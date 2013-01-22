@@ -1,0 +1,71 @@
+[21-Jan-2013 07:09:04] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'dba_interfirex'@'localhost' (using password: YES) in /home/interfir/public_html/interfire/funciones.php on line 5
+[21-Jan-2013 07:09:04] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/interfir/public_html/interfire/funciones.php on line 7
+[21-Jan-2013 07:09:04] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/interfir/public_html/interfire/funciones.php on line 11
+[21-Jan-2013 07:09:04] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/interfir/public_html/interfire/funciones.php on line 13
+[21-Jan-2013 07:09:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/interfir/public_html/interfire/funciones.php:5) in /home/interfir/public_html/interfire/login.php on line 12
+[21-Jan-2013 07:35:19] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:19] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:19] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:34] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:34] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:34] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:36] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:36] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:36] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:37] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:37] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:37] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:38] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:38] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:38] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:40] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:40] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:40] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:41] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:41] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:41] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:42] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:43] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:43] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:43] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:44] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:44] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:44] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:46] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:46] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:46] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:47] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:47] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:47] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:48] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:48] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:48] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[21-Jan-2013 07:35:50] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 63
+[21-Jan-2013 07:35:50] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 64
+[21-Jan-2013 07:35:50] PHP Warning:  mktime() expects parameter 6 to be long, string given in /home/interfir/public_html/interfire/calendar.php on line 65
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_semanal.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 23
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_semanal.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 23
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_semanal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 23
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_quincenal.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 29
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_quincenal.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 29
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_quincenal.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 29
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_mensual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 35
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_mensual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 35
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_mensual.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 35
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_bimensual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 41
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_bimensual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 41
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_bimensual.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 41
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_trimestral.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 47
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_trimestral.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 47
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_trimestral.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 47
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_semestral.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 53
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_semestral.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 53
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_semestral.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 53
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_anual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 59
+[22-Jan-2013 13:49:00] PHP Warning:  include(sistema_tuberia/rev_anual.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 59
+[22-Jan-2013 13:49:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sistema_tuberia/rev_anual.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/interfir/public_html/interfire/productos/sistema_tuberia.php on line 59
