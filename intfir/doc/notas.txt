@@ -1,0 +1,10 @@
+ROLES
+- Administrador
+- Coordinador
+- Usuario
+La unica diferencia entre los administradores y los coordinadores es que los segundos no pueden crear administradores ni coordinadores
+Y los usuarios solo pueden llenar los formularios semanales y mensuales
+Y ver solo la sede y la empresa a la que estan asignados
+Administrador crea y modifica de todo igual que coordinador pero este no puede crear otros coordinadores/administradores y solo ve empresas asignadas
+Y el usuario solo ve su propia sede y llena los formularios de revisiones semanales y mensuales de los productos que le cree el coordinador de su empresa
+

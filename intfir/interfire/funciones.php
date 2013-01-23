@@ -2,7 +2,8 @@
 //funcion para conectar a la base de datos y verificar la existencia del usuario
 function conexiones($usuario, $clave) {
 	//conexion con el servidor de base de datos MySQL
-	$conectar = mysql_connect('localhost','interfir_dba','123456');
+//	$conectar = mysql_connect('localhost','interfir_dba','123456');
+	$conectar = mysql_connect('localhost','root','root');
 	//seleccionar la base de datos para trabajar
 	mysql_select_db('interfir_interfirex',$conectar);
 	//sentencia sql para consultar el nombre del usuario
