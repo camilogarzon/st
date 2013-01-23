@@ -103,6 +103,7 @@ CREATE TABLE fir_usuario (
   usr_foto VARCHAR(200) NULL,
   usr_nick VARCHAR(20) NULL,
   usr_hashpass VARCHAR(50) NULL,
+  usr_rol VARCHAR(20) NULL,
   PRIMARY KEY(usr_id),
   INDEX fir_usuario_FKIndex1(fir_sede_sde_id),
   INDEX fir_usuario_FKIndex2(fir_empresa_emp_id)

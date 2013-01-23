@@ -84,7 +84,8 @@ class Controller {
                         'correo' => $obj->usr_correo,
                         'celular' => ($obj->usr_celular),
                         'foto' => $obj->usr_foto,
-                        'nick' => $obj->usr_nick));
+                        'nick' => $obj->usr_nick,
+                        'rol' => $obj->usr_rol));
             }
             if ($resultado == 0) {
                 $arrjson = array('output' => array('valid' => false, 'error' => "error en usuario o contraseña."));
