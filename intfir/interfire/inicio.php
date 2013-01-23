@@ -10,6 +10,7 @@ if (!isset($_SESSION['usuario'])){
         header('Location: index.php?error=1');
     }
 }
+$_ACTIVE_SIDEBAR = "inicio";
 
 ?>
 <!DOCTYPE html>

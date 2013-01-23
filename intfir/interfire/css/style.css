@@ -52,7 +52,9 @@ button { margin: 0; outline: 0; }
 small { font-size: 11px; line-height: 12px; }
 
 .bodywhite { background: #fff; }
-.bodygrey { background: #eee url(../images/leftbg.png) repeat-y top left; overflow: scroll;}
+.bodygrey { background: #eee url(../images/leftbg.png) repeat-y top left; 
+/*           overflow: scroll;*/
+}
 .page404 { background: #eee; }
 
 h1.prize { font-size: 28px; color: #000; font-family: Arial, Helvetica, sans-serif; margin-bottom: 5px; }

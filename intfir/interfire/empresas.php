@@ -1,8 +1,6 @@
 <?php
-session_start();
-if (!isset($_SESSION['usuario'])){
-    header('Location: index.php');
-}
+require_once 'includes/generic_validate_session.php';
+$_ACTIVE_SIDEBAR = "empresas";
 
 ?>
 <!DOCTYPE html>
@@ -12,7 +10,6 @@ if (!isset($_SESSION['usuario'])){
         include_once 'includes/generic_head.php';
         ?>
     </head>
-
     <body class="bodygrey">
         <header class="header">
             <?php
@@ -41,5 +38,3 @@ if (!isset($_SESSION['usuario'])){
         </footer>
     </body>
 </html>
-
-

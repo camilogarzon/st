@@ -22,6 +22,7 @@
 <script type="text/javascript" src="js/plugins/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.flot.min.js"></script>
 <script type="text/javascript" src="js/custom/general.js"></script>
+<script type="text/javascript" src="js/custom/dashboard.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="js/plugins/elfinder.min.js"></script>
 <script type="text/javascript" src="js/dhtmlwindow.js"></script>

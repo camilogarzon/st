@@ -39,7 +39,9 @@
 <div class="accountinfo">
     <img src="images/foto.png" alt="Avatar" />
     <div class="info">
-        <h3>Hola, <span>Administrador</span></h3>
-        <a href="#">Detalles</a> | <a href="salir.php">Salir</a>
+        <h3>Hola, <span><?php echo $_SESSION['usuario']['nombre'] . " " . $_SESSION['usuario']['apellido']; ?></span></h3>
+        <div align="right">
+            <a href="#">Detalles</a> | <a href="salir.php">Salir</a>
+        </div>
     </div><!-- info -->
 </div><!-- accountinfo -->
