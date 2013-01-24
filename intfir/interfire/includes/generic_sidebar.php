@@ -14,28 +14,14 @@
             <li <?php if ($_ACTIVE_SIDEBAR == "archivos") echo 'class="current"'; ?>><a href="archivos.php" class="editor">Archivos</a></li>
         </ul>
     </div>
-    <h3 class="open">Controles</h3>    
-    <div class="controles">
-        <ul>
-            <li>
-                <a href="#" onClick="nuevo(); return false;" class="controlmas"></a>
-            </li>
-            <li>
-            	<a href="#" onClick="borra(); return false;" class="controlmenos"></a>
-            </li>
-            <li >
-                <a href="#" onClick="edita(); return false;" class="controleditar"></a>
-            </li>
-        </ul>
-    </div><!-- controles -->
     <script type="text/javascript">
         <?php
-        
+        $openControl = TRUE;
         switch ($_ACTIVE_SIDEBAR) {
             case "empresas":
                 echo '
         function nuevo(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaIngreso.html", "Ingresar Empresa", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaIngreso.html", "Ingresar Empresa", "width=450px,height=400px,left=300px,top=100px,resize=0,scrolling=0")
             //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Empresa")} 
         }
         function edita(){ 
@@ -81,6 +67,7 @@
 ';
                 break;
             case "categorias":
+                $openControl = FALSE;
                 echo '
         function nuevo(){};
         function edita(){};
@@ -88,6 +75,7 @@
 ';
                 break;
             case "productos":
+                $openControl = FALSE;
                 echo '
         function nuevo(){};
         function edita(){};
@@ -95,6 +83,7 @@
 ';
                 break;
             default:
+                $openControl = FALSE;
                 echo '
         function nuevo(){};
         function edita(){};
@@ -104,5 +93,19 @@
         }
         
         ?>
-    </script>      
+    </script>
+    <h3 <?php if ($openControl) echo 'class="open"'; ?>>Controles</h3>    
+    <div class="controles" <?php if (!$openControl) echo 'style="display: none;"'; ?>>
+        <ul>
+            <li>
+                <a href="#" onClick="nuevo(); return false;" class="controlmas"></a>
+            </li>
+            <li>
+            	<a href="#" onClick="borra(); return false;" class="controlmenos"></a>
+            </li>
+            <li >
+                <a href="#" onClick="edita(); return false;" class="controleditar"></a>
+            </li>
+        </ul>
+    </div><!-- controles -->    
 </div>
