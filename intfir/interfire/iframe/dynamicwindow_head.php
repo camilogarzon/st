@@ -25,4 +25,4 @@
 <script type="text/javascript" src="../js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="../js/plugins/elfinder.min.js"></script>
 <script type="text/javascript" src="../js/dhtmlwindow.js"></script>
-
+<script type="text/javascript" src="../js/cursor.js"></script>

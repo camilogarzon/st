@@ -77,7 +77,7 @@ class Controller {
      * Mensaje de error cuando se llama una metodo no valido
      */
     private function invalid_method_called() {
-        $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '1001', 'content' => 'Invalid method called.')));
+        $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '1001', 'content' => 'Metodo no existe.')));
         $this->response = ($arrjson);
     }
 
@@ -99,7 +99,7 @@ class Controller {
     private function login() {
         $resultado = 0;
         if ($this->nick == "" || $this->pass == "") {
-            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Missing parameters.')));
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
         } else {
             $pass = $this->make_hash_pass($this->nick, $this->pass);
             $q = "SELECT * FROM fir_usuario WHERE usr_nick = '$this->nick' and usr_hashpass = '$pass' ";
@@ -160,7 +160,7 @@ class Controller {
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
                 }
             } else {
-                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Missing parameters.')));
+                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
             }
         } else {
             if ($resultado == 0) {
@@ -171,7 +171,7 @@ class Controller {
                 $id = mysql_insert_id();
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             } else {
-                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '3002', 'content' => 'already exists.')));
+                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '3002', 'content' => 'ya existe.')));
             }
         }
         $this->response = ($arrjson);
@@ -243,7 +243,7 @@ class Controller {
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
                 }
             } else {
-                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Missing parameters.')));
+                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
             }
         } else {
             if ($resultado == 0) {
@@ -252,7 +252,7 @@ class Controller {
                 $id = mysql_insert_id();
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             } else {
-                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '3002', 'content' => 'already exists.')));
+                $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '3002', 'content' => 'ya existe.')));
             }
         }
         $this->response = ($arrjson);
