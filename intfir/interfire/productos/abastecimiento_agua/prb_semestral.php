@@ -21,42 +21,35 @@
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
-			                <col class="head1" width="33%" />
-			                <col class="head0" width="33%" />
-			                <col class="head1" width="33%" />
+			                <col class="head1" width="75%" />
+			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
 			                <td>Detalle</td>
-			                <td>Semestre 1</td>
-			                <td>Semestre 2</td>
+			                <td>Semestre</td>
 			            </tr>
 			            </table>
 			        
 			        <div class="sTableWrapper">
 			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
 			                <colgroup>
-			                    <col class="con1" width="33%" />
-			                    <col class="con0" width="33%" />
-			                    <col class="con1" width="33%" />
+			                    <col class="con1" width="75%" />
+			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
 			                    <td>Fecha</td>
-			                    <td><input type="text" name="email" value="fecha" class="sftable" /></td>
 			                    <td><input type="text" name="email" value="fecha" class="sftable" /></td>
 			                </tr>
 			                <tr>
 			                    <td>Inspector</td>
 			                    <td><input type="text" name="email" value="inspector" class="sftable" /></td>
-			                    <td><input type="text" name="email" value="inspector" class="sftable" /></td>
 			                </tr>
 			                <tr>
 			                    <td>Las alarmas de nivel de agua funcionan correctamente</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
 			                    <td>Drenar los sedimentos del deposito y examinarlo en busca de signos de deterioro del mismo</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			            </table>

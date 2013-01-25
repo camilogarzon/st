@@ -1,6 +1,6 @@
-<?php 
+<?php
 session_start();
-if (isset($_SESSION['usuario'])){
+if (isset($_SESSION['usuario'])) {
     header('Location: inicio.php');
 } else {
     session_destroy();
@@ -47,11 +47,13 @@ if (isset($_SESSION['usuario'])){
             <div class="bg1"></div>
             <div class="bg2"></div>
             <div class="bg3"></div>
+            <div class="bg4"></div>
+            <div class="bg5"></div>
         </div>
 
         <div class="notification notifyError loginNotify">Los datos ingresados no son v&aacute;lidos. (Escr&iacute;balos de nuevo)</div>
 
-        <form id="loginform" action="inicio.php" method="post">
+        <form id="loginform" action="login.php" method="post">
             <div class="loginbox">
 
                 <div class="loginbox_inner">
@@ -63,15 +65,15 @@ if (isset($_SESSION['usuario'])){
 
                         <div class="loginoption">
                             <a href="" class="cant">Ha perdido su clave?</a>
-<?php
-if (isset($_GET['error'])) {
-    if ($_GET['error'] == "1") {
-        echo "<strong>Nombre de usuario o contraseña incorrectos, intente de nuevo</strong>";
-    }
-} else {
-    echo "<input type=\"checkbox\" name=\"remember\" /> Recordar en esta computadora";
-}
-?>
+                            <?php
+                            if (isset($_GET['error'])) {
+                                if ($_GET['error'] == "1") {
+                                    echo "<strong style='color: #FFFFFF;'>Nombre de usuario o contraseña incorrectos, intente de nuevo</strong>";
+                                }
+                            } else {
+                                echo "<input type=\"checkbox\" name=\"remember\" /> Recordar en esta computadora";
+                            }
+                            ?>
 
                         </div><!--loginoption-->
 

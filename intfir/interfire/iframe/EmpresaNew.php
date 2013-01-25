@@ -6,39 +6,18 @@
         ?>
     </head>
     <body>
-
         <style type="text/css">
             input{
                 width: 320px !important;
             }
-            .requirefield{
-                background-color: #fff8ef;
-                border-color: red;
-            }
-            .infotext{
-                color: green;
-            }
-            .errortext{
-                color: red;
-            }
         </style>
         <script type="text/javascript">
-            function isEmail(email) {
-                var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                return regex.test(email);
-            }
-    
-            function callAjaxRqst(ladata, callBackFn){
-                cursorBusy();
-                jQuery.ajax({data: ladata , type: "GET", dataType: "json", url: "ajax/rqst.php", success: callBackFn });
-            }
-            
             function responseAjax(data){
                 cursorNormal();
                 if (data.output.valid){
                     jQuery("input").val('');
                     jQuery("#descripcion").val('');
-                    jQuery("#Registrar").val('Registrar');
+                    jQuery("#accion").val('Guardar');
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
@@ -50,10 +29,6 @@
                     jQuery("#mensaje").append('Error: '+data.output.response.content);
                 }
                 jQuery("#mensaje").show();
-            }
-            
-            function setrequirefield(id){
-                jQuery("#"+id).addClass("requirefield");
             }
             
             function savedata(){
@@ -81,7 +56,7 @@
                 } else {
                     jQuery("#mensaje").hide();
                     ladata += "&razonsocial="+a+"&nit="+b+"&ciudad="+c+"&direccion="+d+"&telefono="+e;
-                    ladata += "&celular="+f+"&contacto="+g+"&correo="+h+"&descripcion="+i+"&logo=empresaDefault.png";
+                    ladata += "&celular="+f+"&contacto="+g+"&correo="+h+"&descripcion="+i+"&logo=images/icons/empresa.png";
                     callAjaxRqst(ladata, responseAjax);
                 }
             }
@@ -126,7 +101,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" id="Registrar" value="Registrar" style="cursor: pointer" onclick="savedata();"/></td>
+                <td><input type="submit" id="accion" value="Guardar" style="cursor: pointer" onclick="savedata();"/></td>
             </tr>
             <tr>
                 <td></td>

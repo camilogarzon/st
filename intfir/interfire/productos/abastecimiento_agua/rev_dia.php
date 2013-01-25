@@ -21,12 +21,11 @@
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
-			                <col class="head1" width="16%" />
-			                <col class="head0" width="16%" />
-			                <col class="head1" width="16%" />
-			                <col class="head0" width="16%" />
-			                <col class="head1" width="16%" />
-			                <col class="head0" width="16%" />
+			                <col class="head1" width="20%" />
+			                <col class="head0" width="20%" />
+			                <col class="head1" width="20%" />
+			                <col class="head0" width="20%" />
+			                <col class="head1" width="20%" />
 			            </colgroup>
 			            <tr>
 			                <td>Fecha</td>
@@ -34,19 +33,17 @@
 			                <td>El estado del tanque es normal</td>
 			                <td>La temperatura del tanque es 40?F o mas</td>
 			                <td>Calefaccion operativa</td>
-			                <td>Notas</td>
 			            </tr>
 			            </table>
 			        
 			        <div class="sTableWrapper">
 			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
 			                <colgroup>
-			                    <col class="con1" width="16%" />
-			                    <col class="con0" width="16%" />
-			                    <col class="con1" width="16%" />
-			                    <col class="con0" width="16%" />
-			                    <col class="con1" width="16%" />
-			                    <col class="con0" width="16%" />
+			                    <col class="con1" width="20%" />
+			                    <col class="con0" width="20%" />
+			                    <col class="con1" width="20%" />
+			                    <col class="con0" width="20%" />
+			                    <col class="con1" width="20%" />
 			                </colgroup>
 			                <tr>
 			                    <td>Fecha</td>
@@ -54,7 +51,6 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			            </table>
 			        </div>

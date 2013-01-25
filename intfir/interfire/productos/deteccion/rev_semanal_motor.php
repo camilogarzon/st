@@ -23,32 +23,28 @@
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
-			                <col class="head1" width="25%" />
-			                <col class="head0" width="25%" />
-			                <col class="head1" width="25%" />
-			                <col class="head0" width="25%" />
+			                <col class="head1" width="33%" />
+			                <col class="head0" width="33%" />
+			                <col class="head1" width="33%" />
 			            </colgroup>
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
 			                <td>Funcionamiento</td>
-			                <td>Notas</td>
 			            </tr>
 			            </table>
 			        
 			        <div class="sTableWrapper">
 			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
 			                <colgroup>
-			                    <col class="con1" width="25%" />
-			                    <col class="con0" width="25%" />
-			                    <col class="con1" width="25%" />
-			                    <col class="con0" width="25%" />
+			                    <col class="con1" width="33%" />
+			                    <col class="con0" width="33%" />
+			                    <col class="con1" width="33%" />
 			                </colgroup>
 			                <tr>
 			                    <td><input type="text" name="name" value="fecha" class="sftable" /></td>
 			                    <td><input type="text" name="name" value="inspector" class="sftable" /></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                    <td><input type="text" name="name" class="sftable" /></td>
 			                </tr>
                             
 			            </table>    

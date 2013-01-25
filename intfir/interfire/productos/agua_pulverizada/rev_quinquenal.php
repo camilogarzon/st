@@ -19,7 +19,11 @@
 	                   <!-- TABLA QUINQUENAL-->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisi—n Quinquenal</legend>
+	                   	<legend>Revisión Quinquenal</legend>
+	                   	
+	                   	<ul>
+	                   	<li>Inspeccionar internamente todas las válvulas de prueba. Comprobar que todos los componentes funcionan correctamente, se mueven con facilidad y están en buen estado.</li>
+	                   	</ul>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

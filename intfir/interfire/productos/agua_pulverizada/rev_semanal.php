@@ -20,6 +20,14 @@
 	                   
 	                  	<fieldset>
 	                   	<legend>Revisi—n Semanal</legend>
+	                   	
+	                   	<ul>
+	                   	<li>1- Si las válvulas están abiertas y precintadas anotar Si en la casilla. Si existen algunas no precintadas, volver a precintar y anotar Si.</li>
+	                   	<li>2- Si todas las boquillas están en buenas condiciones y no están bloqueadas, anotar Si en la casilla. Si no, ver las correcciones que se han realizado y anotarlas en Notas.</li>
+	                   	<li>3- Asegurarse de que el recinto en que se encuentra la válvula se mantiene por encima de 4,4°C.</li>
+	                   	<li>4- Asegurarse que la válvula de diluvio o de preacción está libre de daños, las válvulas de disparo están en la posición correcta y todos los componentes están en uso.</li>
+	                   	<li>5- Registrar todas aquellas observaciones acerca del sistema que el inspector considere improtantes.</li>
+	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

@@ -121,4 +121,5 @@
                       
                         <input type="submit" name="button" id="button" value="Registrar" />
                         
+                    </div>
                     </form>

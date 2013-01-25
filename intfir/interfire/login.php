@@ -1,15 +1,14 @@
 <?php
-include ('funciones.php');
-//usuario y clave pasados por el formulario
-$usuario = $_POST['usuario'];
-$clave = $_POST['clave'];
-//usa la funcion conexiones() que se ubica dentro de funciones.php
-if (conexiones($usuario, $clave)){
-	//si es valido accedemos a ingreso.php
-	header('Location:site.php');
-} else {
-	//si no es valido volvemos al formulario inicial
-	header('Location: index.php?error=1');
-	
+session_start();
+include_once 'lib/Controller.php';
+if (!isset($_SESSION['usuario'])) {
+    $control = new Controller();
+    $response = $control->getResponse();
+    if (intval($response['output']['valid']) > 0) {
+        $_SESSION['usuario'] = $response['output'];
+        header('Location: inicio.php');
+    } else {
+        header('Location: index.php?error=1');
+    }
 }
 ?>

@@ -19,6 +19,14 @@
 	                   
 	                  	<fieldset>
 	                   	<legend>Revision Trimestral</legend>
+	                   	
+	                   	<ul>
+	                   	<li>1- Comprobar el manómetro de presión de aire para confirmar que se mantiene una presión adecuada.</li>
+	                   	<li>2- Inspeccionar los componentes de operación, incluyendo las válvulas de control.</li>
+	                   	<li>3- Inspeccionar los interruptores de flujo, válvula, e interruptores de supervisión del depósito.</li>
+	                   	<li>4- Inspeccionar los dispositivos iniciadores y detectores.</li>
+	                   	<li>5 - Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

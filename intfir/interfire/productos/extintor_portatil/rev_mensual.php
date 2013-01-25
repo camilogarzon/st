@@ -44,32 +44,87 @@
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
-			                <col class="head1" width="33%" />
-			                <col class="head0" width="33%" />
-			                <col class="head1" width="33%" />
+			                <col class="head1" width="50%" />
+			                <col class="head0" width="50%" />
 			            </colgroup>
 			            <tr>
 			                <td>ID Extintor</td>
 			                <td>Mensual (M), Anual (A), Recarga (R)</td>
-			                <td>Notas</td>
 			            </tr>
 			            </table>
 			        
 			        <div class="sTableWrapper">
 			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
 			                <colgroup>
-			                    <col class="con1" width="33%" />
-			                    <col class="con0" width="33%" />
-			                    <col class="con1" width="33%" />
+			                    <col class="con1" width="50%" />
+			                    <col class="con0" width="50%" />
 			                </colgroup>
 			                <tr>
 			                    <td>Precargado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Inspeccion Mensual</option><option value="1">Mantenimiento Anual</option><option value="1">Recarga Extintor</option></select></td>
-			                    <td><input type="text" name="name" class="sftable" /></td>
 			                   </tr>
 			            </table>
-				       
-				       </fieldset>
+	                   
+	                   <!-- TABLA MANTENIMIENTO 2 -->
+                   
+				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
+			        	<colgroup>
+			                <col class="head1" width="9%" />
+			                <col class="head0" width="8%" />
+			                <col class="head1" width="9%" />
+			                <col class="head0" width="8%" />
+			                <col class="head1" width="9%" />
+			                <col class="head0" width="8%" />
+			                <col class="head1" width="9%" />
+			                <col class="head0" width="8%" />
+			                <col class="head1" width="9%" />
+			                <col class="head0" width="10%" />
+			                <col class="head1" width="10%" />
+			            </colgroup>
+			            <tr>
+			                <td>Manometro y Presion</td>
+			                <td>Sello Seguridad</td>
+			                <td>Cilindro</td>
+			                <td>Etiquetas</td>
+			                <td>Acceso</td>
+			                <td>Ubicacion</td>
+			                <td>Altura</td>
+			                <td>Señalizacion</td>
+			                <td>Inspeccion Mensual</td>
+			                <td>Fecha Mant.</td>
+			                <td>Fecha Prox. Mant.</td>
+			            </tr>
+			            </table>
+			        
+			        <div class="sTableWrapper">
+			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
+			                <colgroup>
+			                    <col class="con1" width="9%" />
+			                    <col class="con0" width="8%" />
+			                    <col class="con1" width="9%" />
+			                    <col class="con0" width="8%" />
+			                    <col class="con1" width="9%" />
+			                    <col class="con0" width="8%" />
+			                    <col class="con1" width="9%" />
+			                    <col class="con0" width="8%" />
+			                    <col class="con1" width="9%" />
+			                    <col class="con0" width="10%" />
+			                    <col class="con1" width="10%" />
+			                </colgroup>
+			                <tr>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="checkbox"></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			               </tr>
+			            </table>
 	                   	                   
 	                   <!-- NOTAS -->
 	                   

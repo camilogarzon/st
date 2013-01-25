@@ -21,7 +21,17 @@
 	                   <!-- TABLA MENSUAL -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Inspeccion Mensual</legend>
+	                   	<legend>Inspección Mensual</legend>
+	                   	
+	                   	<ul>
+	                   	<li>1- Confirmar que las válvulas están abiertas. Si las válvulas están cerradas anotar Si. Si no, cerrarla y anotar Si.</li>
+	                   	<li>2- Inspeccionar las válvulas de alarma para asegurarse que no hay fugas ni daños físicos en la cámara de retardo o en las cámaras de drenaje. Confirmas que las válvulas de asiento estén en la posición correcta.</li>
+	                   	<li>3- Asegurarse que existe el número y tipo correcto de rociadores y una llave inglesa adecuada.</li>
+	                   	<li>4- Comprobar que no existan daños físicos y que las conexiones eléctricas sean seguras.</li>
+	                   	<li>5- Registrar las lecturas de presión psi. Se deberá investigar cualquier pérdida de más de un 10%.</li>
+	                   	<li>6- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	<li></li>
+	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

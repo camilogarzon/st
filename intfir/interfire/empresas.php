@@ -1,6 +1,19 @@
 <?php
 require_once 'includes/generic_validate_session.php';
 $_ACTIVE_SIDEBAR = "empresas";
+require_once 'lib/Controller.php';
+$control = new Controller();
+$control->empresa_get();
+$arrempresas = $control->getResponse();
+$arrempresas = $arrempresas['output']['response'];
+$_SESSION['empresas'] = $arrempresas;
+
+$emp = '<option value="seleccione">Seleccione...</option>';
+for ($i = 0; $i < count($arrempresas); $i++) {
+    $emp .= '<option value="' . $arrempresas[$i]['id'] . '">' . $arrempresas[$i]['razonsocial'] . '</option>';
+}
+$_SESSION['opciones_empresas'] = $emp;
+
 
 ?>
 <!DOCTYPE html>
@@ -24,10 +37,9 @@ $_ACTIVE_SIDEBAR = "empresas";
         <!-- content -->
         <div class="maincontent">
             <ul class="widgetlist">
-
-                <li><a href=""><img src="images/icons/empresa.png" alt="Document Icon" /><span>Exito</span></a></li>
-                <li><a href=""><img src="images/icons/empresa.png" alt="Report Icon" /><span>Sika</span></a></li>
-
+                <?php for ($i = 0; $i < count($arrempresas); $i++) { ?>
+                <li><a href="sedes.php?i=<?php echo $arrempresas[$i]['id']; ?>"><img src="<?php echo $arrempresas[$i]['logo']; ?>" /><span><?php echo $arrempresas[$i]['razonsocial']; ?></span></a></li>
+                <?php } ?>
             </ul>
         </div>
         <!-- content -->

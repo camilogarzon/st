@@ -6,9 +6,9 @@
             <li <?php if ($_ACTIVE_SIDEBAR == "empresas") echo 'class="current"'; ?>><a href="empresas.php" class="home">Empresas</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "sedes") echo 'class="current"'; ?>><a href="sedes.php" class="form">Sedes</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "usuarios") echo 'class="current"'; ?>><a href="usuarios.php" class="usuarios">Usuarios</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "categorias") echo 'class="current"'; ?>><a href="categorias.php" class="gallery">Categorías</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "productos") echo 'class="current"'; ?>><a href="productos.php" class="gallery">Productos</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "reportes") echo 'class="current"'; ?>><a href="reportes.php" class="grid">Reportes</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "sistemas") echo 'class="current"'; ?>><a href="sistemas.php" class="form">Sistemas</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "equipos") echo 'class="current"'; ?>><a href="equipos.php" class="gallery">Equipos</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "indicadores") echo 'class="current"'; ?>><a href="indicadores.php" class="grid">Indicadores</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "mensajes") echo 'class="current"'; ?>><a href="mensajes.php" class="calendar">Mensajes</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "alertas") echo 'class="current"'; ?>><a href="alertas.php" class="buttons">Alertas</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "archivos") echo 'class="current"'; ?>><a href="archivos.php" class="editor">Archivos</a></li>
@@ -25,7 +25,7 @@
             //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Empresa")} 
         }
         function edita(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaEdita.html", "Editar Empresa", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaEdita.html", "Editar Empresa", "width=450px,height=450px,left=300px,top=100px,resize=0,scrolling=0")
             //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Empresa")} 
         }
         function borra(){ 
@@ -66,7 +66,7 @@
         }
 ';
                 break;
-            case "categorias":
+            case "sistemas":
                 $openControl = FALSE;
                 echo '
         function nuevo(){};
@@ -74,7 +74,7 @@
         function borra()(){};
 ';
                 break;
-            case "productos":
+            case "equipos":
                 $openControl = FALSE;
                 echo '
         function nuevo(){};

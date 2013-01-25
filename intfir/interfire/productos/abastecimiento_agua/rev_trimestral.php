@@ -31,8 +31,8 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Condiciones exteriores del tanque adeacuadas</td>
-			                <td>Sustentacion del tanque es adecuada</td>
+			                <td>Condiciones exteriores del tanque adecuadas</td>
+			                <td>El soporte estructural del tanque es adecuado</td>
 			                <td>Medios de acceso al deposito adecuados</td>
 			                <td>Area libre de suciedad y sin fugas</td>
 			            </tr>

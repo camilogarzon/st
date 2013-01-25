@@ -20,6 +20,15 @@
 	                   
 	                  	<fieldset>
 	                   	<legend>Revision Mensual</legend>
+	                   	
+	                   	<ul>
+	                   	<li>1- Comprobar que el tanque de abastecimiento está lleno si el nivel de agua no está supervisado.</li>
+	                   	<li>2- Comprobar el manómetro de presión de aire para confirmar que se mantiene en un valor adecuado.</li>
+	                   	<li>3- Comprobar el manómetro de presión del aire para confirmar que la presión del aire se mantiene gracias al compresor.</li>
+	                   	<li>4- Comprobar la presión y discos indicadores en los cilindros.</li>
+	                   	<li>5- Inspeccionar los componentes de operación del sistema, incluyendo las válvulas de control.</li>
+	                   	<li>6- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

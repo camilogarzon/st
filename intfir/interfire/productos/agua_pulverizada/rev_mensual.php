@@ -19,7 +19,13 @@
 	                   <!-- TABLA MENSUAL -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisi—n Mensual</legend>
+	                   	<legend>Revisión Mensual</legend>
+	                   	
+	                   	<ul>
+	                   	<li>Si las válvulas están abiertas y precintadas anotar Si, si existen algunas no precintadas, volver a precintar y anotar Si.</li>
+	                   	<li>Inspeccionar el correcto emplazamiento de las boquillas, posibles obstáculos a la descarga, corrosión y si las tapas (si existen) están en su lugar.</li>
+	                   	<li>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

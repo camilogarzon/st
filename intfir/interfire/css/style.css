@@ -52,9 +52,7 @@ button { margin: 0; outline: 0; }
 small { font-size: 11px; line-height: 12px; }
 
 .bodywhite { background: #fff; }
-.bodygrey { background: #eee url(../images/leftbg.png) repeat-y top left; 
-/*           overflow: scroll;*/
-}
+.bodygrey { background: #eee url(../images/leftbg.png) repeat-y top left;}
 .page404 { background: #eee; }
 
 h1.prize { font-size: 28px; color: #000; font-family: Arial, Helvetica, sans-serif; margin-bottom: 5px; }
@@ -133,7 +131,7 @@ h2.prize { font-size: 20px; color: #000; font-family: Arial, Helvetica, sans-ser
 #search button { float: left; border: 0; margin: 0; background: url(../images/searchicon.png) no-repeat 0 0; width: 27px; height: 30px; cursor: pointer; }
 
 /***HEADER (all page)***/
-.header { background: url(../images/bg_header.png) top repeat-x; padding: 5px 0 5px;; position: absolute; height: 55px; border-bottom: 3px solid #de6328; width: 100%;}
+.header { background: url(../images/bg_header.png) top repeat-x; padding: 5px 0 5px;; position: relative; height: 55px; border-bottom: 3px solid #de6328; width: 100%;}
 .accountinfo { position: relative; float: right; top: 2px; background: url(../images/whitetrans.png); padding: 7px; overflow: hidden; line-height: 15px; right: 7px; }
 .accountinfo { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #DE6328;}
 .accountinfo img { float: left; }
@@ -184,7 +182,7 @@ h2.prize { font-size: 20px; color: #000; font-family: Arial, Helvetica, sans-ser
 .tabmenu ul li.current .subnav li a span { text-shadow: 1px 1px #f7f7f7; }
 
 /***SIDEBAR (all page)***/
-.sidebar { padding: 0 0 20px 0; width: 200px; float: left; z-index: 300; top: 68px; position: relative;}
+.sidebar { padding: 10px 0 60px 0; width: 200px; float: left; z-index: 300; top: 0px; position: relative;}
 
 #accordion h3 { background: url(../images/arrow.png) no-repeat 10px 6px; padding-left: 30px; }
 #accordion h3 { cursor: pointer; font-size: 12px; color: #333; text-transform: uppercase; }
@@ -236,9 +234,9 @@ ul.productos li a.items { background-image: url(../images/icons/buttons.png); ba
 .last{ margin-right:0 !important; clear:right; }
 
 /***MAIN CONTENT (dashboard.html)***/
-.maincontent {color: #333; position: relative; top: 68px; padding:10px 10px 40px 210px; z-index: 100;}
+.maincontent {color: #333; top: 78px; z-index: 100; position: absolute; float: left; left: 210px; right: 10px; padding-bottom: 50px;}
 .maincontent .espacio { clear: both; height: 15px; float: right;}
-.maincontent .contenedor { padding: 20px 15px; overflow: hidden; }
+.maincontent .contenedor { padding: 0px 0px 10px 0px; overflow: hidden; position: relative; }
 .maincontent .left { padding: 20px 15px; overflow: hidden; }
 .maincontent .right { padding: 20px 0; padding-right: 15px; overflow: hidden; }
 .maincontent .right .widgetbox:last-child { margin-bottom: 0; border-bottom: 0; }
@@ -610,14 +608,14 @@ input[type=radio], input[type=checkbox] { margin: 0; padding: 0; vertical-align:
 .invoicetable tr td.line { border-bottom: 1px solid #ccc; }
 
 /** FOOTER**/
-.footer { background: #333; padding: 10px 0; z-index: 1000}
+.footer { background: #333; padding: 10px 0; z-index: 1000; bottom: 0; position: fixed; width: 100%;}
 .footerinner { padding: 0 20px; text-align: right; font-size: 11px; color: #ccc; }
 .footer_float { position: fixed; bottom: 0; left: 0; width: 100%; }
 
 /***MAIN CONTENT: CUSTOM STYLES***/
 .errorpage { padding: 20px; }
 .widgetbox .content .bright { border-right: 1px solid #ddd; width: 47%; }
-.clear { clear: both; height: 15px;  }
+.clear { clear: both; height: 30px;  }
 .nopadding { padding: 0 !important; }
 .loaders img { vertical-align: middle; display: inline-block; margin-right: 10px; }
 .padding15 { padding: 15px; overflow: hidden; }
@@ -645,9 +643,11 @@ input[type=radio], input[type=checkbox] { margin: 0; padding: 0; vertical-align:
 /** BACKGROUNDS **/
 #bg_containers {width:100%; margin:0; z-index:1;}
 #bg_containers div {width:100%; height:1000px; margin:0 auto;}
-#bg_containers .bg1 {background:url(../images/bg1.jpg) top center repeat-x;}
-#bg_containers .bg2 {background:url(../images/bg2.jpg) top center repeat-x;}
-#bg_containers .bg3 {background:url(../images/bg3.jpg) top center repeat-x;}
+#bg_containers .bg1 {background:url(../images/bg1.jpg) top left repeat-x;}
+#bg_containers .bg2 {background:url(../images/bg2.jpg) top left repeat-x;}
+#bg_containers .bg3 {background:url(../images/bg3.jpg) top left repeat-x;}
+#bg_containers .bg4 {background:url(../images/bg4.jpg) top left repeat-x;}
+#bg_containers .bg5 {background:url(../images/bg5.jpg) top left repeat-x;}
 
 /*** CONTROLES ***/
 .controles { width: 180px; padding: 10px; z-index: 2000;}
@@ -659,6 +659,9 @@ input[type=radio], input[type=checkbox] { margin: 0; padding: 0; vertical-align:
 .controles > ul { list-style: none; position: relative;}
 .controles > ul > li { display: inline-block; float: left; margin-right: 15px; line-height: 14px;}
 .controles > ul > li > a:hover { background-position: right -50px; text-decoration: none; }
+
+.flecha_calendario {width: 25px; height: 25px; overflow: hidden;}
+#todo {height: 100%;}
 
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {

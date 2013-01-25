@@ -23,7 +23,7 @@ $_ACTIVE_SIDEBAR = "alertas";
         <!-- content -->
         <div class="maincontent">
             <div class="contenedor">
-                <h1 class="pageTitle">Productos</h1>
+                <h1 class="pageTitle">Alertas de Revision de Equipos</h1>
                 <table cellpadding="0" cellspacing="0" border="0" class="dyntable" id="example">
                     <thead>
                         <tr>
@@ -44,7 +44,7 @@ $_ACTIVE_SIDEBAR = "alertas";
                             <td class="con0">001</td>
                             <td class="con1">Rociador 004</td>
                             <td class="con0">26 Nov 2012</td>
-                            <td class="con1">Revisión</td>
+                            <td class="con1">Revisi—n</td>
                         </tr>
                     </tbody>
                     <tfoot>

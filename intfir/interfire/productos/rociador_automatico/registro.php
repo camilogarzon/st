@@ -24,7 +24,7 @@
 	                   		<legend>General</legend>
                     <p>
                     	<div class="one_fourth">
-                    	<label for="name">Denominaci&oacute;n General</label>
+                    	<label for="name">Nombre del Sistema</label>
                     	</div>
                     	<div class="three_fourth last">
                         <input type="text" name="name"  class="sftable" />
@@ -56,12 +56,8 @@
                         </div>
                     </p>
                     <p>
-                    	<div class="one_fourth">
-                    	<label for="name">Marca Puesto Control</label>
-                    	</div>
-                    	<div class="three_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
+                    	<div class="one_fourth"><label for="name">Marca Puesto Control</label></div>
+                    	<div class="three_fourth last"><input type="text" name="name"  class="sftable" /></div>
                     </p>
                     <p>
                     	<div class="one_half"><label for="name">Esta el edificio totalmente cubierto por rociadores?</label></div>
@@ -76,22 +72,10 @@
                     	</div>
                     </p>
                     <p>
-                        <div class="one_half"><label for="name">Esta todo el sistema de rociadores en condiciones de funcionamiento?</label></div>
-                        <div class="one_half last"><select name="occupation">
-                          <option>Seleccione una</option>
-                          <option value="0">Si</option>
-                          <option value="1">No</option>
-                        </select>
-                        </div>
-                    </p>
-                    <p>
-                        <div class="one_half"><label for="name">Se ha modificado el sistema de rociadores desde la &uacute;ltima inspecci&oacute;n?</label></div>
-                        <div class="one_half last"><select name="occupation">
-                          <option>Seleccione una</option>
-                          <option value="0">Si</option>
-                          <option value="1">No</option>
-                        </select>
-                        </div>
+                        <div class="one_fourth"><label for="name">Esta todo el sistema de rociadores en condiciones de funcionamiento?</label></div>
+                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                        <div class="one_fourth"><label for="name">Se ha modificado el sistema de rociadores desde la &uacute;ltima inspecci&oacute;n?</label></div>
+                        <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -104,7 +88,8 @@
                         <div class="three_fourth last">
                         <input type="radio" name="language[]" value="0" /> Con asiento&nbsp;&nbsp;&nbsp;&nbsp; 
                         <input type="radio" name="language[]" value="1" /> Cerradas &nbsp;&nbsp;&nbsp;&nbsp; 
-                        <input type="radio" name="language[]" value="2" /> Interruptor antimanipulaci&oacute;n
+                        <input type="radio" name="language[]" value="2" /> Interruptor antimanipulaci&oacute;n &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="language[]" value="3" /> Ninguna
                         </div>
                     </p>
                     <p>

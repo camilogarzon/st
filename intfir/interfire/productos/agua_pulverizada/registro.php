@@ -41,7 +41,7 @@
 	                   <fieldset><legend>V&aacute;lvulas</legend>
                     <p>
                     	<div class="one_fourth"><label for="name">C&oacute;mo est&aacute;n supervisadas las v&aacute;lvulas?</label></div>
-                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Precintadas</option><option value="1">Bloqueadas</option><option value="2">Interruptor antimanipulacion</option></select></div>
+                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Precintadas</option><option value="1">Bloqueadas</option><option value="2">Interruptor antimanipulacion</option><option value="3">Ninguna</option></select></div>
                     	<div class="one_fourth"><label for="name">Est&aacute;n las v&aacute;lvulas identificadas con alguna se&ntilde;alizaci&oacute;n?</label></div>
                         <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
@@ -53,8 +53,8 @@
                     <p>
                     	<div class="one_fourth"><label for="name">Cuando se realiz&oacute; la &uacute;ltima prueba de abastecimiento de agua?</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select> </div>
-                    	<div class="one_fourth"><label for="name">Est&aacute;n los dep&oacute;sitos, tanques de presi&oacyte;n, etc, en buen estado?</label></div>
-                        <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option> <option value="0">Si</option></select></div>
+                    	<div class="one_fourth"><label for="name">Están los depósitos, tanques de presión, etc, en buen estado?</label></div>
+                        <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
 	                   

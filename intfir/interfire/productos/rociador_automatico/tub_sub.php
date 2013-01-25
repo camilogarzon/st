@@ -30,7 +30,7 @@
                     </p>
                     <p>
                     	<div class="one_fourth">
-                    	<label for="name">Domicilio</label>
+                    	<label for="name">Dirección</label>
                     	</div>
                     	<div class="three_fourth last">
                         <input type="text" name="name"  class="sftable" />

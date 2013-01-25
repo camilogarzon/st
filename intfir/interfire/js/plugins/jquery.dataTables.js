@@ -966,12 +966,12 @@
 			 */
 			this.oLanguage = {
 				"sProcessing": "Procesando solicitud",
-				"sLengthMenu": "Mostar _MENU_ usuarios por ventana",
+				"sLengthMenu": "Mostar _MENU_ campos por ventana",
 				"sZeroRecords": "No se encontraron resultados",
 				"sEmptyTable": "No hay datos disponibles",
 				"sLoadingRecords": "Cargando...",
-				"sInfo": "Mostrando _START_ a _END_ de _TOTAL_ usuarios",
-				"sInfoEmpty": "Mostrando 0 a 0 de 0 usuarios",
+				"sInfo": "Mostrando _START_ a _END_ de _TOTAL_ campos",
+				"sInfoEmpty": "Mostrando 0 a 0 de 0 campos",
 				"sInfoFiltered": "(filtered from _MAX_ total entries)",
 				"sInfoPostFix": "",
 				"sInfoThousands": ",",
@@ -1400,7 +1400,7 @@
 			 *   from the first array, and the displayed value to the end user comes from the second
 			 *   array. 2D example: [ [ 10, 25, 50, 100, -1 ], [ 10, 25, 50, 100, 'All' ] ];
 			 */
-			this.aLengthMenu = [ 10, 25, 50, 100 ];
+			this.aLengthMenu = [ 25, 50, 100 ];
 			
 			/*
 			 * Variable: iDraw
@@ -1431,9 +1431,9 @@
 			 * Notes:    These variable must NOT be used externally to get the data length. Rather, use
 			 *   the fnRecordsTotal() (etc) functions.
 			 */
-			this._iDisplayLength = 10;
+			this._iDisplayLength = 25;
 			this._iDisplayStart = 0;
-			this._iDisplayEnd = 10;
+			this._iDisplayEnd = 25;
 			
 			/*
 			 * Variable: _iRecordsTotal, _iRecordsDisplay

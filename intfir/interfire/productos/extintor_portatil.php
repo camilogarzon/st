@@ -1,9 +1,9 @@
-			<h1 class="pageTitle">Sistema de Extintor Portatil</h1>
+			<h1 class="pageTitle">Extintores Portátiles</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Mensual</a></li>
+                    <li><a href="#tabs-2">Inspección Mensual</a></li>
                 </ul>
                 
                 <div id="tabs-1">

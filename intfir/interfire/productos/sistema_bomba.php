@@ -91,7 +91,7 @@
                 
                 <div id="tabs-13">
                 
-                <?php include("sistema_bomba/resumen.php") ?>
+                <?php include("sistema_bomba/prb_resumen.php") ?>
                    
                 </div>
                 

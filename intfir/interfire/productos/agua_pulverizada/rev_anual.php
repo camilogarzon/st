@@ -94,22 +94,26 @@
 			                </tr>
 			                <tr>
 			                    <td>Prueba de drenaje</td>
+			                    <td></td>
+			                </tr>
+			                <tr>
+			                    <td>-- Registrar la presión estática del suministro en psi</td>
+			                    <td><input type="text" name="name"  class="sftable" /></td>
+			                </tr>
+			                <tr>
+			                    <td>-- Abrir el drenaje y dejar fluir el agua hasta que se estabilice</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Abrir el drenaje y dejar fluir el agua hasta que se estabilice</td>
+			                    <td>-- Registrar la presion residual del agua mientras esta fluyendo por la tuberia de 2" (51mm)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Registrar la presion residual del agua mientras esta fluyendo por la tuberia de 2" (51mm)</td>
+			                    <td>-- Cerrar el drenaje </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Cerrar el drenaje </td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Comparar los resultados de la pueba de este a–o con los resultados de a–os anteriores para determinar si el suministro de agua se ha deteriorado</td>
+			                    <td>-- Comparar los resultados de la pueba de este a–o con los resultados de a–os anteriores para determinar si el suministro de agua se ha deteriorado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
