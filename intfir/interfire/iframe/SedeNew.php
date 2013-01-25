@@ -20,7 +20,6 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 cursorNormal();
                 if (data.output.valid){
                     jQuery("input").val('');
-                    jQuery("#descripcion").val('');
                     jQuery("#accion").val('Guardar');
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("errortext");
@@ -36,36 +35,40 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
             }
             
             function savedata(){
-                jQuery("input").removeClass("requirefield");
-                jQuery("#mensaje").empty();
-                jQuery("#mensaje").addClass("errortext");
-                jQuery("#mensaje").append('Los campos en rojo son obligatorios');
-                a = jQuery("#nombre").val();
-                b = jQuery("#nit").val();
-                c = jQuery("#ciudad").val();
-                d = jQuery("#direccion").val();
-                e = jQuery("#telefono").val();
-                f = jQuery("#celular").val();
-                g = jQuery("#contacto").val();
-                h = jQuery("#correo").val();
-                i = jQuery("#descripcion").val();
-                var enable = true;
-                var ladata = "op=empresa_save";
-                if (a.length < 4){ enable = false; setrequirefield("nombre");}
-                if (b.length < 4){ enable = false; setrequirefield("nit");}
-                if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
+                j = jQuery("#selectEmpresa").val();
+                if (j != 'seleccione'){
+                    jQuery("input").removeClass("requirefield");
+                    jQuery("#mensaje").empty();
+                    jQuery("#mensaje").addClass("errortext");
+                    jQuery("#mensaje").append('Los campos en rojo son obligatorios');
+                    a = jQuery("#nombre").val();
+                    d = jQuery("#direccion").val();
+                    e = jQuery("#telefono").val();
+                    f = jQuery("#celular").val();
+                    g = jQuery("#contacto").val();
+                    h = jQuery("#correo").val();
+                    var enable = true;
+                    var ladata = "op=sede_save";
+                    if (a.length < 4){ enable = false; setrequirefield("nombre");}
+                    if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
-                if (!enable) {
-                    jQuery("#mensaje").show();
+                    if (!enable) {
+                        jQuery("#mensaje").show();
+                    } else {
+                        jQuery("#mensaje").hide();
+                        ladata += "&empresa_id="+j;
+                        ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
+                        ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
+                        callAjaxRqst(ladata, responseAjax);
+                    }
                 } else {
-                    jQuery("#mensaje").hide();
-                    ladata += "&empresa_id="+j;
-                    ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
-                    ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
-                    callAjaxRqst(ladata, responseAjax);
+                    jQuery("#mensaje").empty();
+                    jQuery("#mensaje").addClass("errortext");
+                    jQuery("#mensaje").append('Seleccione la empresa.');
+                    jQuery("#mensaje").show();
                 }
+
             }
-            sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, emp_correo, fir_empresa_emp_id
         </script>
         <table>
             <tr>

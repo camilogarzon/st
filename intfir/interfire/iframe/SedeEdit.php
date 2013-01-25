@@ -20,7 +20,6 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 cursorNormal();
                 if (data.output.valid){
                     jQuery("input").val('');
-                    jQuery("#descripcion").val('');
                     jQuery("#accion").val('Guardar');
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("errortext");
@@ -39,15 +38,12 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 cursorNormal();
                 if (data.output.valid){
                     res = data.output.response;
-                    jQuery("#razonsocial").val(res[0].razonsocial);
-                    jQuery("#nit").val(res[0].nit);
-                    jQuery("#ciudad").val(res[0].ciudad);
+                    jQuery("#nombre").val(res[0].nombre);
                     jQuery("#direccion").val(res[0].direccion);
                     jQuery("#telefono").val(res[0].telefono);
                     jQuery("#celular").val(res[0].celular);
                     jQuery("#contacto").val(res[0].contacto);
                     jQuery("#correo").val(res[0].correo);
-                    jQuery("#descripcion").val(res[0].descripcion);
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -63,29 +59,24 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").addClass("errortext");
                     jQuery("#mensaje").append('Los campos en rojo son obligatorios');
-                    a = jQuery("#razonsocial").val();
-                    b = jQuery("#nit").val();
-                    c = jQuery("#ciudad").val();
+                    a = jQuery("#nombre").val();
                     d = jQuery("#direccion").val();
                     e = jQuery("#telefono").val();
                     f = jQuery("#celular").val();
                     g = jQuery("#contacto").val();
                     h = jQuery("#correo").val();
-                    i = jQuery("#descripcion").val();
-                
                     var enable = true;
-                    var ladata = "op=empresa_save";
-                    if (a.length < 4){ enable = false; setrequirefield("razonsocial");}
-                    if (b.length < 4){ enable = false; setrequirefield("nit");}
+                    var ladata = "op=sede_save";
+                    if (a.length < 4){ enable = false; setrequirefield("nombre");}
                     if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
                     if (!enable) {
                         jQuery("#mensaje").show();
                     } else {
                         jQuery("#mensaje").hide();
-                        ladata += "&id="+j;
-                        ladata += "&razonsocial="+a+"&nit="+b+"&ciudad="+c+"&direccion="+d+"&telefono="+e;
-                        ladata += "&celular="+f+"&contacto="+g+"&correo="+h+"&descripcion="+i+"&logo=images/icons/empresa.png";
+                        ladata += "&empresa_id="+j;
+                        ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
+                        ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
                         callAjaxRqst(ladata, responseAjax);
                     }
                 } else {
@@ -94,23 +85,21 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").append('Seleccione la empresa.');
                     jQuery("#mensaje").show();
                 }
+
             }
             
             function loadselected(){
                 jQuery("#mensaje").hide();
                 a = jQuery("#selectEmpresa").val();
                 if (a != 'seleccione'){
-                    ladata = "op=empresa_get&id="+a;
+                    ladata = "op=sede_get&id="+a;
                     callAjaxRqst(ladata, responseLoad);
                 } else {
                     jQuery("input").val('');
-                    jQuery("#descripcion").val('');
                     jQuery("#accion").val('Guardar');
                 }
             }
-            
         </script>
-
         <table>
             <tr>
                 <td style="width: 100px;">Empresa</td>
@@ -119,17 +108,8 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     </select></td>
             </tr>
             <tr>
-                <td>Razón social</td>
-                <td><input type="text" id="razonsocial" name="razonsocial" maxlength="40"/></td>
-            </tr>
-            <tr>
-                <td>NIT</td>
-                <td><input type="text" id="nit" name="nit" required="true" maxlength="20" /></td>
-            </tr>
-            <tr>
-                <td>Ciudad</td>
-                <td><input type="text" id="ciudad" name="ciudad" maxlength="50"/></td>
-            </tr>
+                <td style="width: 100px;">Nombre</td>
+                <td><input type="text" id="nombre" name="nombre" maxlength="40"/></td>
             <tr>
                 <td>Dirección</td>
                 <td><input type="text" id="direccion" name="direccion" maxlength="90" /></td>
@@ -149,10 +129,6 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
             <tr>
                 <td>Correo</td>
                 <td><input type="email" id="correo" name="correo"  maxlength="190"/></td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;">Descripción</td>
-                <td><textarea id="descripcion" name="descripcion" cols="50" rows="3" maxlength="400"></textarea></td>
             </tr>
             <tr>
                 <td></td>

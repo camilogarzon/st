@@ -7,15 +7,20 @@ $control->sede_get();
 $arrsede = $control->getResponse();
 $arrsede = $arrsede['output']['response'];
 $_SESSION['sedes'] = $arrsede;
+
+$emp = '<option value="seleccione">Seleccione...</option>';
+for ($i = 0; $i < count($arrsede); $i++) {
+    $emp .= '<option value="' . $arrsede[$i]['id'] . '">' . $arrsede[$i]['empresa_razonsocial'] . ' - ' . $arrsede[$i]['nombre'] . '</option>';
+}
+$_SESSION['opciones_sedes'] = $emp;
 ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <?php
-        include_once 'includes/generic_head.php';
+        include_once 'includes/generic_head_table.php';
         ?>
     </head>
-
     <body class="bodygrey">
         <header class="header">
             <?php
@@ -31,7 +36,7 @@ $_SESSION['sedes'] = $arrsede;
         <div class="maincontent">
             <div class="contenedor">
                 <h1 class="pageTitle">Sedes</h1>
-                <table cellpadding="0" cellspacing="0" border="0" class="dyntable" id="example">
+                <table cellpadding="0" cellspacing="0" border="0" class="dyntable" id="dynamictable">
                     <thead>
                         <tr>
                             <th class="head0">Nombre</th>
@@ -61,14 +66,6 @@ $_SESSION['sedes'] = $arrsede;
                                 <td class="con1"><a href="mailto:<?php echo $arrsede[$i]['correo']; ?>"><?php echo $arrsede[$i]['correo']; ?></a></td>
                             </tr>
                         <?php } ?>
-                        <tr class="gradeC">
-                            <td class="con0">Chapinero</td>
-                            <td class="con1">Calle 52 No 13-70</td>
-                            <td class="con0">Exito</td>
-                            <td class="con1">2115108</td>
-                            <td class="con0"></td>
-                            <td class="con1"><a href="mailto:operaciones@interfiresas.com">operaciones@interfiresas.com</a></td>
-                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>

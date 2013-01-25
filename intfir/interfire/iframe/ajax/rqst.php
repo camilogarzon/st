@@ -34,6 +34,13 @@ switch ($op) {
 //        }
         echo $control->getResponseJSON();
         break;
+    case 'sede_save':
+        echo $control->getResponseJSON();
+        break;
+    case 'sede_get':
+        echo $control->getResponseJSON();
+        break;
+    
     default:
         break;
 }

@@ -6,7 +6,7 @@ $_ACTIVE_SIDEBAR = "usuarios";
 <html lang="es">
     <head>
         <?php
-        include_once 'includes/generic_head.php';
+        include_once 'includes/generic_head_table.php';
         ?>
     </head>
 
@@ -25,7 +25,7 @@ $_ACTIVE_SIDEBAR = "usuarios";
         <div class="maincontent">
             <div class="contenedor">
                 <h1 class="pageTitle">Usuarios</h1>
-                <table cellpadding="0" cellspacing="0" border="0" class="dyntable" id="example">
+                <table cellpadding="0" cellspacing="0" border="0" class="dyntable" id="dynamictable">
                     <thead>
                         <tr>
                             <th class="head0">Nombre</th>

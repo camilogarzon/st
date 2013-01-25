@@ -192,14 +192,14 @@ class Controller {
             $arr[] = array(
                 'id' => $obj->emp_id,
                 'nit' => $obj->emp_nit,
-                'razonsocial' => utf8_encode($obj->emp_razonsocial),
-                'ciudad' => utf8_encode($obj->emp_ciudad),
-                'direccion' => utf8_encode($obj->emp_direccion),
+                'razonsocial' => ($obj->emp_razonsocial),
+                'ciudad' => ($obj->emp_ciudad),
+                'direccion' => ($obj->emp_direccion),
                 'telefono' => $obj->emp_telefono,
                 'celular' => $obj->emp_celular,
-                'contacto' => utf8_encode($obj->emp_contacto),
+                'contacto' => ($obj->emp_contacto),
                 'correo' => $obj->emp_correo,
-                'descripcion' => utf8_encode($obj->emp_descripcion),
+                'descripcion' => ($obj->emp_descripcion),
                 'logo' => $obj->emp_logo);
         }
         if ($resultado > 0) {
@@ -285,12 +285,12 @@ class Controller {
             $arr[] = array(
                 'id' => $obj->sde_id,
                 'empresa_id' => $obj->fir_empresa_emp_id,
-                'empresa_razonsocial' => $obj->emp_razonsocial,
-                'nombre' => utf8_encode($obj->sde_nombre),
-                'direccion' => utf8_encode($obj->sde_direccion),
+                'empresa_razonsocial' => ($obj->emp_razonsocial),
+                'nombre' => ($obj->sde_nombre),
+                'direccion' => ($obj->sde_direccion),
                 'telefono' => $obj->sde_telefono,
                 'celular' => $obj->sde_celular,
-                'contacto' => utf8_encode($obj->sde_contacto),
+                'contacto' => ($obj->sde_contacto),
                 'correo' => $obj->sde_correo);
         }
         if ($resultado > 0) {
@@ -312,7 +312,7 @@ class Controller {
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             while ($obj = mysql_fetch_object($con)) {
                 $id = $obj->sde_id;
-                $table = "fir_empresa";
+                $table = "fir_sede";
                 $arrfieldscomma = array('sde_nombre' => $this->nombre,
                     'sde_direccion' => $this->direccion,
                     'sde_telefono' => $this->telefono,
@@ -325,7 +325,7 @@ class Controller {
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             }
         } else {
-            $q = "INSERT INTO fir_empresa (sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, emp_correo, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->direccion', '$this->telefono', '$this->celular', '$this->contacto', '$this->correo', $this->empresa_id)";
+            $q = "INSERT INTO fir_sede (sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, sde_correo, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->direccion', '$this->telefono', '$this->celular', '$this->contacto', '$this->correo', $this->empresa_id)";
             mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $id = mysql_insert_id();
             $arrjson = array('output' => array('valid' => true, 'id' => $id));

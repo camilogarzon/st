@@ -10,6 +10,14 @@ $_ACTIVE_SIDEBAR = "archivos";
         ?>
     </head>
     <body class="bodygrey">
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery('#fileManager').elfinder({
+                    url : 'php/connector.php'
+                })
+            });
+        </script>
+
         <header class="header">
             <?php
             include_once 'includes/generic_header.php';
