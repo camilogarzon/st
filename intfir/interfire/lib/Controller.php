@@ -26,7 +26,11 @@ class Controller {
             $this->nick = $rqst['nick'];
             $this->pass = $rqst['pass'];
             $this->login();
+        } else if ($this->op == 'usuario_get') {
+            $this->usuario_get();
         } else if ($this->op == 'usuario_save') {
+            $this->euid = $rqst['euid'];
+            $this->sdid = $rqst['sdid'];
             $this->nombre = $rqst['nombre'];
             $this->apellido = $rqst['apellido'];
             $this->nick = $rqst['nick'];
@@ -37,8 +41,11 @@ class Controller {
             $this->foto = $rqst['foto'];
             $this->rol = $rqst['rol'];
             $this->usuario_save();
+        } else if ($this->op == 'usuario_check') {
+            $this->nick = $rqst['nick'];
+            $this->usuario_check();
         } else if ($this->op == 'usuario_delete') {
-            
+            $this->usuario_delete();
         } else if ($this->op == 'empresa_get') {
             $this->empresa_get();
         } else if ($this->op == 'empresa_save') {
@@ -111,7 +118,7 @@ class Controller {
                         'valid' => true,
                         'id' => $obj->usr_id,
                         'euid' => ($obj->fir_empresa_emp_id),
-                        'sede_id' => $obj->fir_sede_sde_id,
+                        'sdid' => $obj->fir_sede_sde_id,
                         'nombre' => ($obj->usr_nombre),
                         'apellido' => ($obj->usr_apellido),
                         'cargo' => ($obj->usr_cargo),
@@ -128,13 +135,53 @@ class Controller {
         $this->response = ($arrjson);
     }
 
+    public function usuario_get() {
+        $q = "SELECT * FROM fir_usuario ORDER BY usr_nombre, usr_apellido, usr_cargo";
+        if ($this->id > 0) {
+            $q = "SELECT * FROM fir_usuario WHERE usr_id = " . $this->id;
+        }
+        $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+        $resultado = mysql_num_rows($con);
+        $arr = array();
+        while ($obj = mysql_fetch_object($con)) {
+            $nom_sede = 'ninguna';
+            $nom_empresa = 'ninguna';
+            $q2 = "SELECT sde_nombre, emp_razonsocial FROM fir_sede, fir_empresa WHERE fir_empresa_emp_id = emp_id AND sde_id = " . $obj->fir_sede_sde_id;
+            $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);
+            while ($obj2 = mysql_fetch_object($con2)) {
+                $nom_empresa = $obj2->emp_razonsocial;
+                $nom_sede = $obj2->sde_nombre;
+            }
+            $arr[] = array(
+                'id' => $obj->usr_id,
+                'euid' => ($obj->fir_empresa_emp_id),
+                'empresa_razonsocial' => ($nom_empresa),
+                'sdid' => $obj->fir_sede_sde_id,
+                'sede_nombre' => ($nom_sede),
+                'nombre' => ($obj->usr_nombre),
+                'apellido' => ($obj->usr_apellido),
+                'cargo' => ($obj->usr_cargo),
+                'correo' => $obj->usr_correo,
+                'celular' => ($obj->usr_celular),
+                'foto' => $obj->usr_foto,
+                'nick' => $obj->usr_nick,
+                'rol' => $obj->usr_rol);
+        }
+        if ($resultado > 0) {
+            $arrjson = array('output' => array('valid' => true, 'response' => $arr));
+        } else {
+            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados')));
+        }
+        $this->response = ($arrjson);
+    }
+
     /**
      * Metodo para guardar y actualizar usuarios
      */
     private function usuario_save() {
         $id = 0;
         //consulta la existencia del usuario
-        $q = "SELECT usr_id FROM fir_usuario WHERE usr_nick = '" . $this->nick;
+        $q = "SELECT usr_id FROM fir_usuario WHERE usr_nick = '" . $this->nick . "' ";
         $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
         $resultado = mysql_num_rows($con);
         if ($this->id > 0) {
@@ -155,7 +202,7 @@ class Controller {
                         'usr_hashpass' => $pass,
                         'usr_nick' => $this->nick,
                         'usr_rol' => $this->rol);
-                    $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid, 'fir_sede_sde_id' => $this->sede_id);
+                    $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid, 'fir_sede_sde_id' => $this->sdid);
                     $q = $this->UTILITY->make_query_update($table, "usr_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                     mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -167,13 +214,40 @@ class Controller {
             if ($resultado == 0) {
                 //crea el nuevo usuario
                 $pass = $this->make_hash_pass($this->nick, $this->pass);
-                $q = "INSERT INTO fir_usuario (usr_nombre, usr_apellido, usr_cargo, usr_correo, usr_celular, usr_foto, usr_hashpass, usr_nick, fir_empresa_emp_id, fir_sede_sde_id, usr_rol) VALUES ('$this->nombre', '$this->apellido', '$this->cargo', '$this->correo', '$this->celular', '$this->foto', '$pass', '$this->nick', $this->euid, $this->sede_id, '$this->rol')";
+                $q = "INSERT INTO fir_usuario (usr_nombre, usr_apellido, usr_cargo, usr_correo, usr_celular, usr_foto, usr_hashpass, usr_nick, fir_empresa_emp_id, fir_sede_sde_id, usr_rol) VALUES ('$this->nombre', '$this->apellido', '$this->cargo', '$this->correo', '$this->celular', '$this->foto', '$pass', '$this->nick', $this->euid, $this->sdid, '$this->rol')";
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                 $id = mysql_insert_id();
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             } else {
                 $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '3002', 'content' => 'ya existe.')));
             }
+        }
+        $this->response = ($arrjson);
+    }
+    
+    private function usuario_delete() {
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "DELETE FROM fir_usuario WHERE usr_id = " . $this->id;
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $arrjson = array('output' => array('valid' => true, 'id' => $this->id));
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
+        }
+        $this->response = ($arrjson);
+    }
+
+    public function usuario_check() {
+        $id = 0;
+        if (strlen($this->nick) > 3) {
+            $q = "SELECT usr_id FROM fir_usuario WHERE usr_nick = '" . $this->nick . "' ";
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            while ($obj = mysql_fetch_object($con)) {
+                $id = $obj->usr_id;
+            }
+            $arrjson = array('output' => array('valid' => true, 'id' => $id));
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
         }
         $this->response = ($arrjson);
     }
@@ -348,7 +422,7 @@ class Controller {
         }
         $this->response = ($arrjson);
     }
-    
+
     public function getResponse() {
         return $this->response;
     }

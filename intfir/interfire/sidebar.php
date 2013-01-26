@@ -21,11 +21,11 @@
             case "empresas":
                 echo '
         function nuevo(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaIngreso.html", "Ingresar Empresa", "width=450px,height=400px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaIngreso.html", "Ingresar Empresa", "width=450px,height=450px,left=300px,top=100px,resize=0,scrolling=0")
             //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Empresa")} 
         }
         function edita(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaEdita.html", "Editar Empresa", "width=450px,height=450px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EmpresaEdita.html", "Editar Empresa", "width=450px,height=480px,left=300px,top=100px,resize=0,scrolling=0")
             //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Empresa")} 
         }
         function borra(){ 
@@ -37,11 +37,11 @@
             case "sedes":
                 echo '
         function nuevo(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeIngreso.html", "Ingresar Sede", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeIngreso.html", "Ingresar Sede", "width=450px,height=450px,left=300px,top=100px,resize=0,scrolling=0")
 //            ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Sede")} 
         }
         function edita(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeEdita.html", "Editar Sede", "width=450px,height=350px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeEdita.html", "Editar Sede", "width=450px,height=450px,left=300px,top=100px,resize=0,scrolling=0")
 //            ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Sede")} 
         }
         function borra(){ 
@@ -53,11 +53,11 @@
             case "usuarios":
                 echo '
         function nuevo(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/UsuariosIngreso.html", "Ingresar Usuario", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/UsuariosIngreso.html", "Ingresar Usuario", "width=450px,height=520px,left=300px,top=100px,resize=0,scrolling=0")
 //            ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Usuario")} 
         }
         function edita(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/UsuariosEdita.html", "Editar Usuario", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/UsuariosEdita.html", "Editar Usuario", "width=450px,height=520px,left=300px,top=100px,resize=0,scrolling=0")
             ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Usuario")} 
         }
         function borra(){ 

@@ -38,4 +38,7 @@
     .errortext{
         color: red;
     }
+    select {
+        width: 320px !important;
+    }
 </style>

@@ -1,6 +1,16 @@
 <?php
 require_once 'includes/generic_validate_session.php';
+require_once 'lib/Controller.php';
+$control = new Controller();
+if (!isset($_SESSION['opciones_empresas'])) {
+    include_once 'includes/generic_empresas_get.php';
+}
+
 $_ACTIVE_SIDEBAR = "usuarios";
+$control->usuario_get();
+$arrusr = $control->getResponse();
+$arrusr = $arrusr['output']['response'];
+
 ?>
 <!-- head -->
 <?php include("head_table.php"); ?>
@@ -44,14 +54,16 @@ $_ACTIVE_SIDEBAR = "usuarios";
                 <col class="con1" />
             </colgroup>
             <tbody>
-                <tr class="gradeC">
-                    <td class="con0">Felipe Ceballos</td>
-                    <td class="con1">Desarrollo</td>
-                    <td class="con0">Creamos</td>
-                    <td class="con1">Bogotá</td>
-                    <td class="con0"><a href="felipe@creamos.co">felipe@creamos.co</a></td>
-                    <td class="con1">300 329 9049</td>
-                </tr>
+                <?php for ($i = 0; $i < count($arrusr); $i++) { ?>
+                    <tr class="gradeC">
+                        <td class="con0"><?php echo $arrusr[$i]['nombre'].' '.$arrusr[$i]['apellido']; ?></td>
+                        <td class="con1"><?php echo $arrusr[$i]['cargo']; ?></td>
+                        <td class="con0"><?php echo $arrusr[$i]['empresa_razonsocial']; ?></td>
+                        <td class="con1"><?php echo $arrusr[$i]['sede_nombre']; ?></td>
+                        <td class="con1"><a href="mailto:<?php echo $arrusr[$i]['correo']; ?>"><?php echo $arrusr[$i]['correo']; ?></a></td>
+                        <td class="con0"><?php echo $arrusr[$i]['celular']; ?></td>
+                    </tr>
+                <?php } ?>
             </tbody>
             <tfoot>
                 <tr>

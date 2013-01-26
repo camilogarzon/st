@@ -156,6 +156,10 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 <td><textarea id="descripcion" name="descripcion" cols="50" rows="3" maxlength="400"></textarea></td>
             </tr>
             <tr>
+                <td>Logo</td>
+                <td><input type="file" id="archivo" name="archivo" disabled="true"/></td>
+            </tr>
+            <tr>
                 <td></td>
                 <td><input type="submit" id="accion" value="Guardar" style="cursor: pointer" onclick="savedata();"/></td>
             </tr>

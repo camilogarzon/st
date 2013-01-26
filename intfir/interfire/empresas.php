@@ -1,18 +1,10 @@
 <?php
 require_once 'includes/generic_validate_session.php';
-$_ACTIVE_SIDEBAR = "empresas";
 require_once 'lib/Controller.php';
 $control = new Controller();
-$control->empresa_get();
-$arrempresas = $control->getResponse();
-$arrempresas = $arrempresas['output']['response'];
-$_SESSION['empresas'] = $arrempresas;
+include_once 'includes/generic_empresas_get.php';
+$_ACTIVE_SIDEBAR = "empresas";
 
-$emp = '<option value="seleccione">Seleccione...</option>';
-for ($i = 0; $i < count($arrempresas); $i++) {
-    $emp .= '<option value="' . $arrempresas[$i]['id'] . '">' . $arrempresas[$i]['razonsocial'] . '</option>';
-}
-$_SESSION['opciones_empresas'] = $emp;
 ?>
 <!-- head -->
 <?php include("head.php"); ?>
