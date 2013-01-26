@@ -23,10 +23,9 @@ if (isset($_SESSION['usuario'])) {
         <!--[if IE 7]>
             <link rel="stylesheet" media="screen" href="css/ie7.css"/>
         <![endif]-->
-<!--        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-        <link rel="icon" type="image/x-icon" href="images/fire_48.png" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/custom/general.js"></script>
-        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/custom/jquery.cycle.lite.min.js"></script>
         <script type="text/javascript">
      
@@ -42,6 +41,8 @@ if (isset($_SESSION['usuario'])) {
     </head>
 
     <body>
+
+        <div class="logo_login"></div>
 
         <div id="bg_containers">
             <div class="bg1"></div>

@@ -27,21 +27,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-/***@FONT FACE***/
-@font-face {
-    font-family: 'DroidSansRegular';
-    src: url('../fonts/droidsans-webfont.eot');
-    src: url('../fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/droidsans-webfont.woff') format('woff'),
-         url('../fonts/droidsans-webfont.ttf') format('truetype'),
-         url('../fonts/droidsans-webfont.svg#DroidSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 /***GENERAL STYLES***/
-body { font-family: DroidSansRegular, "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 12px; }
+body { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 12px; }
 body {line-height: 21px; }
 input, select, textarea, button { outline: none; font-family: DroidSansRegular, "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 12px; }
 input, select, textarea, button { border: 1px solid #ccc; padding: 5px; }
@@ -643,11 +630,13 @@ input[type=radio], input[type=checkbox] { margin: 0; padding: 0; vertical-align:
 /** BACKGROUNDS **/
 #bg_containers {width:100%; margin:0; z-index:1;}
 #bg_containers div {width:100%; height:1000px; margin:0 auto;}
-#bg_containers .bg1 {background:url(../images/bg1.jpg) top left repeat-x;}
-#bg_containers .bg2 {background:url(../images/bg2.jpg) top left repeat-x;}
-#bg_containers .bg3 {background:url(../images/bg3.jpg) top left repeat-x;}
-#bg_containers .bg4 {background:url(../images/bg4.jpg) top left repeat-x;}
-#bg_containers .bg5 {background:url(../images/bg5.jpg) top left repeat-x;}
+#bg_containers .bg1 {background:url(../images/bg1.jpg) center center no-repeat;}
+#bg_containers .bg2 {background:url(../images/bg2.jpg) center center no-repeat;}
+#bg_containers .bg3 {background:url(../images/bg3.jpg) center center no-repeat;}
+#bg_containers .bg4 {background:url(../images/bg4.jpg) center center no-repeat;}
+#bg_containers .bg5 {background:url(../images/bg5.jpg) center center no-repeat;}
+
+.logo_login {width: 170px; height: 170px; background: url(../images/logo_login.png) no-repeat; position: absolute; top: 40px; left: 40px; float: left; z-index: 500;}
 
 /*** CONTROLES ***/
 .controles { width: 180px; padding: 10px; z-index: 2000;}

@@ -3,8 +3,8 @@
     <div class="content" style="display: block;">
         <ul class="leftmenu">
             <li <?php if ($_ACTIVE_SIDEBAR == "inicio") echo 'class="current"'; ?>><a href="inicio.php" class="home">Inicio</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "empresas") echo 'class="current"'; ?>><a href="empresas.php" class="home">Empresas</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "sedes") echo 'class="current"'; ?>><a href="sedes.php" class="form">Sedes</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "empresas") echo 'class="current"'; ?>><a href="empresas.php" class="form">Empresas</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "sedes") echo 'class="current"'; ?>><a href="sedes.php" class="gallery">Sedes</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "usuarios") echo 'class="current"'; ?>><a href="usuarios.php" class="usuarios">Usuarios</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "sistemas") echo 'class="current"'; ?>><a href="sistemas.php" class="form">Sistemas</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "equipos") echo 'class="current"'; ?>><a href="equipos.php" class="gallery">Equipos</a></li>
