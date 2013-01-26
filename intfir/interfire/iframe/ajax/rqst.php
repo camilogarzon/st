@@ -40,6 +40,9 @@ switch ($op) {
     case 'sede_get':
         echo $control->getResponseJSON();
         break;
+    case 'sede_delete':
+        echo $control->getResponseJSON();
+        break;
     
     default:
         break;

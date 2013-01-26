@@ -25,6 +25,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información guardada correctamente');
+                    parent.window.location = '../sedes.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -50,13 +51,13 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     var enable = true;
                     var ladata = "op=sede_save";
                     if (a.length < 4){ enable = false; setrequirefield("nombre");}
-                    if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
+                    if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
                     if (!enable) {
                         jQuery("#mensaje").show();
                     } else {
                         jQuery("#mensaje").hide();
-                        ladata += "&empresa_id="+j;
+                        ladata += "&euid="+j;
                         ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
                         ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
                         callAjaxRqst(ladata, responseAjax);

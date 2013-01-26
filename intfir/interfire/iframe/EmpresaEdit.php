@@ -26,6 +26,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información guardada correctamente');
+                    parent.window.location = '../empresas.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -77,7 +78,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     var ladata = "op=empresa_save";
                     if (a.length < 4){ enable = false; setrequirefield("razonsocial");}
                     if (b.length < 4){ enable = false; setrequirefield("nit");}
-                    if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
+                    if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
                     if (!enable) {
                         jQuery("#mensaje").show();

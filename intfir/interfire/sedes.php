@@ -2,17 +2,30 @@
 require_once 'includes/generic_validate_session.php';
 $_ACTIVE_SIDEBAR = "sedes";
 require_once 'lib/Controller.php';
+$euid = intval($_GET['euid']);
 $control = new Controller();
-$control->sede_get();
-$arrsede = $control->getResponse();
-$arrsede = $arrsede['output']['response'];
-$_SESSION['sedes'] = $arrsede;
+if ($euid > 0) {
+    $arrsede = $control->getResponse();
+    $arrsede = $arrsede['output']['response'];
+    $_SESSION['sedes'] = $arrsede;
 
-$emp = '<option value="seleccione">Seleccione...</option>';
-for ($i = 0; $i < count($arrsede); $i++) {
-    $emp .= '<option value="' . $arrsede[$i]['id'] . '">' . $arrsede[$i]['empresa_razonsocial'] . ' - ' . $arrsede[$i]['nombre'] . '</option>';
+    $emp = '<option value="seleccione">Seleccione...</option>';
+    for ($i = 0; $i < count($arrsede); $i++) {
+        $emp .= '<option value="' . $arrsede[$i]['id'] . '">' . $arrsede[$i]['nombre'] . ' (' . $arrsede[$i]['empresa_razonsocial'] . ')</option>';
+    }
+    $_SESSION['opciones_sedes'] = $emp;
+} else {
+    $control->sede_get();
+    $arrsede = $control->getResponse();
+    $arrsede = $arrsede['output']['response'];
+    $_SESSION['sedes'] = $arrsede;
+
+    $emp = '<option value="seleccione">Seleccione...</option>';
+    for ($i = 0; $i < count($arrsede); $i++) {
+        $emp .= '<option value="' . $arrsede[$i]['id'] . '">' . $arrsede[$i]['nombre'] . ' (' . $arrsede[$i]['empresa_razonsocial'] . ')</option>';
+    }
+    $_SESSION['opciones_sedes'] = $emp;
 }
-$_SESSION['opciones_sedes'] = $emp;
 ?>
 <!-- head -->
 <?php include("head_table.php"); ?>

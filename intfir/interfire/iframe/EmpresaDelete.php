@@ -27,6 +27,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información eliminada correctamente');
+                    parent.window.location = '../empresas.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");

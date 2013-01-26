@@ -1,6 +1,6 @@
 <?php
 session_start();
-$opciones_empresas = $_SESSION['opciones_empresas'];
+$opciones_sedes = $_SESSION['opciones_sedes'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -16,17 +16,18 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 cursorNormal();
                 if (data.output.valid){
                     jQuery('#continuar').attr('checked', false);
-                    jQuery("#selectEmpresa").empty();
+                    jQuery("#selectSede").empty();
                     res = data.output.response;
                     opciones = '<option value="seleccione">Seleccione...</option>';
                     for (var j in res) {
                         opciones += '<option value="'+res[j].id+'">'+res[j].razonsocial+'</option>';
                     }
-                    jQuery('#selectEmpresa').append(opciones);
+                    jQuery('#selectSede').append(opciones);
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información eliminada correctamente');
+                    parent.window.location = '../sedes.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -41,12 +42,12 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 jQuery("#mensaje").empty();
                 jQuery("#mensaje").addClass("errortext");
                 jQuery("#mensaje").append('Los campos en rojo son obligatorios');
-                a = jQuery("#selectEmpresa").val();
+                a = jQuery("#selectSede").val();
                 b = jQuery('#continuar').is(":checked");
                 var enable = true;
-                var ladata = "op=empresa_delete";
+                var ladata = "op=sede_delete";
                 if (!b){ enable = false; setrequirefield("continuar"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Seleccione la casilla, si desea continuar.');}
-                if (a == 'seleccione'){ enable = false; setrequirefield("selectEmpresa"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Seleccione la empresa.');}
+                if (a == 'seleccione'){ enable = false; setrequirefield("selectSede"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Seleccione la sede.');}
                 
                 if (!enable) {
                     jQuery("#mensaje").show();
@@ -61,9 +62,9 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
 
         <table>
             <tr>
-                <td style="width: 100px;">Empresa</td>
-                <td><select id="selectEmpresa" name="selectEmpresa">
-                        <?php echo $opciones_empresas; ?>
+                <td style="width: 100px;">Sede</td>
+                <td><select id="selectSede" name="selectSede">
+                        <?php echo $opciones_sedes; ?>
                     </select></td>
             </tr>
             <tr>
@@ -72,7 +73,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>Con esta operación eliminará de manera definitiva e irreversible información de la empresa seleccionada.</td>
+                <td>Con esta operación eliminará de manera definitiva e irreversible información de la sede seleccionada.</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

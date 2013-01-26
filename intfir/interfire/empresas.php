@@ -37,7 +37,7 @@ $_SESSION['opciones_empresas'] = $emp;
     <h1 class="pageTitle">Empresas</h1>
     <ul class="widgetlist">
 <?php for ($i = 0; $i < count($arrempresas); $i++) { ?>
-            <li><a href="sedes.php?i=<?php echo $arrempresas[$i]['id']; ?>"><img src="<?php echo $arrempresas[$i]['logo']; ?>" /><span><?php echo $arrempresas[$i]['razonsocial']; ?></span></a></li>
+            <li><a href="sedes.php?op=sede_get&euid=<?php echo $arrempresas[$i]['id']; ?>"><img src="<?php echo $arrempresas[$i]['logo']; ?>" /><span><?php echo $arrempresas[$i]['razonsocial']; ?></span></a></li>
         <?php } ?>
     </ul>
 </div>

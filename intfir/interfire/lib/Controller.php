@@ -56,9 +56,10 @@ class Controller {
         } else if ($this->op == 'empresa_delete') {
             $this->empresa_delete();
         } else if ($this->op == 'sede_get') {
+            $this->euid = $rqst['euid'];
             $this->sede_get();
         } else if ($this->op == 'sede_save') {
-            $this->empresa_id = $rqst['empresa_id'];
+            $this->euid = $rqst['euid'];
             $this->nombre = $rqst['nombre'];
             $this->direccion = $rqst['direccion'];
             $this->telefono = $rqst['telefono'];
@@ -67,7 +68,7 @@ class Controller {
             $this->correo = $rqst['correo'];
             $this->sede_save();
         } else if ($this->op == 'sede_delete') {
-            
+            $this->sede_delete();
         } else {
             $this->invalid_method_called();
         }
@@ -109,7 +110,7 @@ class Controller {
                 $arrjson = array('output' => array(
                         'valid' => true,
                         'id' => $obj->usr_id,
-                        'empresa_id' => ($obj->fir_empresa_emp_id),
+                        'euid' => ($obj->fir_empresa_emp_id),
                         'sede_id' => $obj->fir_sede_sde_id,
                         'nombre' => ($obj->usr_nombre),
                         'apellido' => ($obj->usr_apellido),
@@ -154,7 +155,7 @@ class Controller {
                         'usr_hashpass' => $pass,
                         'usr_nick' => $this->nick,
                         'usr_rol' => $this->rol);
-                    $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->empresa_id, 'fir_sede_sde_id' => $this->sede_id);
+                    $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid, 'fir_sede_sde_id' => $this->sede_id);
                     $q = $this->UTILITY->make_query_update($table, "usr_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                     mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -166,7 +167,7 @@ class Controller {
             if ($resultado == 0) {
                 //crea el nuevo usuario
                 $pass = $this->make_hash_pass($this->nick, $this->pass);
-                $q = "INSERT INTO fir_usuario (usr_nombre, usr_apellido, usr_cargo, usr_correo, usr_celular, usr_foto, usr_hashpass, usr_nick, fir_empresa_emp_id, fir_sede_sde_id, usr_rol) VALUES ('$this->nombre', '$this->apellido', '$this->cargo', '$this->correo', '$this->celular', '$this->foto', '$pass', '$this->nick', $this->empresa_id, $this->sede_id, '$this->rol')";
+                $q = "INSERT INTO fir_usuario (usr_nombre, usr_apellido, usr_cargo, usr_correo, usr_celular, usr_foto, usr_hashpass, usr_nick, fir_empresa_emp_id, fir_sede_sde_id, usr_rol) VALUES ('$this->nombre', '$this->apellido', '$this->cargo', '$this->correo', '$this->celular', '$this->foto', '$pass', '$this->nick', $this->euid, $this->sede_id, '$this->rol')";
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                 $id = mysql_insert_id();
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -278,13 +279,16 @@ class Controller {
         if ($this->id > 0) {
             $q = "SELECT sde_id, sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, sde_correo, fir_empresa_emp_id, emp_razonsocial FROM fir_sede, fir_empresa WHERE fir_empresa_emp_id = emp_id AND sde_id = " . $this->id;
         }
+        if ($this->euid > 0) {
+            $q = "SELECT sde_id, sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, sde_correo, fir_empresa_emp_id, emp_razonsocial FROM fir_sede, fir_empresa WHERE fir_empresa_emp_id = emp_id AND emp_id = " . $this->euid;
+        }
         $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
         $resultado = mysql_num_rows($con);
         $arr = array();
         while ($obj = mysql_fetch_object($con)) {
             $arr[] = array(
                 'id' => $obj->sde_id,
-                'empresa_id' => $obj->fir_empresa_emp_id,
+                'euid' => $obj->fir_empresa_emp_id,
                 'empresa_razonsocial' => ($obj->emp_razonsocial),
                 'nombre' => ($obj->sde_nombre),
                 'direccion' => ($obj->sde_direccion),
@@ -319,13 +323,13 @@ class Controller {
                     'sde_celular' => $this->celular,
                     'sde_contacto' => $this->contacto,
                     'sde_correo' => $this->correo);
-                $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->empresa_id);
+                $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid);
                 $q = $this->UTILITY->make_query_update($table, "sde_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             }
         } else {
-            $q = "INSERT INTO fir_sede (sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, sde_correo, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->direccion', '$this->telefono', '$this->celular', '$this->contacto', '$this->correo', $this->empresa_id)";
+            $q = "INSERT INTO fir_sede (sde_nombre, sde_direccion, sde_telefono, sde_celular, sde_contacto, sde_correo, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->direccion', '$this->telefono', '$this->celular', '$this->contacto', '$this->correo', $this->euid)";
             mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $id = mysql_insert_id();
             $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -333,6 +337,18 @@ class Controller {
         $this->response = ($arrjson);
     }
 
+    private function sede_delete() {
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "DELETE FROM fir_sede WHERE sde_id = " . $this->id;
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $arrjson = array('output' => array('valid' => true, 'id' => $this->id));
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
+        }
+        $this->response = ($arrjson);
+    }
+    
     public function getResponse() {
         return $this->response;
     }

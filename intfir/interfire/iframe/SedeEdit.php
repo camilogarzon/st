@@ -1,6 +1,7 @@
 <?php
 session_start();
 $opciones_empresas = $_SESSION['opciones_empresas'];
+$opciones_sedes = $_SESSION['opciones_sedes'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -25,6 +26,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información guardada correctamente');
+                    parent.window.location = '../sedes.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -44,6 +46,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     jQuery("#celular").val(res[0].celular);
                     jQuery("#contacto").val(res[0].contacto);
                     jQuery("#correo").val(res[0].correo);
+                    jQuery("#selectEmpresa").val(res[0].euid);
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -68,13 +71,13 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                     var enable = true;
                     var ladata = "op=sede_save";
                     if (a.length < 4){ enable = false; setrequirefield("nombre");}
-                    if (h.length > 5){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
+                    if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
                     if (!enable) {
                         jQuery("#mensaje").show();
                     } else {
                         jQuery("#mensaje").hide();
-                        ladata += "&empresa_id="+j;
+                        ladata += "&euid="+j;
                         ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
                         ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
                         callAjaxRqst(ladata, responseAjax);
@@ -90,20 +93,27 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
             
             function loadselected(){
                 jQuery("#mensaje").hide();
-                a = jQuery("#selectEmpresa").val();
+                a = jQuery("#selectSede").val();
                 if (a != 'seleccione'){
                     ladata = "op=sede_get&id="+a;
                     callAjaxRqst(ladata, responseLoad);
                 } else {
                     jQuery("input").val('');
+                    jQuery("#selectEmpresa").val('seleccione');
                     jQuery("#accion").val('Guardar');
                 }
             }
         </script>
         <table>
             <tr>
+                <td style="width: 100px;">Sede</td>
+                <td><select id="selectSede" name="selectSede" onchange="loadselected();">
+                        <?php echo $opciones_sedes; ?>
+                    </select></td>
+            </tr>
+            <tr>
                 <td style="width: 100px;">Empresa</td>
-                <td><select id="selectEmpresa" name="selectEmpresa" onchange="loadselected();">
+                <td><select id="selectEmpresa" name="selectEmpresa">
                         <?php echo $opciones_empresas; ?>
                     </select></td>
             </tr>

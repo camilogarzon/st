@@ -41,7 +41,7 @@
 //            ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Sede")} 
         }
         function edita(){ 
-            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeEdita.html", "Editar Sede", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+            ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/SedeEdita.html", "Editar Sede", "width=450px,height=350px,left=300px,top=100px,resize=0,scrolling=0")
 //            ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Sede")} 
         }
         function borra(){ 
