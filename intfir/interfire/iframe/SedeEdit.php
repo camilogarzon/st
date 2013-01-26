@@ -1,5 +1,8 @@
 <?php
 session_start();
+require_once '../lib/Controller.php';
+$control = new Controller();
+include_once '../includes/generic_empresas_get.php';
 $opciones_empresas = $_SESSION['opciones_empresas'];
 $opciones_sedes = $_SESSION['opciones_sedes'];
 ?>
@@ -57,38 +60,33 @@ $opciones_sedes = $_SESSION['opciones_sedes'];
             
             function savedata(){
                 j = jQuery("#selectEmpresa").val();
-                if (j != 'seleccione'){
-                    jQuery("input").removeClass("requirefield");
-                    jQuery("#mensaje").empty();
-                    jQuery("#mensaje").addClass("errortext");
-                    jQuery("#mensaje").append('Los campos en rojo son obligatorios');
-                    a = jQuery("#nombre").val();
-                    d = jQuery("#direccion").val();
-                    e = jQuery("#telefono").val();
-                    f = jQuery("#celular").val();
-                    g = jQuery("#contacto").val();
-                    h = jQuery("#correo").val();
-                    var enable = true;
-                    var ladata = "op=sede_save";
-                    if (a.length < 4){ enable = false; setrequirefield("nombre");}
-                    if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
+                k = jQuery("#selectSede").val();
+                jQuery("input").removeClass("requirefield");
+                jQuery("#mensaje").empty();
+                if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
+                if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
+                jQuery("#mensaje").addClass("errortext");
+                jQuery("#mensaje").append('Los campos en rojo son obligatorios');
+                a = jQuery("#nombre").val();
+                d = jQuery("#direccion").val();
+                e = jQuery("#telefono").val();
+                f = jQuery("#celular").val();
+                g = jQuery("#contacto").val();
+                h = jQuery("#correo").val();
+                var enable = true;
+                var ladata = "op=sede_save";
+                if (a.length < 4){ enable = false; setrequirefield("nombre");}
+                if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto.'); } }
                 
-                    if (!enable) {
-                        jQuery("#mensaje").show();
-                    } else {
-                        jQuery("#mensaje").hide();
-                        ladata += "&euid="+j;
-                        ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
-                        ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
-                        callAjaxRqst(ladata, responseAjax);
-                    }
-                } else {
-                    jQuery("#mensaje").empty();
-                    jQuery("#mensaje").addClass("errortext");
-                    jQuery("#mensaje").append('Seleccione la empresa.');
+                if (!enable) {
                     jQuery("#mensaje").show();
+                } else {
+                    jQuery("#mensaje").hide();
+                    ladata += "&euid="+j+"&id="+k;
+                    ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
+                    ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
+                    callAjaxRqst(ladata, responseAjax);
                 }
-
             }
             
             function loadselected(){

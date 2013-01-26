@@ -1,5 +1,8 @@
 <?php
 session_start();
+require_once '../lib/Controller.php';
+$control = new Controller();
+include_once '../includes/generic_empresas_get.php';
 $opciones_empresas = $_SESSION['opciones_empresas'];
 ?>
 <!DOCTYPE html>

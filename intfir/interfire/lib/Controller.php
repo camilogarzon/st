@@ -386,7 +386,7 @@ class Controller {
         $id = 0;
         if ($this->id > 0) {
             //actualiza la informacion
-            $q = "SELECT sde_id FROM fir_sede WHERE emp_id = " . $this->id;
+            $q = "SELECT sde_id FROM fir_sede WHERE sde_id = " . $this->id;
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             while ($obj = mysql_fetch_object($con)) {
                 $id = $obj->sde_id;

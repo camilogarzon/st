@@ -60,8 +60,8 @@ if (isset($_SESSION['usuario'])) {
                 <div class="loginbox_inner">
                     <div class="loginbox_content">
                         <input type="hidden" name="op" value="login"/>
-                        <input type="text" name="nick" class="username" style="background-position: 0px -32px;" value="adminprueba"/>
-                        <input type="password" name="pass" class="password" style="background-position: 0px -32px;" value="0000"/>
+                        <input type="text" name="nick" class="username" style="background-position: 0px -32px;" value=""/>
+                        <input type="password" name="pass" class="password" style="background-position: 0px -32px;" value=""/>
                         <button name="submit" class="submit">Ingresar</button>
 
                         <div class="loginoption">
