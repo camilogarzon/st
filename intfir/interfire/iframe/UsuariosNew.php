@@ -57,8 +57,10 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 l = jQuery("#selectRol").val();
                 jQuery("#mensaje").empty();
                 jQuery("input").removeClass("requirefield");
-                if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
-                if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
+                if (j == 'seleccione'){j=0;}
+                if (k == 'seleccione'){k=0;}
+                //if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
+                //if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
                 if (l == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione el rol.');jQuery("#mensaje").show();return;}
                 a = jQuery("#nombre").val();
                 b = jQuery("#pass1").val();
