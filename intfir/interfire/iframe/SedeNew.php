@@ -63,6 +63,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                         ladata += "&euid="+j;
                         ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
                         ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
+                        ladata = ladata.replace("#", "%23");
                         callAjaxRqst(ladata, responseAjax);
                     }
                 } else {

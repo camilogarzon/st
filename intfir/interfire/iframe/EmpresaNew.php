@@ -58,6 +58,7 @@
                     jQuery("#mensaje").hide();
                     ladata += "&razonsocial="+a+"&nit="+b+"&ciudad="+c+"&direccion="+d+"&telefono="+e;
                     ladata += "&celular="+f+"&contacto="+g+"&correo="+h+"&descripcion="+i+"&logo=images/icons/empresa.png";
+                    ladata = ladata.replace("#", "%23");
                     callAjaxRqst(ladata, responseAjax);
                 }
             }

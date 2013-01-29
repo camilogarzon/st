@@ -87,6 +87,7 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                         ladata += "&id="+j;
                         ladata += "&razonsocial="+a+"&nit="+b+"&ciudad="+c+"&direccion="+d+"&telefono="+e;
                         ladata += "&celular="+f+"&contacto="+g+"&correo="+h+"&descripcion="+i+"&logo=images/icons/empresa.png";
+                        ladata = ladata.replace("#", "%23");
                         callAjaxRqst(ladata, responseAjax);
                     }
                 } else {

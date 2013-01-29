@@ -85,6 +85,7 @@ $opciones_sedes = $_SESSION['opciones_sedes'];
                     ladata += "&euid="+j+"&id="+k;
                     ladata += "&nombre="+a+"&direccion="+d+"&telefono="+e;
                     ladata += "&celular="+f+"&contacto="+g+"&correo="+h;
+                    ladata = ladata.replace("#", "%23");
                     callAjaxRqst(ladata, responseAjax);
                 }
             }
