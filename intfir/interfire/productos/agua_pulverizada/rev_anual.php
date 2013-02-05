@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,14 +12,14 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <!-- TABLA ANUAL-->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisi—n Anual</legend>
+	                   	<legend>Inspección Anual</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -27,8 +27,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>A–o</td>
+			                <td>Descripción</td>
+			                <td>Año</td>
 			            </tr>
 			            </table>
 			        
@@ -39,19 +39,19 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Boquilla de pulverizacion</td>
+			                    <td>Boquilla de pulverización</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Tuberias</td>
+			                    <td>Tuberías</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Soportes de tuberias</td>
+			                    <td>Soportes de tuberías</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Manometros</td>
+			                    <td>Manómetros</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -64,19 +64,19 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Valvula de diluvio</td>
+			                    <td>Válvula de diluvio</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Valvulas de control</td>
+			                    <td>Válvulas de control</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Lubricacion de las valvulas de control</td>
+			                    <td>Lubricación de las válvulas de control</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Limpieza de tuberias subterraneas</td>
+			                    <td>Limpieza de tuberías subterráneas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -85,11 +85,11 @@
 			                </tr>
 			                <tr>
 			                <tr>
-			                    <td>Mantenimiento del sistema de deteccion de incendios</td>
+			                    <td>Mantenimiento del sistema de detección de incendios</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Activacion manual</td>
+			                    <td>Activación manual</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -105,7 +105,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>-- Registrar la presion residual del agua mientras esta fluyendo por la tuberia de 2" (51mm)</td>
+			                    <td>-- Registrar la presión residual del agua mientras esta fluyendo por la tubería de 2" (51mm)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -113,7 +113,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>-- Comparar los resultados de la pueba de este a–o con los resultados de a–os anteriores para determinar si el suministro de agua se ha deteriorado</td>
+			                    <td>-- Comparar los resultados de la prueba de este a–o con los resultados de a–os anteriores para determinar si el suministro de agua se ha deteriorado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -121,7 +121,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Ensamblaje de las valvulas de retencion</td>
+			                    <td>Ensamblaje de las válvulas de retencion</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>

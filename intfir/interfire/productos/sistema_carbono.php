@@ -1,15 +1,15 @@
-			<h1 class="pageTitle">Sistema de Extinci—n de Incendios por Dioxido de Carbono</h1>
+			<h1 class="pageTitle">Sistema de Extinción de Incendios por Dióxido de Carbono</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Anual</a></li>
-                    <li><a href="#tabs-5">Prb. Semestral</a></li>
-                    <li><a href="#tabs-6">Prb. Anual</a></li>
-                    <li><a href="#tabs-7">Prb. Quinquenal</a></li>
-                    <li><a href="#tabs-8">Prb. 12 a–os</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-5">Prueba Semestral</a></li>
+                    <li><a href="#tabs-4">Inspección Anual</a></li>
+                    <li><a href="#tabs-6">Prueba Anual</a></li>
+                    <li><a href="#tabs-7">Prueba Quinquenal</a></li>
+                    <li><a href="#tabs-8">Prueba 12 años</a></li>
                 </ul>
                 
                 <div id="tabs-1">

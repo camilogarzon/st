@@ -3,16 +3,16 @@
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Anual</a></li>
-                    <li><a href="#tabs-5">Prb. Trimestral</a></li>
-                    <li><a href="#tabs-6">Prb. Semestral</a></li>
-                    <li><a href="#tabs-7">Prb. Anual</a></li>
-                    <li><a href="#tabs-8">Mant. Mensual</a></li>
-                    <li><a href="#tabs-9">Mant. Trimestral</a></li>
-                    <li><a href="#tabs-10">Mant. Semestral</a></li>
-                    <li><a href="#tabs-11">Mant. Anual</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-8">Mantenimiento Mensual</a></li>
+                    <li><a href="#tabs-9">Mantenimiento Trimestral</a></li>
+                    <li><a href="#tabs-5">Prueba Trimestral</a></li>
+                    <li><a href="#tabs-10">Mantenimiento Semestral</a></li>
+                    <li><a href="#tabs-6">Prueba Semestral</a></li>
+                    <li><a href="#tabs-4">Inspección Anual</a></li>
+                    <li><a href="#tabs-7">Prueba Anual</a></li>
+                    <li><a href="#tabs-11">Mantenimiento Anual</a></li>
                 </ul>
                 
                 <div id="tabs-1">

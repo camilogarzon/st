@@ -3,11 +3,11 @@
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Semestral</a></li>
-                    <li><a href="#tabs-5">Rev. Anual</a></li>
-                    <li><a href="#tabs-6">Rev. Quinquenal</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-4">Inspección Semestral</a></li>
+                    <li><a href="#tabs-5">Inspección Anual</a></li>
+                    <li><a href="#tabs-6">Inspección Quinquenal</a></li>
                 </ul>
                 
                 <div id="tabs-1">

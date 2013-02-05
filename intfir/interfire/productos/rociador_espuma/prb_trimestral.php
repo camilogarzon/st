@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -27,8 +27,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Trimestre</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -47,19 +47,19 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar los filtros de espumogeno</td>
+			                    <td>Inspecciónar los filtros de espumogeno</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar el area proxima al sistema de espuma para asegurar un drenaje correcto</td>
+			                    <td>Inspecciónar el área próxima al sistema de espuma para asegurar un drenaje correcto</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar el sistema de tuberias y accesorios para ver si existe corrocion, falta de alineacion, secciones bloqueadas, estado de los puntos de drenaje y de las juntas de goma</td>
+			                    <td>Inspecciónar el sistema de tuberías y accesorios para ver si existe corrosión, falta de alineación, secciones bloqueadas, estado de los puntos de drenaje y de las juntas de goma</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar los soportes para ver si estan da–ados o le faltan elementos, si esta correctamente sustentada, oxidada, con signos de corrosion o con el revestimiento da–ado</td>
+			                    <td>Inspecciónar los soportes para ver si están dañados o le faltan elementos, si esta correctamente sustentada, oxidada, con signos de corrosión o con el revestimiento dañado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>

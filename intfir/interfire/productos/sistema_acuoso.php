@@ -1,11 +1,11 @@
-			<h1 class="pageTitle">Sistema de Extinci—n por Agente Acuoso</h1>
+			<h1 class="pageTitle">Sistema de Extinción por Agente Acuoso</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Mensual</a></li>
-                    <li><a href="#tabs-3">Mant. Semestral</a></li>
-                    <li><a href="#tabs-4">Mantenimiento</a></li>
+                    <li><a href="#tabs-2">Inspección Mensual</a></li>
+                    <li><a href="#tabs-3">Mantenimiento Semestral</a></li>
+                    <li><a href="#tabs-4">Pruebas</a></li>
                 </ul>
                 
                 <div id="tabs-1">
@@ -28,7 +28,7 @@
                 
                 <div id="tabs-4">
                 
-                <?php include("sistema_acuoso/mantenimiento.php") ?>
+                <?php include("sistema_acuoso/pruebas.php") ?>
                 
                 </div>
                 

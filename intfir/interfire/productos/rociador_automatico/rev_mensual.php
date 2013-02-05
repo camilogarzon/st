@@ -6,7 +6,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -14,7 +14,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -25,7 +25,7 @@
 	                   	
 	                   	<ul>
 	                   	<li>1- Confirmar que las válvulas están abiertas. Si las válvulas están cerradas anotar Si. Si no, cerrarla y anotar Si.</li>
-	                   	<li>2- Inspeccionar las válvulas de alarma para asegurarse que no hay fugas ni daños físicos en la cámara de retardo o en las cámaras de drenaje. Confirmas que las válvulas de asiento estén en la posición correcta.</li>
+	                   	<li>2- Inspecciónar las válvulas de alarma para asegurarse que no hay fugas ni daños físicos en la cámara de retardo o en las cámaras de drenaje. Confirmas que las válvulas de asiento estén en la posición correcta.</li>
 	                   	<li>3- Asegurarse que existe el número y tipo correcto de rociadores y una llave inglesa adecuada.</li>
 	                   	<li>4- Comprobar que no existan daños físicos y que las conexiones eléctricas sean seguras.</li>
 	                   	<li>5- Registrar las lecturas de presión psi. Se deberá investigar cualquier pérdida de más de un 10%.</li>
@@ -46,11 +46,11 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Valvulas</td>
-			                <td>Valvulas alarma</td>
+			                <td>Válvulas</td>
+			                <td>Válvulas alarma</td>
 			                <td>Rociadores de Repuesto</td>
 			                <td>Dispositivos Alarma</td>
-			                <td>Presion agua</td>
+			                <td>Presión agua</td>
 			            </tr>
 			            </table>
 			        

@@ -1,12 +1,12 @@
-			<h1 class="pageTitle">Sistema de Extinci—n de Incendios Alternativos al Hal—n</h1>
+			<h1 class="pageTitle">Sistema de Extinción de Incendios Alternativos al Halón</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Mensual</a></li>
-                    <li><a href="#tabs-3">Rev. Semestral</a></li>
-                    <li><a href="#tabs-4">Rev. Anual</a></li>
-                    <li><a href="#tabs-5">Rev. Quinquenal</a></li>
+                    <li><a href="#tabs-2">Inspección Mensual</a></li>
+                    <li><a href="#tabs-3">Inspección Semestral</a></li>
+                    <li><a href="#tabs-4">Inspección Anual</a></li>
+                    <li><a href="#tabs-5">Inspección Quinquenal</a></li>
                 </ul>
                 
                 <div id="tabs-1">

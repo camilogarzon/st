@@ -3,8 +3,8 @@
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Trimestral</a></li>
-                    <li><a href="#tabs-3">Mant. Semestral</a></li>
+                    <li><a href="#tabs-2">Inspección Trimestral</a></li>
+                    <li><a href="#tabs-3">Mantenimiento Semestral</a></li>
                 </ul>
                 
                 <div id="tabs-1">

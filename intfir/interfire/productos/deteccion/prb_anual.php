@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -27,8 +27,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -39,7 +39,7 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Equipos de control: Sistemas de alarma de incendios con localizacion de alarma, supervision y senales de averias: Funciones</td>
+			                    <td>Equipos de control: Sistemas de alarma de incendios con localización de alarma, supervisión y señales de averías: Funciones</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
@@ -83,11 +83,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Senales de averia en el panel de control</td>
+			                    <td>Señales de avería en el panel de control</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Equipo de emergencia de transmision de alarma-voz</td>
+			                    <td>Equipo de emergencia de transmisión de alarma-voz</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
@@ -99,11 +99,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Dispositivos electromecanicos en cierres</td>
+			                    <td>Dispositivos electromecánicos en cierres</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Interruptores de extincion o supresion de incendios</td>
+			                    <td>Interruptores de extinción o supresión de incendios</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
@@ -127,7 +127,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Equipo de proteccion del vigilante</td>
+			                    <td>Equipo de protección del vigilante</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
@@ -135,7 +135,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Equipo de proteccion para riesgos especiales</td>
+			                    <td>Equipo de protección para riesgos especiales</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option><option value="1">N/A</option></select></td>
 			                </tr>
 			                <tr>

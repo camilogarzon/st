@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,12 +12,12 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                  	<fieldset>
-	                   	<legend>Todas las bombas sistema hidraulico</legend>
+	                   	<legend>Todas las bombas sistema hidraúlico</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -25,8 +25,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -37,15 +37,15 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Presion de la aspiracion:</td>
+			                    <td>Presión de la aspiración:</td>
 			                    <td><input type="text" name="email" value="PSI bar" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Presion en el manometro de impulsion:</td>
+			                    <td>Presión en el manometro de impulsion:</td>
 			                    <td><input type="text" name="email" value="PSI bar" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Presion de arranque de la bomba:</td>
+			                    <td>Presión de arranque de la bomba:</td>
 			                    <td><input type="text" name="email" value="PSI bar" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -53,27 +53,27 @@
 			                    <td><input type="text" name="email" value="minutos" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Las valvulas de control en la linea de aspiracion estan precintadas en posicion abierta</td>
+			                    <td>Las válvulas de control en la linea de aspiración están precintadas en posición abierta</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las valvulas de control en la linea de impulsion estan precintadas en posicion abierta</td>
+			                    <td>Las válvulas de control en la linea de impulsion estan precintadas en posición abierta</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las valvulas bypass estan precintadas en posicion abierta</td>
+			                    <td>Las válvulas bypass están precintadas en posición abierta</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Todas las valvulas de control estan accesibles</td>
+			                    <td>Todas las válvulas de control están accesibles</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>El deposito de aspiracion esta lleno</td>
+			                    <td>El deposito de aspiración esta lleno</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Perdida de agua en las juntas de la bomba (una gota por segundo)</td>
+			                    <td>Perdida de agua en las juntas de la bomba (una gota por segúndo)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -90,7 +90,7 @@
 				       </fieldset>
 	                   
 	                  	<fieldset>
-	                   	<legend>Solo para bombas electricas</legend>
+	                   	<legend>Solo para bombas eléctricas</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -98,8 +98,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Dato</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -139,8 +139,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Dato</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -172,8 +172,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Dato</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -269,8 +269,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Dato</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -369,7 +369,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>La presion de actuacion de la valvula de emergencia esta ajustada correctamente</td>
+			                    <td>La presión de actuacion de la valvula de emergencia esta ajustada correctamente</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			            </table>

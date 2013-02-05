@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,12 +12,12 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                  	<fieldset>
-	                   	<legend>Inspeccion semanal</legend>
+	                   	<legend>Revisión semanal</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -25,8 +25,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Semana</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -53,23 +53,23 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las valvulas de aspiracion, impulsion y de bypass estan abiertas</td>
+			                    <td>Las válvulas de aspiración, impulsion y de bypass están abiertas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>No existen fugas en tuberias</td>
+			                    <td>No existen fugas en tuberías</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>la bomba vierte una gota de agua por segundo en las juntas</td>
+			                    <td>la bomba vierte una gota de agua por segúndo en las juntas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>La presion en la aspiracion es normal</td>
+			                    <td>La presión en la aspiración es normal</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>el deposito de aspiracion esta lleno</td>
+			                    <td>el deposito de aspiración esta lleno</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -101,7 +101,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las lecturas de tension para las baterias son normales</td>
+			                    <td>Las lecturas de tensión para las baterias son normales</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -109,11 +109,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las luces de "bateria disponible" estan encendidas o bien las lices de "fallo bateria" estan apagadas</td>
+			                    <td>Las luces de "batería disponible" están encendidas o bien las lices de "fallo batería" están apagadas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Todas las luces de alarma estan apagadas</td>
+			                    <td>Todas las luces de alarma están apagadas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -121,7 +121,7 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>El nivel de aciete para los enganajes de los motores es normal</td>
+			                    <td>El nivel de aceite para los engranajes de los motores es normal</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -137,7 +137,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>los terminales de las baterias estan libres de corrosion</td>
+			                    <td>los terminales de las baterías están libres de corrosión</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -145,7 +145,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>para bombas movidas por vapor, la presion de vapor es normal</td>
+			                    <td>para bombas movidas por vapor, la presión de vapor es normal</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -157,7 +157,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>drenar el sifon de condensado del sistema de refrigeracion</td>
+			                    <td>drenar el sifon de condensado del sistema de refrigeración</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>

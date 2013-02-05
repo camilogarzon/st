@@ -29,7 +29,7 @@ class elFinderLogger implements elFinderILogger {
 
 $opts = array(
 	'root'            => '../files',                       // path to root directory
-	'URL'             => 'http://host.creamos.co/interfirex/files/', 		// root directory URL
+	'URL'             => 'http://interfiresas.com/interfire/files/', 		// root directory URL
 	'rootAlias'       => 'Archivo Interfirex',       // display this instead of root directory name
 	//'uploadAllow'   => array('images/*'),
 	//'uploadDeny'    => array('all'),

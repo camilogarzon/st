@@ -3,7 +3,7 @@ require_once 'includes/generic_validate_session.php';
 $_ACTIVE_SIDEBAR = "inicio";
 ?>
 <!-- head -->
-<?php include("head.php"); ?> 
+<?php include("head2.php"); ?> 
 <!-- head -->
 
 
@@ -24,10 +24,10 @@ $_ACTIVE_SIDEBAR = "inicio";
 <!-- content -->
 <div class="maincontent">
 
-<h1 class="pageTitle">Interfire SAS | Interfirex</h1>
+<h1 class="pageTitle">Interfire SAS | Interfire IPM</h1>
 
 		<div class="one_half">
-        	<h3>Bienvenido a Interfirex</h3>
+        	<h3>Bienvenido a Interfire IPM</h3>
         	<br />
             <p>Interfirex es una moderna herramienta desarrollada por Interfire S.A.S., con la cual se permite al cliente tener una interacción adecuada en la inspección, prueba y mantenimiento de los sistemas de protección contra incendio con los que cuenta.</p>
             <p>Esto lo logramos llevando un control en tiempo real y desde cualquier lugar con una herramienta de fácil manejo.</p>
@@ -36,7 +36,7 @@ $_ACTIVE_SIDEBAR = "inicio";
         <div class="one_half last">
         	<h3>Ventajas</h3>
         	<br />
-            <p>Las soluciones que ofrece Interfirex a sus clientes no solo aplican para su facilidad se manejo, también es una herramienta que le permitirá exponer al máximo los siguiente beneficios:</p>
+            <p>Las soluciones que ofrece Interfire IPM a sus clientes no solo aplican para su facilidad se manejo, también es una herramienta que le permitirá exponer al máximo los siguiente beneficios:</p>
             <ul>
             <li>Gerenciar sus equipos contra incendio de forma ágil y segura, desde cualquier lugar del mundo y con reportes ejecutivos a la medida.</li>
             <li>Fácil acceso a indicadores.</li>

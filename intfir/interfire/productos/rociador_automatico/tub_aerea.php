@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>IMaterial del instalador y certificado de prueba para tuberias aereas</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -21,24 +21,14 @@
 	                   <fieldset>
 	                   		<legend>Planos</legend>
                     <p>
-                    	<div class="one_fourth">
-                    	<label for="name">Aceptados por</label>
-                    	</div>
-                    	<div class="three_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
+                    	<div class="one_fourth"><label for="name">Aceptados por</label></div>
+                    	<div class="one_fourth"><input type="text" name="name"  class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Domicilio</label></div>
+                    	<div class="one_fourth last"><input type="text" name="name"  class="sftable" /></div>
                     </p>
                     <p>
                     	<div class="one_fourth">
-                    	<label for="name">Domicilio</label>
-                    	</div>
-                    	<div class="three_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
-                    </p>
-                    <p>
-                    	<div class="one_fourth">
-                    	<label for="name">Esta la instalacion de acuerdo con los planos recibidos</label>
+                    	<label for="name">Esta la instalación de acuerdo con los planos recibidos</label>
                     	</div>
                     	<div class="three_fourth last"><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
@@ -55,29 +45,19 @@
 	                   <fieldset>
 	                   		<legend>Instrucciones</legend>
                     <p>
-                    	<div class="one_half">
-                    	<label for="name">Se ha instruido a la persona a cargo de las instalaciones contra incendios en cuestiones como valvulas de control, cuidados y mantenimiento de estos equipos</label>
-                    	</div>
+                    	<div class="one_half"><label for="name">Se ha instruido a la persona a cargo de las instalaciones contra incendios en cuestiones como válvulas de control, cuidados y mantenimiento de estos equipos?</label></div>
                     	<div class="one_half last"><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_half">
-                    	<label for="name">Esta la instalacion de acuerdo con los planos recibidos</label>
-                    	</div>
+                    	<div class="one_half"><label for="name">Existen copias de las instrucciones apropiadas, cuadros de cuidado y mantenimiento, y de NFPA 13?</label></div>
                     	<div class="one_half last"><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></div>
-                    </p>
-                    <p>
-                    	<div class="one_half">
-                    	<label for="name">Esta correcto el equipo utilizado</label>
-                    	</div>
-                    	<div class="one_fourth last"><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     	</fieldset>
 	                   
 	                   <!-- LOCALIZACION SISTEMA -->
 	                   
 	                   <fieldset>
-	                   		<legend>Localizacion del sistema</legend>
+	                   		<legend>Localización del sistema</legend>
                     <p>
                     	<div class="one_fourth">
                     	<label for="name">Edificio de suministros</label>
@@ -105,7 +85,7 @@
 			                <td>Marca</td>
 			                <td>Modelo</td>
 			                <td>Ano</td>
-			                <td>Tamano orificio</td>
+			                <td>Tamaño orificio</td>
 			                <td>Cantidad</td>
 			                <td>Temperatura</td>
 			            </tr>
@@ -167,9 +147,9 @@
 	                   <!-- tuberias y accesorios -->
 	                   
 	                   <fieldset>
-	                   		<legend>Tuberias y accesorios</legend>
+	                   		<legend>Tuberías y accesorios</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Tuberia conforme a la norma</label></div>
+                    	<div class="one_fourth"><label for="name">Tubería conforme a la norma</label></div>
                     	<div class="one_fourth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
@@ -183,7 +163,7 @@
 	                   <!-- VALVULA DE ALARMA O INDICADOR DE FLUJO -->
 	                   
 	                   <fieldset>
-	                   		<legend>Valvula de alarma o indicador de flujo</legend>
+	                   		<legend>Válvula de alarma o indicador de flujo</legend>
 						<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
 			                <col class="head1" width="60%" />
@@ -191,7 +171,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Dispositivo de alarma</td>
-			                <td>Maximo tiempo de funcionamiento en tuberia de prueba</td>
+			                <td>Maximo tiempo de funcionamiento en tubería de prueba</td>
 			            </tr>
 			            </table>
 			        
@@ -253,7 +233,7 @@
 			                <col class="head0" width="50%" />
 			            </colgroup>
 			            <tr>
-			                <td>Valvula de tuberia seca</td>
+			                <td>Válvula de tubería seca</td>
 			                <td>Dispositivo de apertura rapida</td>
 			            </tr>
 			            </table>
@@ -316,8 +296,8 @@
 			                <col class="head0" width="50%" />
 			            </colgroup>
 			            <tr>
-			                <td>Valvula de tuberia seca</td>
-			                <td>Dispositivo de apertura rapida</td>
+			                <td>Válvula de tubería seca</td>
+			                <td>Dispositivo de apertura rápida</td>
 			            </tr>
 			            </table>
 			        
@@ -334,20 +314,20 @@
 			                </colgroup>
 			                <tr>
 			                    <td></td>
-			                    <td>Tiempo de disparo a traves de la tuberia de prueba</td>
-			                    <td>Presion del agua</td>
-			                    <td>Presion del aire</td>
-			                    <td>Presion del aire en el momento del disparo</td>
-			                    <td>Tiempo de rretraso hasta que el agua sale por la toma de pruebas</td>
+			                    <td>Tiempo de disparo a través de la tubería de prueba</td>
+			                    <td>Presión del agua</td>
+			                    <td>Presión del aire</td>
+			                    <td>Presión del aire en el momento del disparo</td>
+			                    <td>Tiempo de retraso hasta que el agua sale por la toma de pruebas</td>
 			                    <td>Funcionamiento correcto de la alarma</td>
 			                </tr>
 			                <tr>
 			                    <td></td>
-			                    <td>Min.</td>
-			                    <td>Sec.</td>
+			                    <td>Minutos</td>
+			                    <td>Segúndos</td>
 			                    <td>PSI Bar</td>
 			                    <td>PSI Bar</td>
-			                    <td>Sec.</td>
+			                    <td>Segúndos</td>
 			                    <td>Seleccionar</td>
 			                </tr>
 			                <tr>
@@ -374,15 +354,15 @@
 	                   <!-- valvulas de diluvio y preaccion -->
 	                   
 	                   <fieldset>
-	                   		<legend>Valvulas de diluvio y preaccion</legend>
+	                   		<legend>Válvulas de diluvio y preacción</legend>
                     <p>
                     	<div class="one_fourth"><label for="name">Funcionamiento</label></div>
-                    	<div class="one_fourth"><select name="occupation"><option>Seleccionar</option><option value="0">Neumatico</option><option value="1">Electrico</option><option value="2">Hidraulico</option></select></div>
-                    	<div class="one_fourth"><label for="name">Tuberia supervisada</label></div>
+                    	<div class="one_fourth"><select name="occupation"><option>Seleccionar</option><option value="0">Neumático</option><option value="1">Eléctrico</option><option value="2">Hidraúlico</option></select></div>
+                    	<div class="one_fourth"><label for="name">Tubería supervisada</label></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_fourth"><label for="name">Deteccion supervisada</label></div>
+                    	<div class="one_fourth"><label for="name">Detección supervisada</label></div>
                     	<div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     	<div class="one_fourth"><label for="name">Hay alguna toma para prueba accesible en cada circuito</label></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
@@ -399,9 +379,9 @@
 			            <tr>
 			                <td>Marca</td>
 			                <td>Modelo</td>
-			                <td>Cada circuito tiene supervision de perdida o fallo de alarma</td>
-			                <td>Cada circuito activa las apertura de valvulas</td>
-			                <td>Tiempo maximo para el accionamientodel mecanismo de apertura</td>
+			                <td>Cada circuito tiene supervisión de perdida o fallo de alarma</td>
+			                <td>Cada circuito activa las apertura de válvulas</td>
+			                <td>Tiempo máximo para el accionamiento del mecanismo de apertura</td>
 			            </tr>
 			            </table>
 			        
@@ -429,26 +409,26 @@
 	                   <fieldset>
 	                   		<legend>Pruebas</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Toda la tuberia se ha probado hidrostaticamente a</label></div>
+                    	<div class="one_fourth"><label for="name">Toda la tubería se ha probado hidrostáticamente a</label></div>
                     	<div class="one_fourth"><input type="text" value="PSI bar" name="name"  class="sftable" /></div>
-                    	<div class="one_fourth"><label for="name">durante </label></div>
+                    	<div class="one_fourth"><label for="name">Durante </label></div>
                         <div class="one_fourth last"><input type="text" name="name" value="horas" class="sftable" /></div>
                     </p>
                     <p>
-                    	<div class="one_fourth"><label for="name">Se ha probado neumaticamente la tuberia seca?</label></div>
+                    	<div class="one_fourth"><label for="name">Se ha probado neumáticamente la tubería seca?</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     	<div class="one_fourth"><label for="name">El equipo trabaja satisfactoriamente</label></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_half"><label for="name">Prueba de drenaje - Lectura del manometro localizado cerca de la tuberia de pruebas del abastecimiento de agua. Presion estatica:</label></div>
+                    	<div class="one_half"><label for="name">Prueba de drenaje - Lectura del manómetro localizado cerca de la tubería de pruebas del abastecimiento de agua. Presión estática:</label></div>
                     	<div class="one_fourth last"><input type="text" value="PSI bar" name="name"  class="sftable" /></div>
                     </p>
                     <p>
-                    	<div class="one_half"><label for="name">Prueba de drenaje - Presion residual con la valvula de pruebas abierta completamente:</label></div>
+                    	<div class="one_half"><label for="name">Prueba de drenaje - Presión residual con la válvula de pruebas abierta completamente:</label></div>
                         <div class="one_fourth last"><input type="text" name="name" value="PSI bar" class="sftable" /></div>
                     </p>
-                    <p>La tuberia subterranea y las conexiones a las tuberias ascendentes del sistema se limpiaron antes de que se hiciera la conexion al sistema de rociadores</p>
+                    <p>La tubería subterránea y las conexiones a las tuberias ascendentes del sistema se limpiaron antes de que se hiciera la conexión al sistema de rociadores</p>
                     <p>
                     	<div class="one_fourth"><label for="name">Verificado con copia del modelo U No. 85B</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option><option value="2">Otra</option></select></div>
@@ -469,7 +449,7 @@
                     <p>
                     	<div class="one_sixth"><label for="name">Cantidad usada</label></div>
                     	<div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
-                    	<div class="one_sixth"><label for="name">Localizacion</label></div>
+                    	<div class="one_sixth"><label for="name">Localización</label></div>
                         <div class="one_sixth"><input type="text" name="name" class="sftable" /></div>
                     	<div class="one_sixth"><label for="name">Cantidad respuesta</label></div>
                         <div class="one_sixth last"><input type="text" name="name" class="sftable" /></div>
@@ -481,7 +461,7 @@
 	                   <fieldset>
 	                   		<legend>Soldadura</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Existen tuberias soldadas</label></div>
+                    	<div class="one_fourth"><label for="name">Existen tuberías soldadas</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>Si es asi</p>
@@ -494,7 +474,7 @@
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
-                    	<div class="three_fourth"><label for="name">Certifica que la soldadura se llevo a cabo de acuerdo a un procedimiento de control documentado para asegurarse que todos los discos se han recuperado, que las aberturas en las tuberias se han pulido, que toda la escoria y demas residuos se han retirado, y que los diametros internos de la tuberia no se han penetrado?</label></div>
+                    	<div class="three_fourth"><label for="name">Certifica que la soldadura se llevo a cabo de acuerdo a un procedimiento de control documentado para asegurarse que todos los discos se han recuperado, que las aberturas en las tuberías se han pulido, que toda la escoria y demás residuos se han retirado, y que los díametros internos de la tubería no se han penetrado?</label></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
@@ -502,7 +482,7 @@
 	                   <!-- placa y caracteristicas hidraulicas -->
 	                   
 	                   <fieldset>
-	                   		<legend>Placa y caracteristicas hidraulicas</legend>
+	                   		<legend>Placa y características hidráulicas</legend>
                     <p>
                     	<div class="one_fourth"><label for="name">Se ha suministrado placa</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
@@ -518,7 +498,7 @@
 	                   <fieldset>
 	                   		<legend>Observaciones</legend>
                     <p>
-                    	<div class="one_third"><label for="name">Dia que se dejo en servicio con todas las valvulas de control abiertas</label></div>
+                    	<div class="one_third"><label for="name">Día que se dejo en servicio con todas las válvulas de control abiertas</label></div>
                         <div class="one_sixth"><input type="text" name="name" value="fecha" class="sftable" /></div>
                     </p>
                     <br />

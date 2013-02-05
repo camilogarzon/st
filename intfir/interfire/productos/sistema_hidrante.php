@@ -1,12 +1,12 @@
-			<h1 class="pageTitle">Sistema de Hidrante</h1>
+			<h1 class="pageTitle">Hidrantes Contra Incendios</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Mensual</a></li>
-                    <li><a href="#tabs-3">Rev. Semestral Seca</a></li>
-                    <li><a href="#tabs-4">Rev. Anual Humeda</a></li>
-                    <li><a href="#tabs-5">Prb. Anual</a></li>
+                    <li><a href="#tabs-2">Inspección Mensual</a></li>
+                    <li><a href="#tabs-3">Inspección Semestral Seca</a></li>
+                    <li><a href="#tabs-4">Inspección Anual Humeda</a></li>
+                    <li><a href="#tabs-5">Prueba Anual</a></li>
                 </ul>
                 
                 <div id="tabs-1">

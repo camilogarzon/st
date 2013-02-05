@@ -3,7 +3,7 @@ require_once 'includes/generic_validate_session.php';
 $_ACTIVE_SIDEBAR = "indicadores";
 ?>
 <!-- head -->
-<?php include("head.php"); ?> 
+<?php include("head2.php"); ?> 
 <!-- head -->
 
 

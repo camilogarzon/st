@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -25,8 +25,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Semestre</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -45,63 +45,63 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Registrar las presion en el cilindro de agente extintor:)</td>
+			                    <td>Registrar las presión en el cilindro de agente extintor (Si se trata del tipo presurizado)</td>
+			                    <td><input type="text" name="email" value="psi" class="sftablehalf" /><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                </tr>
+			                <tr>
+			                    <td>- Cartucho de gas propelente (si se trata del tipo presurizado) presión del nitrógeno en psi (bar)</td>
 			                    <td><input type="text" name="email"  class="sftablehalf" /><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>- Cartucho de gas propelente (si se trata del tipo presurizado) presion del nitrogeno en psi (bar)</td>
+			                    <td>- Peso de dióxido de carbono (libras)</td>
 			                    <td><input type="text" name="email"  class="sftablehalf" /><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>- Peso de dioxido de carbono (libras)</td>
-			                    <td><input type="text" name="email"  class="sftablehalf" /><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Comprobar componentes no da–andos: Detectores o eslabones fusibles</td>
+			                    <td>Comprobar componentes no dañados: Detectores o eslabones fusibles</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Cilindros de gas propelente</td>
+			                    <td>- Cilindros de gas propelente</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Contenedores de agente extintor</td>
+			                    <td>- Contenedores de agente extintor</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Dispositivos de disparo</td>
+			                    <td>- Dispositivos de disparo</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Tuberias</td>
+			                    <td>- Tuberías</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Boquillas </td>
+			                    <td>- Boquillas </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Alarmas </td>
+			                    <td>- Alarmas </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Equipo auxiliar </td>
+			                    <td>- Equipo auxiliar </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Reposicion de componentes da–ados o prueba hidrostatica </td>
+			                    <td>Reposición de componentes dañados o prueba hidrostática </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
 			                <tr>
-			                    <td>Se probo el sistema de tuberias para ver si estaba obstruido </td>
+			                    <td>Se probó el sistema de tuberías para ver si estaba obstruido</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>el sistema de tuberias no esta obstruido </td>
+			                    <td>El sistema de tuberías no esta obstruido </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
-			                    <td>Sustitucion del eslabon fusible (Anualmente)</td>
+			                    <td>Sustitución del eslabón fusible (Anualmente)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			            </table>

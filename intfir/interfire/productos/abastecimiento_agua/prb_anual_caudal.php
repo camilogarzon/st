@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,42 +12,42 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <fieldset>
-	                   	<legend>Realizar un prueba de drenaje a traves de la salida de 2"</legend>
+	                   	<legend>Realizar un prueba de drenaje a través de la salida de 2"</legend>
 	                   	
 	                   	<p>
-	                    	<div class="one_fourth"><label for="name">Presion estatica</label></div>
+	                    	<div class="one_fourth"><label for="name">Presión estática</label></div>
 	                        <div class="one_fourth"><input type="text" name="name" value="PSI" class="sftable" /></div>
-	                        <div class="one_fourth"><label for="email">Presion caudal maximo</label></div>
+	                        <div class="one_fourth"><label for="email">Presión caudal máximo</label></div>
 	                        <div class="one_fourth last"><input type="text" name="email" value="PSI" class="sftable" /></div>
                         </p>
-	                   	<p>Depositos a nivel del terreno susbterraneos: La prueba anual se realizara durante las pruebas de la bomba a caudal maximo.</p>
+	                   	<p>Depósitos a nivel del terreno subterráneos: La prueba anual se realizará durante las pruebas de la bomba a caudal máximo.</p>
 				       
 				       </fieldset>
 	                   
 	                   <fieldset>
-	                   	<legend>Sistemas de distribucion del agua</legend>
+	                   	<legend>Sistemas de distribución del agua</legend>
 	                   	<p>La prueba anual se realizara durante la prueba anual de hidrantes. Para cada prueba, tomar los siguientes datos:</p>
 	                   	
 	                   	<p>
-	                    	<div class="one_sixth"><label for="name">Localizacion del hidrante residual</label></div>
+	                    	<div class="one_sixth"><label for="name">Localización del hidrante residual</label></div>
 	                        <div class="one_sixth"><input type="text" name="name" class="sftable" /></div>
-	                        <div class="one_sixth"><label for="email">Localizacion del hidrante abierto</label></div>
+	                        <div class="one_sixth"><label for="email">Localización del hidrante abierto</label></div>
 	                        <div class="one_sixth"><input type="text" name="email" class="sftable" /></div>
-	                        <div class="one_sixth"><label for="email">Presion estatica (hidrante residual)</label></div>
+	                        <div class="one_sixth"><label for="email">Presión estática (hidrante residual)</label></div>
 	                        <div class="one_sixth last"><input type="text" name="email" value="PSI" class="sftable" /></div>
                         </p>
 	                   	
 	                   	<p>
-	                    	<div class="one_sixth"><label for="name">Presion residual</label></div>
+	                    	<div class="one_sixth"><label for="name">Presión residual</label></div>
 	                        <div class="one_sixth"><input type="text" name="name" value="PSI" class="sftable" /></div>
-	                        <div class="one_sixth"><label for="email">Presion en el Pitot</label></div>
+	                        <div class="one_sixth"><label for="email">Presión en el Pitot</label></div>
 	                        <div class="one_sixth"><input type="text" name="email" value="PSI" class="sftable" /></div>
-	                        <div class="one_sixth"><label for="email">Tama?o boquilla (hidrante abierto)</label></div>
+	                        <div class="one_sixth"><label for="email">Tamaño boquilla (hidrante abierto)</label></div>
 	                        <div class="one_sixth last"><input type="text" name="email" value="Pulgadas" class="sftable" /></div>
                         </p>
 	                   	

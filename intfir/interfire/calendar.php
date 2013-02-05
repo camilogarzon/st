@@ -42,7 +42,7 @@ $SEMANAABREVIADA[2] = 'Mar';
 $SEMANAABREVIADA[3] = 'Mie';
 $SEMANAABREVIADA[4] = 'Jue';
 $SEMANAABREVIADA[5] = 'Vie';
-$SEMANAABREVIADA[6] = 'Sáb';
+$SEMANAABREVIADA[6] = 'Sab';
 
 ////////////////////////////////////
 if($tipo_semana == 0){
@@ -92,18 +92,18 @@ print " <tr>";
 print " <td colspan=10>";
 print " <table border=0 align=center width=\"1%\" style=\"font-family:arial;font-size:9px\">";
 print " <tr>";
-print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$mes&ano=$AnoAnteriorAno\"><img src=atras2.gif border=0></a></td>";
-print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$MesAnterior&ano=$AnoAnterior \"><img src=atras.gif border=0></a></td>";
+print " <td><a href=\"$PHP_SELF?mes=$mes&ano=$AnoAnteriorAno\"><img width=\"25px\" height=\"25px\" overflow=\"hidden\" src=images/flecha_calendario2.png border=0></a></td>";
+print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$MesAnterior&ano=$AnoAnterior \"><img width=\"25px\" height=\"25px\" overflow=\"hidden\" src=images/flecha_calendario1.png border=0></a></td>";
 print " <td width=\"1%\" colspan=\"1\" align=\"center\" nowrap><b>".$ARRMES[$mes]." - $ano</b></td>";
-print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$MesSiguiente&ano=$AnoSiguiente\"><img src=avanzar.gif border=0></a></td>";
-print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$mes&ano=$AnoSiguienteAno\">< img src=avanzar2.gif border=0></a></td>";
+print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$MesSiguiente&ano=$AnoSiguiente\"><img width=\"25px\" height=\"25px\" overflow=\"hidden\" src=images/flecha_calendario3.png border=0></a></td>";
+print " <td width=\"1%\"><a href=\"$PHP_SELF?mes=$mes&ano=$AnoSiguienteAno\"><img width=\"25px\" height=\"25px\" overflow=\"hidden\" src=images/flecha_calendario4.png border=0></a></td>";
 print " </tr>";
 print " </table>";
 print " </td>";
 print "</tr>";
 print "<tr>";
 foreach($ARRDIASSEMANA AS $key){
-print "<td bgcolor=#ccccff><b>$key</b></td>";
+print "<td bgcolor=#dc102f><b style='color:#ffffff;'>$key</b></td>";
 }
 print "</tr>";
 
@@ -114,9 +114,9 @@ if($b == 0) print '<tr>';
 if(!$c) $c = 1;
 if($a > $EmpiezaMesCalOffset AND $c <= $TotalDiasMes){
 if($c == date(d) && $mes == date(m) && $ano == date(Y)){
-print "<td bgcolor=\"#ffcc99\">$c<br></td>";
+print "<td bgcolor=\"#f890a0\">$c<br></td>";
 }elseif($b == 0 OR $b == 6){
-print "<td bgcolor=#99cccc>$c</td>";
+print "<td bgcolor=#fbc3cb>$c</td>";
 }else{
 print "<td bgcolor=\"#EEEEEE\">$c</td>";
 }

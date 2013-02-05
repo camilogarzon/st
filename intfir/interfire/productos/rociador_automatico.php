@@ -1,18 +1,18 @@
-			<h1 class="pageTitle">Sistema de Rociadores Autom&aacute;ticos</h1>
+			<h1 class="pageTitle">Sistema de Rociadores Automáticos</h1>
 			
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Trimestral</a></li>
-                    <li><a href="#tabs-5">Rev. Semestral</a></li>
-                    <li><a href="#tabs-6">Rev. Anual</a></li>
-                    <li><a href="#tabs-7">Rev. Quinquenal</a></li>
-                    <li><a href="#tabs-8">Rev. Trianual</a></li>
-                    <li><a href="#tabs-9">5, 20 y 50 a?os</a></li>
-                    <li><a href="#tabs-10">Tuberia area</a></li>
-                    <li><a href="#tabs-11">Tuberia Subterranea</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-4">Inspección Trimestral</a></li>
+                    <li><a href="#tabs-5">Inspección Semestral</a></li>
+                    <li><a href="#tabs-6">Inspección Anual</a></li>
+                    <li><a href="#tabs-7">Inspección Quinquenal</a></li>
+                    <li><a href="#tabs-8">Inspección Trianual</a></li>
+                    <li><a href="#tabs-9">5, 20 y 50 años</a></li>
+                    <li><a href="#tabs-10">Tubería area</a></li>
+                    <li><a href="#tabs-11">Tubería Subterránea</a></li>
                 </ul>
                 
                 <div id="tabs-1">

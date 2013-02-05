@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -25,7 +25,7 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
+			                <td>Descripción</td>
 			                <td>Semana</td>
 			            </tr>
 			            </table>
@@ -53,11 +53,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Registar la presion de aspiracion marcada por el monometro en PSI bar</td>
+			                    <td>Registar la presión de aspiración marcada por el monometro en PSI bar</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Registar la presion de impulsion marcada por el manometro en PSI bar</td>
+			                    <td>Registar la presión de impulsion marcada por el manometro en PSI bar</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -73,7 +73,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>registrar la presion de arranque de la bomba</td>
+			                    <td>registrar la presión de arranque de la bomba</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -85,7 +85,7 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Registrar el tiempo que funciona la bomba despues del arranque para aquellas que tienen apagado automatico</td>
+			                    <td>Registrar el tiempo que funciona la bomba después del arranque para aquellas que tienen apagado automático</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -97,15 +97,15 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la presion del aceite, velocidad, temperatura del aceite y del agua, mientras el motor esta funcionanado</td>
+			                    <td>Comprobar la presión del aceite, velocidad, temperatura del aceite y del agua, mientras el motor esta funcionanado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el caudal del refrigerante en el radiador</td>
+			                    <td>Comprobar el caudal del refrigerante en el radíador</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Registrar la presion del vapor en bombas accionadas por vapor</td>
+			                    <td>Registrar la presión del vapor en bombas accionadas por vapor</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -113,7 +113,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la correcta actuacion de los solenoides</td>
+			                    <td>Comprobar la correcta actuación de los solenoides</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -125,7 +125,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar valvula de alivio de vapor (solo turbina de vapor)</td>
+			                    <td>Comprobar válvula de alivio de vapor (solo turbina de vapor)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>

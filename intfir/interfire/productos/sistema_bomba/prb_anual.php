@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,7 +12,7 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -39,16 +39,16 @@
                     <p>
                     	<div class="one_sixth"><label for="name">Velocidad nominal</label></div>
                         <div class="one_sixth"><input type="text" name="name" value="rpm" class="sftable" /></div>
-                        <div class="one_sixth"><label for="name">Presion normal</label></div>
+                        <div class="one_sixth"><label for="name">presión normal</label></div>
                         <div class="one_sixth"><input type="text" name="name" value="psi" class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Accionamiento</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">ElŽctrico</option><option value="1">Diesel</option><option value="1">Vapor</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Eléctrico</option><option value="1">Diesel</option><option value="1">Vapor</option></select></div>
                     </p>
                     
 	                   </fieldset>
 	                   
 	                  	<fieldset>
-	                   	<legend>Prueba Anua de Rendimiento</legend>
+	                   	<legend>Prueba Anual de Rendimiento</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -57,9 +57,9 @@
 			                <col class="head1" width="15%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
-			                <td>Valor</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -71,27 +71,27 @@
 			                    <col class="con1" width="15%" />
 			                </colgroup>
 			                <tr>
-			                    <td>6 intentos de arranque autom‡tico</td>
+			                    <td>6 intentos de arranque automático</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>El arranque autom‡tico funciona correctamente</td>
+			                    <td>El arranque automático funciona correctamente</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>La parada autom‡tica funciona correctamente</td>
+			                    <td>La parada automática funciona correctamente</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Arranque autom‡tico</td>
+			                    <td>Arranque automático</td>
 			                    <td><input type="text" value="psi" class="sftable" /></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Parada autom‡tica</td>
+			                    <td>Parada automática</td>
 			                    <td><input type="text" value="psi" class="sftable" /></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
@@ -146,17 +146,17 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>ÀSe ha reseteado el controlador de tiempo de funcionamiento y se ha cambiado el papel para los gr‡ficos?</td>
+			                    <td>Se ha reseteado el controlador de tiempo de funcionamiento y se ha cambiado el papel para los gráficos?</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Datos de las pruebas y curvas de caudal completas  (adjuntar todas las curvas de caudal, de consumo elŽctrico, de rendimiento, etc)</td>
+			                    <td>Datos de las pruebas y curvas de caudal completas  (adjuntar todas las curvas de caudal, de consumo eléctrico, de rendimiento, etc)</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>ÀSe han registrado las diferentes lecturas para cada caudal en la bomba elŽctrica?</td>
+			                    <td>Se han registrado las diferentes lecturas para cada caudal en la bomba elŽctrica?</td>
 			                    <td></td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>

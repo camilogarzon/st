@@ -3,14 +3,15 @@
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Trimestral</a></li>
-                    <li><a href="#tabs-5">Rev. Semestral</a></li>
-                    <li><a href="#tabs-6">Prb. Anual</a></li>
-                    <li><a href="#tabs-7">Rev. Semanal Motor</a></li>
-                    <li><a href="#tabs-8">Prb. Mensual</a></li>
-                    <li><a href="#tabs-9">Prb. Trimestral</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-7">Inspección Semanal Motor</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-8">Prueba Mensual</a></li>
+                    <li><a href="#tabs-4">Inspección Trimestral</a></li>
+                    <li><a href="#tabs-9">Prueba Trimestral</a></li>
+                    <li><a href="#tabs-5">Inspección Semestral</a></li>
+                    <li><a href="#tabs-10">Prueba Semestral</a></li>
+                    <li><a href="#tabs-6">Prueba Anual</a></li>
                 </ul>
                 
                 <div id="tabs-1">
@@ -64,6 +65,12 @@
                 <div id="tabs-9">
                 
                 <?php include("deteccion/prb_trimestral.php") ?>
+                   
+                </div>
+                
+                <div id="tabs-10">
+                
+                <?php include("deteccion/prb_semestral.php") ?>
                    
                 </div>
                 

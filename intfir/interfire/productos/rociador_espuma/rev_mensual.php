@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,14 +12,14 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <!-- TABLA MENSUAL-->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisión Mensual</legend>
+	                   	<legend>Inspección Mensual</legend>
 	                   	
 	                   	<ul>
 	                   	<li>1- Si las conexiones para el departamento de bomberos no están obstruidas y en buen estado anotar Si. Si no, ver que se realizan correcciones oportunas y describirlas en Notas.</li>
@@ -27,9 +27,9 @@
 	                   	<li>3- Asegurarse que los dispositivos de alarma están libres de daños físicos y que las conexiones eléctricas son seguras. Si es así, anotar Si. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
 	                   	<li>4- Registrar la presión del agua . Si hay una diferencia de 10% o mas, investigar la causa, evaluar el impacto sobre el funcionamiento del sistema y describirlo en Notas.</li>
 	                   	<li>5- Anotar Si si las instrucciones están disponibles. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
-	                   	<li>6- Inspeccionar las boquillas para comprobar que tengan adecuada orientación, que no se encuentren bloqueadas y que las tapas (si tienen) estén en su lugar.</li>
-	                   	<li>7- Inspeccionar que todas las válvulas en el proporcionador están en la posición adecuada.</li>
-	                   	<li>8- Inspeccionar el tanque de espumógeno para comprobar que está lleno y no hay indicios de corrosión importante.</li>
+	                   	<li>6- Inspecciónar las boquillas para comprobar que tengan adecuada orientación, que no se encuentren bloqueadas y que las tapas (si tienen) estén en su lugar.</li>
+	                   	<li>7- Inspecciónar que todas las válvulas en el proporcionador están en la posición adecuada.</li>
+	                   	<li>8- Inspecciónar el tanque de espumógeno para comprobar que está lleno y no hay indicios de corrosión importante.</li>
 	                   	<li>9- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
 	                   	
@@ -39,8 +39,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Mes</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -63,7 +63,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Valvulas bloqueadas</td>
+			                    <td>Válvulas bloqueadas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -84,11 +84,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Valvulas</td>
+			                    <td>Válvulas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Tanque de espumogeno</td>
+			                    <td>Tanque de espumógeno</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>

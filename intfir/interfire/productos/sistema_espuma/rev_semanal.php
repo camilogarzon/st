@@ -19,7 +19,7 @@
 	                   <!-- TABLA SEMANAL -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisión Semanal</legend>
+	                   	<legend>Inspección Semanal</legend>
 	                   	
 	                   	<ul>
 	                   	<li>Si las válvulas están abiertas y precintadas anotar Si. Si no, precintar y anotar Si.</li>

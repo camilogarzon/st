@@ -3,17 +3,17 @@
 			<div id="tabs" class="tabs2">
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
-                    <li><a href="#tabs-2">Rev. Semanal</a></li>
-                    <li><a href="#tabs-3">Rev. Mensual</a></li>
-                    <li><a href="#tabs-4">Rev. Trimestral</a></li>
-                    <li><a href="#tabs-5">Rev. Anual</a></li>
-                    <li><a href="#tabs-6">Mant. Trimestral</a></li>
-                    <li><a href="#tabs-7">Mant. Semestral</a></li>
-                    <li><a href="#tabs-8">Mant. Anual</a></li>
-                    <li><a href="#tabs-9">Prb. Semanal</a></li>
-                    <li><a href="#tabs-10">Prb. Mensual</a></li>
-                    <li><a href="#tabs-11">Prb. Semestral</a></li>
-                    <li><a href="#tabs-12">Prb. Anual</a></li>
+                    <li><a href="#tabs-2">Inspección Semanal</a></li>
+                    <li><a href="#tabs-9">Prueba Semanal</a></li>
+                    <li><a href="#tabs-3">Inspección Mensual</a></li>
+                    <li><a href="#tabs-10">Prueba Mensual</a></li>
+                    <li><a href="#tabs-4">Inspección Trimestral</a></li>
+                    <li><a href="#tabs-6">Mantenimiento Trimestral</a></li>
+                    <li><a href="#tabs-7">Mantenimiento Semestral</a></li>
+                    <li><a href="#tabs-11">Prueba Semestral</a></li>
+                    <li><a href="#tabs-5">Inspección Anual</a></li>
+                    <li><a href="#tabs-8">Mantenimiento Anual</a></li>
+                    <li><a href="#tabs-12">Prueba Anual</a></li>
                     <li><a href="#tabs-13">Resumen</a></li>
                 </ul>
                 

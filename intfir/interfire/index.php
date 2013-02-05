@@ -52,7 +52,7 @@ if (isset($_SESSION['usuario'])) {
             <div class="bg5"></div>
         </div>
 
-        <div class="notification notifyError loginNotify">Los datos ingresados no son v&aacute;lidos. (Escr&iacute;balos de nuevo)</div>
+        <div class="notification notifyError loginNotify">Los datos ingresados no son válidos. (Escríbalos de nuevo)</div>
 
         <form id="loginform" action="login.php" method="post">
             <div class="loginbox">

@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,19 +12,20 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
-                    </p>	                   </fieldset>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
+                    </p>
+	                   </fieldset>
 	                   
 	                   <!-- TABLA SEMANAL -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revision Trimestral</legend>
+	                   	<legend>Inspección Trimestral</legend>
 	                   	
 	                   	<ul>
 	                   	<li>1- Comprobar el manómetro de presión de aire para confirmar que se mantiene una presión adecuada.</li>
-	                   	<li>2- Inspeccionar los componentes de operación, incluyendo las válvulas de control.</li>
-	                   	<li>3- Inspeccionar los interruptores de flujo, válvula, e interruptores de supervisión del depósito.</li>
-	                   	<li>4- Inspeccionar los dispositivos iniciadores y detectores.</li>
+	                   	<li>2- Inspecciónar los componentes de operación, incluyendo las válvulas de control.</li>
+	                   	<li>3- Inspecciónar los interruptores de flujo, válvula, e interruptores de supervisión del depósito.</li>
+	                   	<li>4- Inspecciónar los dispositivos iniciadores y detectores.</li>
 	                   	<li>5 - Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
                    
@@ -40,10 +41,10 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Presion Aire</td>
-			                <td>Componenetes operacion</td>
+			                <td>Presión Aire</td>
+			                <td>Componentes operación</td>
 			                <td>Flujo de Agua y Supervision</td>
-			                <td>Dispositivos de iniciacion</td>
+			                <td>Dispositivos de iniciación</td>
 			            </tr>
 			            </table>
 			        

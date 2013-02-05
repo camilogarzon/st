@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,14 +12,14 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <!-- PRUEBA HIDROSTATICA -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Prueba hidrostatica y de caudal en tuberias</legend>
+	                   	<legend>Prueba hidrostática y de caudal en tuberías</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -27,8 +27,8 @@
 			                <col class="head0" width="25%" />
 			            </colgroup>
 			            <tr>
-			                <td>Detalle</td>
-			                <td>Valor</td>
+			                <td>Descripción</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -39,11 +39,11 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Sistema de Tuberias</td>
+			                    <td>Sistema de Tuberías</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Presion de prueba incial</td>
+			                    <td>Presión de prueba incial</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -55,20 +55,20 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Presion de prueba final</td>
+			                    <td>Presión de prueba final</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			            </table>
 			        </div>
 			            
 			        <p>Prueba de caudal
-                    	<div class="one_fourth"><label for="name">Presion estatica</label></div>
+                    	<div class="one_fourth"><label for="name">Presión estatica</label></div>
                         <div class="one_fourth"><input type="text" name="name" value="psi bar" class="sftable" /></div>
-                        <div class="one_fourth"><label for="email">Presion residual</label></div>
+                        <div class="one_fourth"><label for="email">Presión residual</label></div>
                         <div class="one_fourth last"><input type="text" name="email" value="psi bar" class="sftable" /></div>
-                    	<div class="one_fourth"><label for="name">Diametro de la boquilla</label></div>
+                    	<div class="one_fourth"><label for="name">díametro de la boquilla</label></div>
                         <div class="one_fourth"><input type="text" name="name" value="cm" class="sftable" /></div>
-                        <div class="one_fourth"><label for="email">Presion en el pitot</label></div>
+                        <div class="one_fourth"><label for="email">Presión en el pitot</label></div>
                         <div class="one_fourth last"><input type="text" name="email" value="psi bar" class="sftable" /></div>
                     	<div class="one_fourth"><label for="name">Caudal</label></div>
                         <div class="one_fourth"><input type="text" name="name" value="gpm" class="sftable" /></div>

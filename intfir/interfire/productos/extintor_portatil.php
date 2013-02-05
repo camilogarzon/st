@@ -4,6 +4,7 @@
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
                     <li><a href="#tabs-2">Inspección Mensual</a></li>
+                    <li><a href="#tabs-3">Inspección Anual</a></li>
                 </ul>
                 
                 <div id="tabs-1">
@@ -15,6 +16,12 @@
                 <div id="tabs-2">
                 
                 <?php include("extintor_portatil/rev_mensual.php") ?>
+                
+                </div>
+                
+                <div id="tabs-3">
+                
+                <?php include("extintor_portatil/ins_anual.php") ?>
                 
                 </div>
                 

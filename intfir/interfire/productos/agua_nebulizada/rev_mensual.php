@@ -4,7 +4,7 @@
 	                   <!-- INFORMACION GENERAL -->
 	                   
 	                   <fieldset>
-		                   <legend>Informaci&oacute;n General</legend>
+		                   <legend>Información General</legend>
 		                   
 		            <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
@@ -12,21 +12,21 @@
                         <div class="one_sixth"><label for="name">Sistema</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalaci&oacute;n</option><option value="1">Dise&ntilde;o</option><option value="2">Auditor&iacute;a</option><option value="3">Interventor&iacute;a</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <!-- TABLA SEMANAL -->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revision Mensual</legend>
+	                   	<legend>Inspección Mensual</legend>
 	                   	
 	                   	<ul>
 	                   	<li>1- Comprobar que el tanque de abastecimiento está lleno si el nivel de agua no está supervisado.</li>
 	                   	<li>2- Comprobar el manómetro de presión de aire para confirmar que se mantiene en un valor adecuado.</li>
 	                   	<li>3- Comprobar el manómetro de presión del aire para confirmar que la presión del aire se mantiene gracias al compresor.</li>
 	                   	<li>4- Comprobar la presión y discos indicadores en los cilindros.</li>
-	                   	<li>5- Inspeccionar los componentes de operación del sistema, incluyendo las válvulas de control.</li>
+	                   	<li>5- Inspecciónar los componentes de operación del sistema, incluyendo las válvulas de control.</li>
 	                   	<li>6- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
                    
@@ -44,7 +44,7 @@
 			                <td>Fecha</td>
 			                <td>Inspector</td>
 			                <td>Nivel Agua</td>
-			                <td>Presion Aire en Deposito</td>
+			                <td>Presión Aire en Deposito</td>
 			                <td>Compresor Aire</td>
 			                <td>Cilindros</td>
 			                <td>Componentes operativos</td>
