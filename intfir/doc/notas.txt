@@ -8,3 +8,32 @@ Y ver solo la sede y la empresa a la que estan asignados
 Administrador crea y modifica de todo igual que coordinador pero este no puede crear otros coordinadores/administradores y solo ve empresas asignadas
 Y el usuario solo ve su propia sede y llena los formularios de revisiones semanales y mensuales de los productos que le cree el coordinador de su empresa
 
+**********************************************
+
+Administrador = Control Total
+Coordinador = No puede crear Administradores Ni Coordinadores, solo tiene acceso a Empresas designadas (que pueden ser varias) con todas su sedes.
+Usuario = No puede crear Nuevos Usuarios/Empresas/sedes/equipos, solo ve su Empresa/Sede asignada (solo una) y solo puede modificar 
+los Formularios de Revisión Semanal y Mensual de los equipos asignados a su sede, los demás únicamente los puede ver.
+
+
+mira el Inspector es como un usuario pero puede entrar a todas las sedes de una empresa 
+el coordinador solo no puede crear administradores y coordinadores y ya entonces, 
+en el campo de crear empresa, se debe preguntar por el coordinador perdon, 
+por el inspector con esa queda registrado de una vez asi como cuando se crea sede pregunta la empresa para facilitar las cosas
+
+
+**********************************************
+
+Administrador
+Coordinador
+Inspector
+Usuario
+Administrador = Control Total
+Coordinador = No crea otros coordinadores ni Administradores, No modifica o elimina información guardada solo la crea.
+Inspector = Esta designado a una Empresa en especifico, puede ver todas las sedes de su Empresa, No puede ver las demás 
+Empresas que no le pertenezcan, No crea usuarios inspectores o coordinadores, no crea sedes categorías o productos, 
+solo rellena formularios de sus sedes.
+Usuario = No Crea nada igual que el Inspector, solo puede ver su empresa/sede especifica, solo debe tener permiso 
+para rellenar los formularios de revision semanal quincenal y mensual de sus productos sin modificaciones.
+
+
