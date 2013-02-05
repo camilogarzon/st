@@ -1,5 +1,13 @@
 <?php
-$control->empresa_get();
+
+$arrempresas = NULL;
+if (isUser() || isInspector()) {
+    $control->setId(getUserIdEmpresa());
+    $control->empresa_get();
+}
+if (isAdmin() || isCoordinator()) {
+    $control->empresa_get();
+}
 $arrempresas = $control->getResponse();
 $arrempresas = $arrempresas['output']['response'];
 $_SESSION['empresas'] = $arrempresas;

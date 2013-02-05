@@ -9,7 +9,7 @@ include 'Util.php';
  */
 class Controller {
 
-    private $conexion, $op, $idhash;
+    private $conexion, $op, $id, $euid, $sdid;
     private $UTILITY;
     private $DATE_NOW = 'DATE_ADD(NOW(),INTERVAL 2 HOUR)';
     private $response;
@@ -140,17 +140,27 @@ class Controller {
         if ($this->id > 0) {
             $q = "SELECT * FROM fir_usuario WHERE usr_id = " . $this->id;
         }
+        if ($this->sdid > 0) {
+            $q = "SELECT * FROM fir_usuario WHERE fir_sede_sde_id = " . $this->sdid;
+        }
+        if ($this->euid > 0) {
+            $q = "SELECT * FROM fir_usuario WHERE fir_empresa_emp_id = " . $this->euid;
+        }
         $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
         $resultado = mysql_num_rows($con);
         $arr = array();
         while ($obj = mysql_fetch_object($con)) {
             $nom_sede = 'ninguna';
             $nom_empresa = 'ninguna';
-            $q2 = "SELECT sde_nombre, emp_razonsocial FROM fir_sede, fir_empresa WHERE fir_empresa_emp_id = emp_id AND sde_id = " . $obj->fir_sede_sde_id;
+            $q2 = "SELECT sde_nombre FROM fir_sede WHERE sde_id = " . $obj->fir_sede_sde_id;
             $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);
             while ($obj2 = mysql_fetch_object($con2)) {
-                $nom_empresa = $obj2->emp_razonsocial;
                 $nom_sede = $obj2->sde_nombre;
+            }
+            $q3 = "SELECT emp_razonsocial FROM fir_empresa WHERE emp_id = " . $obj->fir_empresa_emp_id;
+            $con3 = mysql_query($q3, $this->conexion) or die(mysql_error() . "***ERROR: " . $q3);
+            while ($obj3 = mysql_fetch_object($con3)) {
+                $nom_empresa = $obj3->emp_razonsocial;
             }
             $arr[] = array(
                 'id' => $obj->usr_id,
@@ -422,6 +432,26 @@ class Controller {
         }
         $this->response = ($arrjson);
     }
+    
+    public function sistemas_get() {
+        $q = "SELECT * FROM fir_categoria ORDER BY cat_alias ASC";
+        $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+        $resultado = mysql_num_rows($con);
+        $arr = array();
+        while ($obj = mysql_fetch_object($con)) {
+            $arr[] = array(
+                'id' => $obj->cat_id,
+                'nombre' => $obj->cat_nombre,
+                'alias' => ($obj->cat_alias));
+        }
+        if ($resultado > 0) {
+            $arrjson = array('output' => array('valid' => true, 'response' => $arr));
+        } else {
+            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados')));
+        }
+        $this->response = ($arrjson);
+    }
+    
 
     public function getResponse() {
         return $this->response;
@@ -429,6 +459,16 @@ class Controller {
 
     public function getResponseJSON() {
         return json_encode($this->response);
+    }
+    
+    public function setId($_id){
+        $this->id = $_id;
+    }
+    public function setEuid($_id){
+        $this->euid = $_id;
+    }
+    public function setSdid($_id){
+        $this->sdid = $_id;
     }
 
 }

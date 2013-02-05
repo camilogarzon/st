@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once '../includes/generic_validate_rol.php';
 $opciones_empresas = $_SESSION['opciones_empresas'];
 ?>
 <!DOCTYPE html>
@@ -57,11 +58,18 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 l = jQuery("#selectRol").val();
                 jQuery("#mensaje").empty();
                 jQuery("input").removeClass("requirefield");
-                if (j == 'seleccione'){j=0;}
-                if (k == 'seleccione'){k=0;}
                 //if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
                 //if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
-                if (l == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione el rol.');jQuery("#mensaje").show();return;}
+                if (l == 'seleccione'){
+                    jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione el rol.');jQuery("#mensaje").show();return;
+                } else if (l == 'inspector'){
+                    if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
+                } else if (l == 'usuario'){
+                    if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
+                    if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
+                }
+                if (j == 'seleccione'){j=0;}
+                if (k == 'seleccione'){k=0;}
                 a = jQuery("#nombre").val();
                 b = jQuery("#pass1").val();
                 c = jQuery("#pass2").val();
@@ -129,8 +137,15 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 <td><select id="selectRol" name="selectRol" >
                         <option value="seleccione">Seleccione...</option>
                         <option value="usuario">usuario</option>
+                        <option value="inspector">inspector</option>
+                        <?php
+                        if (isAdmin()) {
+                        ?>
                         <option value="coordinador">coordinador</option>
                         <option value="administrador">administrador</option>
+                        <?php
+                        }
+                        ?>
                     </select></td>
             </tr>
             <tr>

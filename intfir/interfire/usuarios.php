@@ -6,10 +6,9 @@ if (!isset($_SESSION['opciones_empresas'])) {
     include_once 'includes/generic_empresas_get.php';
 }
 
+include_once 'includes/generic_usuarios_get.php';
+
 $_ACTIVE_SIDEBAR = "usuarios";
-$control->usuario_get();
-$arrusr = $control->getResponse();
-$arrusr = $arrusr['output']['response'];
 
 ?>
 <!-- head -->

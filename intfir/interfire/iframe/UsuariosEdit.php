@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once '../includes/generic_validate_rol.php';
 require_once '../lib/Controller.php';
 $control = new Controller();
 $control->usuario_get();
@@ -143,6 +144,7 @@ $opciones_usuarios = $emp;
                 <td><select id="selectRol" name="selectRol" >
                         <option value="seleccione">Seleccione...</option>
                         <option value="usuario">usuario</option>
+                        <option value="inspector">inspector</option>
                         <option value="coordinador">coordinador</option>
                         <option value="administrador">administrador</option>
                     </select></td>

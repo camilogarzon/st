@@ -1,5 +1,16 @@
 <?php
 require_once 'includes/generic_validate_session.php';
+require_once 'lib/Controller.php';
+$arrsys = NULL;
+if (!isset($_SESSION['sistemas'])){
+    $control = new Controller();
+    $control->sistemas_get();
+    $arrsys = $control->getResponse();
+    $arrsys = $arrsys['output']['response'];
+    $_SESSION['sistemas'] = $arrsys;
+} else {
+    $arrsys = $_SESSION['sistemas'];
+}
 $_ACTIVE_SIDEBAR = "sistemas";
 ?>
 <!-- head -->
@@ -23,26 +34,9 @@ $_ACTIVE_SIDEBAR = "sistemas";
 <!-- content -->
 <div class="maincontent">
     <ul class="widgetlist">
-        <li><a href=""><img src="images/icons/empresa.png" alt="Document Icon" /><span>Detección y Alarma de incendios</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Report Icon" /><span>Rociadores Automáticos</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Mail Icon" /><span>Agua Nebulizada</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Events Icon" /><span>Agua Pulverizada</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Rociadores de Espuma</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Report Icon" /><span>Sistemas de Espuma</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Mail Icon" /><span>Tuberías y Mangueras</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Events Icon" /><span>Bombas contra Incendios</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Abastecimiento de Agua</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Report Icon" /><span>Hidrantes contra Incendios</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Mail Icon" /><span>Fijos de Extinción por Polvo</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Events Icon" /><span>Extinción por Agente Extintor Acuoso</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Extinción por Agente Halogenado</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Extinción de Incendios Alternativos al Halon</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Extinción por Dióxido de Carbono</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Extintores Portátiles</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Puertas y Compuertas Cortafuego</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Luces de Emergencia</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Control de Humos</span></a></li>
-        <li><a href=""><img src="images/icons/empresa.png" alt="Media Icon" /><span>Funcionamiento del Ascensor de Emergencia</span></a></li>
+        <?php for ($i = 0; $i < count($arrsys); $i++) { ?>
+        <li><a href="equipos.php?op=equipos_get&sysid=<?php echo $arrsys[$i]['id']; ?>"><img src="images/icons/empresa.png" alt="Media Icon" /><span><?php echo $arrsys[$i]['alias']; ?></span></a></li>
+        <?php } ?>
     </ul>
 </div>
 <!-- content -->
