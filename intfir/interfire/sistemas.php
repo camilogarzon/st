@@ -1,16 +1,7 @@
 <?php
 require_once 'includes/generic_validate_session.php';
 require_once 'lib/Controller.php';
-$arrsys = NULL;
-if (!isset($_SESSION['sistemas'])){
-    $control = new Controller();
-    $control->sistemas_get();
-    $arrsys = $control->getResponse();
-    $arrsys = $arrsys['output']['response'];
-    $_SESSION['sistemas'] = $arrsys;
-} else {
-    $arrsys = $_SESSION['sistemas'];
-}
+include_once 'includes/generic_sistemas_get.php';
 $_ACTIVE_SIDEBAR = "sistemas";
 ?>
 <!-- head -->

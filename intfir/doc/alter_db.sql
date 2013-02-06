@@ -21,7 +21,8 @@ INSERT INTO `fir_categoria` ( `cat_nombre` ,`cat_alias` ) VALUES ( 'sistema_de_t
 INSERT INTO `fir_categoria` ( `cat_nombre` ,`cat_alias` ) VALUES ( 'sistemas_fijos_de_extincion_por_polvo',  'Sistemas Fijos de Extinción por Polvo');
 INSERT INTO `fir_categoria` ( `cat_nombre` ,`cat_alias` ) VALUES ( 'funcionamiento_del_ascensor_de_emergencia',  'Funcionamiento del Ascensor de Emergencia');
 
-
+ALTER TABLE  `fir_producto` ADD  `pro_marca` VARCHAR( 50 ) NULL ;
+ALTER TABLE  `fir_producto` ADD  `pro_numinventario` VARCHAR( 50 ) NULL ;
 
 
 

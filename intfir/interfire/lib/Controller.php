@@ -76,6 +76,19 @@ class Controller {
             $this->sede_save();
         } else if ($this->op == 'sede_delete') {
             $this->sede_delete();
+        } else if ($this->op == 'equipo_get') {
+            $this->sdid = $rqst['sdid'];
+            $this->catid = $rqst['catid'];
+            $this->equipo_get();
+        } else if ($this->op == 'equipo_save') {
+            $this->sdid = $rqst['sdid'];
+            $this->catid = $rqst['catid'];
+            $this->nombre = $rqst['nombre'];
+            $this->marca = $rqst['marca'];
+            $this->numinventario = $rqst['numinventario'];
+            $this->equipo_save();
+        } else if ($this->op == 'equipo_delete') {
+            $this->equipo_delete();
         } else {
             $this->invalid_method_called();
         }
@@ -234,7 +247,7 @@ class Controller {
         }
         $this->response = ($arrjson);
     }
-    
+
     private function usuario_delete() {
         if ($this->id > 0) {
             //actualiza la informacion
@@ -432,7 +445,7 @@ class Controller {
         }
         $this->response = ($arrjson);
     }
-    
+
     public function sistemas_get() {
         $q = "SELECT * FROM fir_categoria ORDER BY cat_alias ASC";
         $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
@@ -442,7 +455,7 @@ class Controller {
             $arr[] = array(
                 'id' => $obj->cat_id,
                 'nombre' => $obj->cat_nombre,
-                'alias' => ($obj->cat_alias));
+                'alias' => utf8_encode($obj->cat_alias));
         }
         if ($resultado > 0) {
             $arrjson = array('output' => array('valid' => true, 'response' => $arr));
@@ -451,7 +464,88 @@ class Controller {
         }
         $this->response = ($arrjson);
     }
-    
+
+    /**
+     * Metodo para guardar y actualizar
+     */
+    private function equipo_save() {
+        $id = 0;
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "SELECT pro_id FROM fir_producto WHERE pro_id = " . $this->id;
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            while ($obj = mysql_fetch_object($con)) {
+                $id = $obj->pro_id;
+                $table = "fir_producto";
+                $arrfieldscomma = array('pro_nombre' => $this->nombre,
+                    'pro_marca' => $this->marca,
+                    'pro_numinventario' => $this->numinventario);
+                $arrfieldsnocomma = array('fir_sede_sde_id' => $this->sdid, 'fir_categoria_cat_id' => $this->catid);
+                $q = $this->UTILITY->make_query_update($table, "pro_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
+                mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+                $arrjson = array('output' => array('valid' => true, 'id' => $id));
+            }
+        } else {
+            $q = "INSERT INTO fir_producto (pro_nombre, pro_marca, pro_numinventario, fir_sede_sde_id, fir_categoria_cat_id) VALUES ('$this->nombre', '$this->marca', '$this->numinventario', $this->sdid, $this->catid)";
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $id = mysql_insert_id();
+            $arrjson = array('output' => array('valid' => true, 'id' => $id));
+        }
+        $this->response = ($arrjson);
+    }
+
+    private function equipo_delete() {
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "DELETE FROM fir_producto WHERE pro_id = " . $this->id;
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $arrjson = array('output' => array('valid' => true, 'id' => $this->id));
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
+        }
+        $this->response = ($arrjson);
+    }
+
+    public function equipo_get() {
+        $q = "SELECT * FROM fir_producto ORDER BY pro_id ASC";
+        if ($this->id > 0) {
+            $q = "SELECT * FROM fir_producto WHERE pro_id = " . $this->id;
+        }
+        if ($this->sdid > 0) {
+            $q = "SELECT * FROM fir_producto WHERE fir_sede_sde_id = " . $this->sdid;
+        }
+        if ($this->catid > 0) {
+            $q = "SELECT * FROM fir_producto WHERE fir_categoria_cat_id = " . $this->catid;
+        }
+        if ($this->sdid > 0 && $this->catid > 0) {
+            $q = "SELECT * FROM fir_producto WHERE fir_categoria_cat_id = " . $this->catid . " AND fir_sede_sde_id = " . $this->sdid;
+        }
+        $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+        $resultado = mysql_num_rows($con);
+        $arr = array();
+        while ($obj = mysql_fetch_object($con)) {
+            $nom_sistema = 'ninguno';
+            $q2 = "SELECT * FROM fir_categoria WHERE cat_id = " . $obj->fir_categoria_cat_id;
+            $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);
+            while ($obj2 = mysql_fetch_object($con2)) {
+                $nom_sistema = utf8_encode($obj2->cat_alias);
+            }
+            $arr[] = array(
+                'id' => $obj->pro_id,
+                'sdid' => $obj->fir_sede_sde_id,
+                'catid' => ($obj->fir_categoria_cat_id),
+                'nombre' => ($obj->pro_nombre),
+                'marca' => ($obj->pro_marca),
+                'numinventario' => $obj->pro_numinventario,
+                'sistema' => $nom_sistema);
+        }
+        if ($resultado > 0) {
+            $arrjson = array('output' => array('valid' => true, 'response' => $arr));
+        } else {
+            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados')));
+        }
+        $this->response = ($arrjson);
+    }
 
     public function getResponse() {
         return $this->response;
@@ -460,14 +554,16 @@ class Controller {
     public function getResponseJSON() {
         return json_encode($this->response);
     }
-    
-    public function setId($_id){
+
+    public function setId($_id) {
         $this->id = $_id;
     }
-    public function setEuid($_id){
+
+    public function setEuid($_id) {
         $this->euid = $_id;
     }
-    public function setSdid($_id){
+
+    public function setSdid($_id) {
         $this->sdid = $_id;
     }
 

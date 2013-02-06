@@ -81,6 +81,25 @@
                 }';
             }
             break;
+        case "equipos":
+            $functionJavaScript .= '
+            function nuevo(){ 
+                ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EquipoIngreso.html", "Ingresar Equipo", "width=450px,height=520px,left=300px,top=100px,resize=0,scrolling=0")
+                //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Ingresar Equipo")} 
+            }';
+            if (isAdmin()){
+                $functionJavaScript .= '
+                function edita(){ 
+                    ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EquipoEdita.html", "Editar Equipo", "width=450px,height=520px,left=300px,top=100px,resize=0,scrolling=0")
+                    //ajaxwin.onclose=function(){return window.confirm("Cerrar ventana Editar Equipo")} 
+                }';
+                $functionJavaScript .= '
+                function borra(){ 
+                    ajaxwin=dhtmlwindow.open("ajaxbox", "ajax", "iframe/EquipoBorra.html", "Eliminar Equipo", "width=450px,height=300px,left=300px,top=100px,resize=0,scrolling=0")
+                    //ajaxwin.onclose=function(){ return window.confirm("Cerrar ventana Eliminar Equipo")} 
+                }';
+            }
+            break;
         default:
             $openControl = FALSE;
             $functionJavaScript .=  '
