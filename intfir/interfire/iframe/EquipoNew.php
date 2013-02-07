@@ -56,45 +56,23 @@ $opciones_sistemas = $_SESSION['opciones_sistemas'];
             function savedata(){
                 j = jQuery("#selectEmpresa").val();
                 k = jQuery("#selectSede").val();
-                l = jQuery("#selectRol").val();
+                l = jQuery("#selectSistema").val();
                 jQuery("#mensaje").empty();
                 jQuery("input").removeClass("requirefield");
-                //if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
-                //if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
-                if (l == 'seleccione'){
-                    jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione el rol.');jQuery("#mensaje").show();return;
-                } else if (l == 'inspector'){
-                    if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
-                } else if (l == 'usuario'){
-                    if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
-                    if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
-                }
-                if (j == 'seleccione'){j=0;}
-                if (k == 'seleccione'){k=0;}
-                a = jQuery("#nombre").val();
-                b = jQuery("#pass1").val();
-                c = jQuery("#pass2").val();
-                d = jQuery("#apellido").val();
-                e = jQuery("#cargo").val();
-                f = jQuery("#celular").val();
-                g = jQuery("#nick").val();
-                h = jQuery("#correo").val();
+                if (j == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la empresa.');jQuery("#mensaje").show();return;}
+                if (k == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione la sede.');jQuery("#mensaje").show();return;}
+                if (l == 'seleccione'){jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('Seleccione el sistema.');jQuery("#mensaje").show();return;}
+                a = jQuery("#marca").val();
+                b = jQuery("#numinventario").val();
                 var enable = true;
-                if (a.length < 2){ enable = false; setrequirefield("nombre");}
-                if (b.length < 2){ enable = false; setrequirefield("pass1");}
-                if (c.length < 2){ enable = false; setrequirefield("pass2");}
-                if (d.length < 2){ enable = false; setrequirefield("apellido");}
-                if (g.length < 2){ enable = false; setrequirefield("nick");}
-                if (h.length > 1){ if (!isEmail(h)) { enable = false; setrequirefield("correo"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('El correo ingresado es incorrecto. '); } }
-                
+                if (a.length < 2){ enable = false; setrequirefield("marca");}
+                if (b.length < 2){ enable = false; setrequirefield("numinventario");}
                 if (!enable) {
                     jQuery("#mensaje").addClass("errortext");
                     jQuery("#mensaje").append('Los campos en rojo son obligatorios');
                     jQuery("#mensaje").show();
                 } else {
-                    //validaciones
-                    if (b != c){ setrequirefield("pass1"); setrequirefield("pass2"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Las contraseñas no coinciden, verifíquelas.');jQuery("#mensaje").addClass("errortext"); jQuery("#mensaje").show();return;}
-                    callAjaxRqst("op=usuario_check&nick="+g, check01);
+                    callAjaxRqst("op=numinventario_check&numinventario="+b, check01);
                 }
             }
             
@@ -104,29 +82,29 @@ $opciones_sistemas = $_SESSION['opciones_sistemas'];
                     if (data.output.id == 0){
                         savedatavalidate();
                     } else {
-                        setrequirefield("nick");jQuery("#mensaje").empty(); jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('El nickname ingresado ya existe, use otro.');jQuery("#mensaje").show();
+                        setrequirefield("numinventario");jQuery("#mensaje").empty(); jQuery("#mensaje").addClass("errortext");jQuery("#mensaje").append('El ID ingresado ya existe, use otro.');jQuery("#mensaje").show();
                     }
                 }
             }
             
             function savedatavalidate(){
-                jQuery("#mensaje").hide();
-                var ladata = "op=usuario_save";
-                ladata += "&euid="+j+"&sdid="+k+"&rol="+l+"&nombre="+a+"&apellido="+d+"&pass="+b+"&cargo="+e;
-                ladata += "&celular="+f+"&nick="+g+"&correo="+h+"&foto=images/foto.png";
-                callAjaxRqst(ladata, responseAjax);
+                    jQuery("#mensaje").hide();
+                    var ladata = "op=equipo_save";
+                    ladata += "&euid="+j+"&sdid="+k+"&catid="+l+"&marca="+a+"&numinventario="+b;
+                    ladata = ladata.replace("#", "%23");
+                    callAjaxRqst(ladata, responseAjax);
             }
             
             function loadselected(){
                 jQuery("#mensaje").hide();
+                jQuery("#selectSede").empty();
+                jQuery("#selectSede").append('<option value="seleccione">Seleccione...</option>');
                 a = jQuery("#selectEmpresa").val();
                 if (a != 'seleccione'){
                     ladata = "op=sede_get&euid="+a;
                     callAjaxRqst(ladata, responseLoad);
                 } else {
                     jQuery("input").val('');
-                    jQuery("#selectSede").empty();
-                    jQuery("#selectRol").val('seleccione');
                     jQuery("#accion").val('Guardar');
                 }
             }
@@ -156,7 +134,7 @@ $opciones_sistemas = $_SESSION['opciones_sistemas'];
                 <td><input type="text" id="marca" name="marca" maxlength="50"/></td>
             </tr>
             <tr>
-                <td style="width: 100px;">Numero de inventario</td>
+                <td style="width: 100px;">ID</td>
                 <td><input type="text" id="numinventario" name="numinventario" maxlength="50"/></td>
             </tr>
             <tr>

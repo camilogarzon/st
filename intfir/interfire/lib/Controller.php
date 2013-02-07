@@ -76,11 +76,15 @@ class Controller {
             $this->sede_save();
         } else if ($this->op == 'sede_delete') {
             $this->sede_delete();
+        } else if ($this->op == 'sistemas_get') {
+            $this->sistemas_get();
         } else if ($this->op == 'equipo_get') {
+            $this->euid = $rqst['euid'];
             $this->sdid = $rqst['sdid'];
             $this->catid = $rqst['catid'];
             $this->equipo_get();
         } else if ($this->op == 'equipo_save') {
+            $this->euid = $rqst['euid'];
             $this->sdid = $rqst['sdid'];
             $this->catid = $rqst['catid'];
             $this->nombre = $rqst['nombre'];
@@ -89,9 +93,13 @@ class Controller {
             $this->equipo_save();
         } else if ($this->op == 'equipo_delete') {
             $this->equipo_delete();
+        } else if ($this->op == 'numinventario_check') {
+            $this->numinventario = $rqst['numinventario'];
+            $this->numinventario_check();
         } else {
             $this->invalid_method_called();
         }
+//        $conexion->closeConnect();
     }
 
     /**
@@ -455,6 +463,7 @@ class Controller {
             $arr[] = array(
                 'id' => $obj->cat_id,
                 'nombre' => $obj->cat_nombre,
+                'href' => $obj->cat_href_file,
                 'alias' => utf8_encode($obj->cat_alias));
         }
         if ($resultado > 0) {
@@ -480,13 +489,13 @@ class Controller {
                 $arrfieldscomma = array('pro_nombre' => $this->nombre,
                     'pro_marca' => $this->marca,
                     'pro_numinventario' => $this->numinventario);
-                $arrfieldsnocomma = array('fir_sede_sde_id' => $this->sdid, 'fir_categoria_cat_id' => $this->catid);
+                $arrfieldsnocomma = array('fir_sede_sde_id' => $this->sdid, 'fir_categoria_cat_id' => $this->catid, 'fir_empresa_emp_id' => $this->euid);
                 $q = $this->UTILITY->make_query_update($table, "pro_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             }
         } else {
-            $q = "INSERT INTO fir_producto (pro_nombre, pro_marca, pro_numinventario, fir_sede_sde_id, fir_categoria_cat_id) VALUES ('$this->nombre', '$this->marca', '$this->numinventario', $this->sdid, $this->catid)";
+            $q = "INSERT INTO fir_producto (pro_nombre, pro_marca, pro_numinventario, fir_sede_sde_id, fir_categoria_cat_id, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->marca', '$this->numinventario', $this->sdid, $this->catid, $this->euid)";
             mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $id = mysql_insert_id();
             $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -514,35 +523,60 @@ class Controller {
         if ($this->sdid > 0) {
             $q = "SELECT * FROM fir_producto WHERE fir_sede_sde_id = " . $this->sdid;
         }
+        if ($this->euid > 0) {
+            $q = "SELECT * FROM fir_producto WHERE fir_empresa_emp_id = " . $this->euid;
+        }
         if ($this->catid > 0) {
             $q = "SELECT * FROM fir_producto WHERE fir_categoria_cat_id = " . $this->catid;
         }
-        if ($this->sdid > 0 && $this->catid > 0) {
+        if ($this->catid > 0 && $this->sdid > 0) {
             $q = "SELECT * FROM fir_producto WHERE fir_categoria_cat_id = " . $this->catid . " AND fir_sede_sde_id = " . $this->sdid;
+        }
+        if ($this->catid > 0 && $this->euid > 0) {
+            $q = "SELECT * FROM fir_producto WHERE fir_categoria_cat_id = " . $this->catid . " AND fir_empresa_emp_id = " . $this->euid;
         }
         $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
         $resultado = mysql_num_rows($con);
         $arr = array();
         while ($obj = mysql_fetch_object($con)) {
             $nom_sistema = 'ninguno';
+            $nom_href = '';
             $q2 = "SELECT * FROM fir_categoria WHERE cat_id = " . $obj->fir_categoria_cat_id;
             $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);
             while ($obj2 = mysql_fetch_object($con2)) {
                 $nom_sistema = utf8_encode($obj2->cat_alias);
+                $nom_href = utf8_encode($obj2->cat_href_file);
             }
             $arr[] = array(
                 'id' => $obj->pro_id,
+                'euid' => $obj->fir_empresa_emp_id,
                 'sdid' => $obj->fir_sede_sde_id,
                 'catid' => ($obj->fir_categoria_cat_id),
                 'nombre' => ($obj->pro_nombre),
                 'marca' => ($obj->pro_marca),
                 'numinventario' => $obj->pro_numinventario,
+                'href' => $nom_href,
                 'sistema' => $nom_sistema);
         }
         if ($resultado > 0) {
             $arrjson = array('output' => array('valid' => true, 'response' => $arr));
         } else {
             $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados')));
+        }
+        $this->response = ($arrjson);
+    }
+    
+    public function numinventario_check() {
+        $id = 0;
+        if (strlen($this->numinventario) > 1) {
+            $q = "SELECT pro_id FROM fir_producto WHERE pro_numinventario = '" . $this->numinventario . "' ";
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            while ($obj = mysql_fetch_object($con)) {
+                $id = $obj->pro_id;
+            }
+            $arrjson = array('output' => array('valid' => true, 'id' => $id));
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
         }
         $this->response = ($arrjson);
     }

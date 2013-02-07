@@ -1,16 +1,12 @@
 <?php
 session_start();
 require_once '../lib/Controller.php';
-$control = new Controller();
-$control->usuario_get();
-$arrusr = $control->getResponse();
-$arrusr = $arrusr['output']['response'];
-
+$arrequipos = $_SESSION['equipos'];
 $emp = '<option value="seleccione">Seleccione...</option>';
-for ($i = 0; $i < count($arrusr); $i++) {
-    $emp .= '<option value="' . $arrusr[$i]['id'] . '">[' . $arrusr[$i]['nick'] . '] ' . $arrusr[$i]['nombre'] . ' ' . $arrusr[$i]['apellido'] . ' (' . $arrusr[$i]['empresa_razonsocial'] . ')</option>';
+for ($i = 0; $i < count($arrequipos); $i++) {
+    $emp .= '<option value="' . $arrequipos[$i]['id'] . '">[' . $arrequipos[$i]['numinventario'] . '] - ' . $arrequipos[$i]['sistema'] . '</option>';
 }
-$opciones_usuarios = $emp;
+$opciones_equipos = $emp;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -26,15 +22,15 @@ $opciones_usuarios = $emp;
                 cursorNormal();
                 if (data.output.valid){
                     jQuery('#continuar').attr('checked', false);
-                    jQuery("#selectUsuario").empty();
+                    jQuery("#numinventario").empty();
                     res = data.output.response;
                     opciones = '<option value="seleccione">Seleccione...</option>';
-                    jQuery('#selectUsuario').append(opciones);
+                    jQuery('#numinventario').append(opciones);
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("errortext");
                     jQuery("#mensaje").addClass("infotext");
                     jQuery("#mensaje").append('Información eliminada correctamente');
-                    parent.window.location = '../usuarios.php';
+                    parent.window.location = '../equipos.php';
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -49,10 +45,10 @@ $opciones_usuarios = $emp;
                 jQuery("#mensaje").empty();
                 jQuery("#mensaje").addClass("errortext");
                 jQuery("#mensaje").append('Los campos en rojo son obligatorios');
-                a = jQuery("#selectUsuario").val();
+                a = jQuery("#numinventario").val();
                 b = jQuery('#continuar').is(":checked");
                 var enable = true;
-                var ladata = "op=usuario_delete";
+                var ladata = "op=equipo_delete";
                 if (!b){ enable = false; setrequirefield("continuar"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Seleccione la casilla, si desea continuar.');}
                 if (a == 'seleccione'){ enable = false; setrequirefield("selectUsuario"); jQuery("#mensaje").empty(); jQuery("#mensaje").append('Seleccione el usuario.');}
                 
@@ -69,9 +65,9 @@ $opciones_usuarios = $emp;
 
         <table>
             <tr>
-                <td style="width: 100px;">Usuario</td>
-                <td><select id="selectUsuario" name="selectUsuario">
-                        <?php echo $opciones_usuarios; ?>
+                <td style="width: 100px;">Equipo</td>
+                <td><select id="numinventario" name="numinventario">
+                        <?php echo $opciones_equipos; ?>
                     </select></td>
             </tr>
             <tr>

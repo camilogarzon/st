@@ -113,18 +113,20 @@ $opciones_empresas = $_SESSION['opciones_empresas'];
                 var ladata = "op=usuario_save";
                 ladata += "&euid="+j+"&sdid="+k+"&rol="+l+"&nombre="+a+"&apellido="+d+"&pass="+b+"&cargo="+e;
                 ladata += "&celular="+f+"&nick="+g+"&correo="+h+"&foto=images/foto.png";
+                ladata = ladata.replace("#", "%23");
                 callAjaxRqst(ladata, responseAjax);
             }
             
             function loadselected(){
                 jQuery("#mensaje").hide();
+                jQuery("#selectSede").empty();
+                jQuery("#selectSede").append('<option value="seleccione">Seleccione...</option>');
                 a = jQuery("#selectEmpresa").val();
                 if (a != 'seleccione'){
                     ladata = "op=sede_get&euid="+a;
                     callAjaxRqst(ladata, responseLoad);
                 } else {
                     jQuery("input").val('');
-                    jQuery("#selectSede").empty();
                     jQuery("#selectRol").val('seleccione');
                     jQuery("#accion").val('Guardar');
                 }

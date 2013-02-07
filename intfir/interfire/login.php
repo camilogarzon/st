@@ -10,5 +10,7 @@ if (!isset($_SESSION['usuario'])) {
     } else {
         header('Location: index.php?error=1');
     }
+} else {
+    header('Location: index.php');
 }
 ?>

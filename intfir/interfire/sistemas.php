@@ -26,7 +26,7 @@ $_ACTIVE_SIDEBAR = "sistemas";
 <div class="maincontent">
     <ul class="widgetlist">
         <?php for ($i = 0; $i < count($arrsys); $i++) { ?>
-        <li><a href="equipos.php?op=equipos_get&sysid=<?php echo $arrsys[$i]['id']; ?>"><img src="images/icons/empresa.png" alt="Media Icon" /><span><?php echo $arrsys[$i]['alias']; ?></span></a></li>
+        <li><a href="equipos.php?op=equipos_get&sysid=<?php echo $arrsys[$i]['id']; ?>"><img src="images/icons/empresa.png" alt="Media Icon" /><span><?php echo utf8_decode($arrsys[$i]['alias']); ?></span></a></li>
         <?php } ?>
     </ul>
 </div>

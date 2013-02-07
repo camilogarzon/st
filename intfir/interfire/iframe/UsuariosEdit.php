@@ -53,7 +53,7 @@ $opciones_usuarios = $emp;
                     jQuery("#nom_empresa").val(res[0].empresa_razonsocial);
                     jQuery("#selectEmpresa").val(res[0].euid);
                     jQuery("#nom_sede").val(res[0].sede_nombre);
-                    jQuery("#selectEmpresa").val(res[0].sdid);
+                    jQuery("#selectSede").val(res[0].sdid);
                     jQuery("#nick").val(res[0].nick);
                     jQuery("#selectRol").val(res[0].rol);
                     jQuery("#pass1").val('');
@@ -64,7 +64,6 @@ $opciones_usuarios = $emp;
                     jQuery("#celular").val(res[0].celular);
                     jQuery("#contacto").val(res[0].contacto);
                     jQuery("#correo").val(res[0].correo);
-                    jQuery("#selectEmpresa").val(res[0].euid);
                 } else {
                     jQuery("#mensaje").empty();
                     jQuery("#mensaje").removeClass("infotext");
@@ -116,6 +115,7 @@ $opciones_usuarios = $emp;
                 var ladata = "op=usuario_save&id="+m;
                 ladata += "&euid="+j+"&sdid="+k+"&rol="+l+"&nombre="+a+"&apellido="+d+"&pass="+b+"&cargo="+e;
                 ladata += "&celular="+f+"&nick="+g+"&correo="+h+"&foto=images/foto.png";
+                ladata = ladata.replace("#", "%23");
                 callAjaxRqst(ladata, responseAjax);
             }
             
