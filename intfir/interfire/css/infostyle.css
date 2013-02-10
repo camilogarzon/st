@@ -1,0 +1,13 @@
+.requirefield{
+    background-color: #fff8ef;
+    border-color: red;
+}
+.infotext{
+    color: green;
+}
+.errortext{
+    color: red;
+}
+select {
+    width: 320px !important;
+}

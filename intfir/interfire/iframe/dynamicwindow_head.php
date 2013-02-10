@@ -3,6 +3,7 @@
 <link rel="stylesheet" media="screen" href="../css/style.css" />
 <link rel="stylesheet" media="screen" href="../css/dhtmlwindow.css" type="text/css" />
 <link rel="stylesheet" media="screen" href="../css/plugins/elfinder.css" type="text/css"/>
+<link rel="stylesheet" media="screen" href="../css/infostyle.css" type="text/css"/>
 <!--[if IE 9]>
     <link rel="stylesheet" media="screen" href="../css/ie9.css"/>
 <![endif]-->
@@ -27,18 +28,3 @@
 <script type="text/javascript" src="../js/dhtmlwindow.js"></script>
 <script type="text/javascript" src="../js/cursor.js"></script>
 
-<style type="text/css">
-    .requirefield{
-        background-color: #fff8ef;
-        border-color: red;
-    }
-    .infotext{
-        color: green;
-    }
-    .errortext{
-        color: red;
-    }
-    select {
-        width: 320px !important;
-    }
-</style>

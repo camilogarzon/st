@@ -6,7 +6,7 @@
 <link rel="stylesheet" media="screen" href="css/style.css" />
 <link rel="stylesheet" media="screen" href="css/dhtmlwindow.css" type="text/css" />
 <link rel="stylesheet" media="screen" href="css/plugins/elfinder.css" type="text/css"/>
-
+<link rel="stylesheet" media="screen" href="css/infostyle.css" type="text/css"/>
 <!--[if IE 9]>
     <link rel="stylesheet" media="screen" href="css/ie9.css"/>
 <![endif]-->
@@ -27,6 +27,10 @@
 <script type="text/javascript" src="js/custom/general.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="js/dhtmlwindow.js"></script>
+<script type="text/javascript" src="js/cursor.js"></script>
+<script type="text/javascript" src="js/jqueryui.calendar.js"></script>
+<script type="text/javascript" src="js/sorceryjson.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
 
 </head>
 

@@ -66,13 +66,14 @@ $opciones_sistemas = $_SESSION['opciones_sistemas'];
                 b = jQuery("#numinventario").val();
                 var enable = true;
                 if (a.length < 2){ enable = false; setrequirefield("marca");}
-                if (b.length < 2){ enable = false; setrequirefield("numinventario");}
+                //if (b.length < 2){ enable = false; setrequirefield("numinventario");}
                 if (!enable) {
                     jQuery("#mensaje").addClass("errortext");
                     jQuery("#mensaje").append('Los campos en rojo son obligatorios');
                     jQuery("#mensaje").show();
                 } else {
-                    callAjaxRqst("op=numinventario_check&numinventario="+b, check01);
+                    //callAjaxRqst("op=numinventario_check&numinventario="+b, check01);
+                    savedatavalidate();
                 }
             }
             
@@ -133,7 +134,7 @@ $opciones_sistemas = $_SESSION['opciones_sistemas'];
                 <td style="width: 100px;">Marca</td>
                 <td><input type="text" id="marca" name="marca" maxlength="50"/></td>
             </tr>
-            <tr>
+            <tr style="display: none">
                 <td style="width: 100px;">ID</td>
                 <td><input type="text" id="numinventario" name="numinventario" maxlength="50"/></td>
             </tr>

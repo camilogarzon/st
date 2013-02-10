@@ -96,6 +96,18 @@ class Controller {
         } else if ($this->op == 'numinventario_check') {
             $this->numinventario = $rqst['numinventario'];
             $this->numinventario_check();
+        } else if ($this->op == 'formulario_save') {
+            $this->euid = $rqst['euid'];
+            $this->sdid = $rqst['sdid'];
+            $this->catid = $rqst['catid'];
+            $this->proid = $rqst['proid'];
+            $this->usrid = $rqst['usrid'];
+            $this->fecha = $rqst['fecha'];
+            $this->sist = $rqst['sist'];
+            $this->activ = $rqst['activ'];
+            $this->content = $rqst['content'];
+            $this->nota = $rqst['nota'];
+            $this->formulario_save();
         } else {
             $this->invalid_method_called();
         }
@@ -479,16 +491,18 @@ class Controller {
      */
     private function equipo_save() {
         $id = 0;
+        $numeroinventario = $this->euid."-".$this->sdid."-";
         if ($this->id > 0) {
             //actualiza la informacion
             $q = "SELECT pro_id FROM fir_producto WHERE pro_id = " . $this->id;
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             while ($obj = mysql_fetch_object($con)) {
                 $id = $obj->pro_id;
+                $numeroinventario = $numeroinventario.$id;
                 $table = "fir_producto";
                 $arrfieldscomma = array('pro_nombre' => $this->nombre,
                     'pro_marca' => $this->marca,
-                    'pro_numinventario' => $this->numinventario);
+                    'pro_numinventario' => $numeroinventario);
                 $arrfieldsnocomma = array('fir_sede_sde_id' => $this->sdid, 'fir_categoria_cat_id' => $this->catid, 'fir_empresa_emp_id' => $this->euid);
                 $q = $this->UTILITY->make_query_update($table, "pro_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
@@ -498,6 +512,9 @@ class Controller {
             $q = "INSERT INTO fir_producto (pro_nombre, pro_marca, pro_numinventario, fir_sede_sde_id, fir_categoria_cat_id, fir_empresa_emp_id) VALUES ('$this->nombre', '$this->marca', '$this->numinventario', $this->sdid, $this->catid, $this->euid)";
             mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $id = mysql_insert_id();
+            $numeroinventario = $numeroinventario.$id;
+            $q = "UPDATE fir_producto SET pro_numinventario = '".$numeroinventario."' WHERE pro_id = ".$id;
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $arrjson = array('output' => array('valid' => true, 'id' => $id));
         }
         $this->response = ($arrjson);
@@ -577,6 +594,36 @@ class Controller {
             $arrjson = array('output' => array('valid' => true, 'id' => $id));
         } else {
             $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
+        }
+        $this->response = ($arrjson);
+    }
+    
+    public function formulario_save(){
+        $id = 0;
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "SELECT eva_id FROM fir_evaluacion WHERE eva_id = " . $this->id;
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            while ($obj = mysql_fetch_object($con)) {
+                $id = $obj->sde_id;
+                $table = "fir_evaluacion";
+                $arrfieldscomma = array('sde_nombre' => $this->nombre,
+                    'sde_direccion' => $this->direccion,
+                    'sde_telefono' => $this->telefono,
+                    'sde_celular' => $this->celular,
+                    'sde_contacto' => $this->contacto,
+                    'sde_correo' => $this->correo);
+                $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid);
+                $q = $this->UTILITY->make_query_update($table, "eva_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
+                mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+                $arrjson = array('output' => array('valid' => true, 'id' => $id));
+            }
+        } else {
+            //$q = "INSERT INTO `fir_evaluacion` (`eva_id` ,`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`fir_producto_pro_id` ,`fir_formulario_frm_id` ,`fir_respuesta_rsp_id` ,`fir_preguntas_prg_id` ,`eva_fecha_hora` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha`)VALUES ('3',  '4',  '5',  '6', NULL , NULL , NULL , NULL ,  'registro',  'sist',  'activ',  '{"nombre":"camilo","apellido":"garzon","profesion":"ingeniero"}',  'las notas',  '2013-02-13')";
+            $q = "INSERT INTO `fir_evaluacion` (`eva_id` ,`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`fir_producto_pro_id` ,`fir_formulario_frm_id` ,`fir_respuesta_rsp_id` ,`fir_preguntas_prg_id` ,`eva_fecha_hora` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha`)VALUES ('3',  '4',  '5',  '6', NULL , NULL , NULL , NULL ,  'registro',  'sist',  'activ',  '{contenido}',  'las notas',  '2013-02-13')";
+            mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $id = mysql_insert_id();
+            $arrjson = array('output' => array('valid' => true, 'id' => $id));
         }
         $this->response = ($arrjson);
     }

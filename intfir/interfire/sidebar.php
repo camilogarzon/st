@@ -105,7 +105,7 @@
             $functionJavaScript .=  '
             function nuevo(){};
             function edita(){};
-            function borra()(){};
+            function borra(){};
             ';
             break;
     }

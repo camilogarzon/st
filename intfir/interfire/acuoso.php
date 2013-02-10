@@ -1,3 +1,6 @@
+<?php
+require_once 'includes/generic_validate_session.php';
+?>
 <!-- head -->
 <?php include("head.php"); ?>
 <!-- head -->

@@ -26,9 +26,11 @@ ALTER TABLE  `fir_producto` ADD  `pro_marca` VARCHAR( 50 ) NULL ;
 ALTER TABLE  `fir_producto` ADD  `pro_numinventario` VARCHAR( 50 ) NULL ;
 ALTER TABLE  `fir_producto` ADD  `fir_empresa_emp_id` INTEGER UNSIGNED NOT NULL ;
 
-
-
-
+-- cambio 2013-02-09
+ALTER TABLE  `fir_evaluacion` ADD  `eva_form_name` VARCHAR( 200 ) NULL , ADD  `eva_sistema` VARCHAR( 200 ) NULL , ADD  `eva_actividad` VARCHAR( 100 ) NULL ;
+ALTER TABLE  `fir_evaluacion` ADD  `eva_contenido` TEXT NULL ;
+ALTER TABLE  `fir_evaluacion` ADD  `eva_notas` TEXT NULL ;
+ALTER TABLE  `fir_evaluacion` ADD  `eva_fecha` DATE NULL ;
 
 
 
