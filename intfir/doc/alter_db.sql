@@ -31,6 +31,7 @@ ALTER TABLE  `fir_evaluacion` ADD  `eva_form_name` VARCHAR( 200 ) NULL , ADD  `e
 ALTER TABLE  `fir_evaluacion` ADD  `eva_contenido` TEXT NULL ;
 ALTER TABLE  `fir_evaluacion` ADD  `eva_notas` TEXT NULL ;
 ALTER TABLE  `fir_evaluacion` ADD  `eva_fecha` DATE NULL ;
+ALTER TABLE  `fir_evaluacion` ADD  `eva_pro_numinventario` VARCHAR( 50 ) NULL ;
 
 
 

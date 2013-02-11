@@ -16,3 +16,4 @@ jQuery.datepicker.regional['es'] = {
     yearSuffix: ''
 };
 jQuery.datepicker.setDefaults( jQuery.datepicker.regional[ "es" ] );
+jQuery.datepicker.setDefaults( "option", "dateFormat", "yy-mm-dd" );

@@ -20,5 +20,8 @@ function getUserIdEmpresa(){
 function getUserIdSede(){
     return $_SESSION['usuario']['sdid'];
 }
+function getUserId(){
+    return $_SESSION['usuario']['id'];
+}
 
 ?>

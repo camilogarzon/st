@@ -29,8 +29,8 @@
 <script type="text/javascript" src="js/dhtmlwindow.js"></script>
 <script type="text/javascript" src="js/cursor.js"></script>
 <script type="text/javascript" src="js/jqueryui.calendar.js"></script>
-<script type="text/javascript" src="js/sorceryjson.js"></script>
 <script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/json_parse.js"></script>
 
 </head>
 

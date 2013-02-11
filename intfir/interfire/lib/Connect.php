@@ -15,10 +15,10 @@ class Connect {
     public function openConnect() {
 	$this->sqlconnect = null;
 	$url = "localhost";
-	$user = "root";
-	$passwd = "root";
-//	$user = "interfir";
-//	$passwd = "p5wB$8OD?=fD";
+//	$user = "root";
+//	$passwd = "root";
+	$user = "interfir";
+	$passwd = "p5wB$8OD?=fD";
 	$db = "interfir_interfirex";
 
 	// Conexion y captura de errores	

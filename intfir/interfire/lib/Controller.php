@@ -96,18 +96,24 @@ class Controller {
         } else if ($this->op == 'numinventario_check') {
             $this->numinventario = $rqst['numinventario'];
             $this->numinventario_check();
-        } else if ($this->op == 'formulario_save') {
-            $this->euid = $rqst['euid'];
+        } else if ($this->op == 'evaluacion_save') {
             $this->sdid = $rqst['sdid'];
-            $this->catid = $rqst['catid'];
             $this->proid = $rqst['proid'];
+            $this->pronum = $rqst['pronum'];
             $this->usrid = $rqst['usrid'];
+            $this->form = $rqst['form'];
             $this->fecha = $rqst['fecha'];
             $this->sist = $rqst['sist'];
             $this->activ = $rqst['activ'];
             $this->content = $rqst['content'];
             $this->nota = $rqst['nota'];
-            $this->formulario_save();
+            $this->evaluacion_save();
+        } else if ($this->op == 'evaluacion_get') {
+            $this->sdid = $rqst['sdid'];
+            $this->fecha = $rqst['fecha'];
+            $this->pronum = $rqst['pronum'];
+            $this->form = $rqst['form'];
+            $this->evaluacion_get();
         } else {
             $this->invalid_method_called();
         }
@@ -598,29 +604,32 @@ class Controller {
         $this->response = ($arrjson);
     }
     
-    public function formulario_save(){
+    public function evaluacion_save(){
         $id = 0;
         if ($this->id > 0) {
             //actualiza la informacion
             $q = "SELECT eva_id FROM fir_evaluacion WHERE eva_id = " . $this->id;
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             while ($obj = mysql_fetch_object($con)) {
-                $id = $obj->sde_id;
+                $id = $obj->eva_id;
                 $table = "fir_evaluacion";
-                $arrfieldscomma = array('sde_nombre' => $this->nombre,
-                    'sde_direccion' => $this->direccion,
-                    'sde_telefono' => $this->telefono,
-                    'sde_celular' => $this->celular,
-                    'sde_contacto' => $this->contacto,
-                    'sde_correo' => $this->correo);
-                $arrfieldsnocomma = array('fir_empresa_emp_id' => $this->euid);
+                $arrfieldscomma = array('eva_form_name' => $this->form,
+                    'eva_pro_numinventario' => $this->pronum,
+                    'eva_sistema' => $this->sist,
+                    'eva_actividad' => $this->activ,
+                    'eva_contenido' => $this->content,
+                    'eva_notas' => $this->nota,
+                    'eva_fecha' => $this->fecha);
+                $arrfieldsnocomma = array('fir_sede_sde_id' => $this->sdid, 
+                    'fir_producto_pro_id' => $this->proid, 
+                    'fir_usuario_usr_id' => $this->usrid);
                 $q = $this->UTILITY->make_query_update($table, "eva_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                 mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
                 $arrjson = array('output' => array('valid' => true, 'id' => $id));
             }
         } else {
-            //$q = "INSERT INTO `fir_evaluacion` (`eva_id` ,`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`fir_producto_pro_id` ,`fir_formulario_frm_id` ,`fir_respuesta_rsp_id` ,`fir_preguntas_prg_id` ,`eva_fecha_hora` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha`)VALUES ('3',  '4',  '5',  '6', NULL , NULL , NULL , NULL ,  'registro',  'sist',  'activ',  '{"nombre":"camilo","apellido":"garzon","profesion":"ingeniero"}',  'las notas',  '2013-02-13')";
-            $q = "INSERT INTO `fir_evaluacion` (`eva_id` ,`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`fir_producto_pro_id` ,`fir_formulario_frm_id` ,`fir_respuesta_rsp_id` ,`fir_preguntas_prg_id` ,`eva_fecha_hora` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha`)VALUES ('3',  '4',  '5',  '6', NULL , NULL , NULL , NULL ,  'registro',  'sist',  'activ',  '{contenido}',  'las notas',  '2013-02-13')";
+            //$q = "INSERT INTO `fir_evaluacion` (`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`fir_producto_pro_id` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha` ,`eva_fecha_hora` ,`eva_pro_numinventario`) 
+            $q = "INSERT INTO `fir_evaluacion` (`fir_usuario_usr_id` ,`fir_sede_sde_id` ,`eva_form_name` ,`eva_sistema` ,`eva_actividad` ,`eva_contenido` ,`eva_notas` ,`eva_fecha` ,`eva_fecha_hora` ,`eva_pro_numinventario`) VALUES ($this->usrid, $this->sdid, '$this->form',  '$this->sist',  '$this->activ',  '$this->content',  '$this->nota', '$this->fecha', NOW(), '$this->pronum')";
             mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $id = mysql_insert_id();
             $arrjson = array('output' => array('valid' => true, 'id' => $id));
@@ -628,6 +637,39 @@ class Controller {
         $this->response = ($arrjson);
     }
 
+    public function evaluacion_get() {
+        $resultado = 0;$q = '';
+        $arr = array();
+        if ($this->sdid > 0 && $this->fecha != "" && $this->pronum != "" && $this->form != "") {
+            $q = "SELECT * FROM fir_evaluacion WHERE fir_sede_sde_id = " . $this->sdid . " AND eva_fecha = '" . $this->fecha . "' AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "'";
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $resultado = mysql_num_rows($con);
+            while ($obj = mysql_fetch_object($con)) {
+                $arr[] = array(
+                    'id' => $obj->eva_id,
+                    'usrid' => $obj->fir_usuario_usr_id,
+                    'sdid' => $obj->fir_sede_sde_id,
+                    'proid' => ($obj->fir_producto_pro_id),
+                    'pronum' => ($obj->eva_pro_numinventario),
+                    'form' => ($obj->eva_form_name),
+                    'sist' => ($obj->eva_sistema),
+                    'activ' => $obj->eva_actividad,
+                    'cont' => utf8_encode($obj->eva_contenido),
+                    'nota' => $obj->eva_notas,
+                    'fecha' => $obj->eva_fecha,
+                    'tsfecha' => $obj->eva_fecha_hora);
+            }            
+        } else {
+            $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
+        }
+        if ($resultado > 0) {
+            $arrjson = array('output' => array('valid' => true, 'response' => $arr));
+        } else {
+            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados', 'q' => $q)));
+        }
+        $this->response = ($arrjson);
+    }
+    
     public function getResponse() {
         return $this->response;
     }

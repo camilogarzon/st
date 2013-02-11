@@ -1,5 +1,8 @@
 <?php
 require_once 'includes/generic_validate_session.php';
+if (empty($_GET['id'])){
+    header('Location: equipos.php');
+}
 ?>
 <!-- head -->
 <?php include("head.php"); ?>
