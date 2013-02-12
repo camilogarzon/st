@@ -1,7 +1,14 @@
 <form id="trimestre_">
     <script type="text/javascript">
-        jQuery(document).ready(function(){applyDatepicker('trimestre_fecha');});
         var form_trimestre_ = 'trimestre_';var sdid = '<?php echo getUserIdSede(); ?>';var usrid = '<?php echo getUserId(); ?>';var pronum = '<?php echo $_GET['id']; ?>';
+        
+        jQuery(document).ready(function(){applyDatepicker('trimestre_fecha');
+            jQuery('#trimestre_fecha_historial').change(function(){
+                jQuery('#trimestre_fecha').val(jQuery('#trimestre_fecha_historial').val());
+                trimestre_loadform();
+            });
+            trimestre_loadLastData();
+        });
         
         function trimestre_savedata() {
             fecha = jQuery('#trimestre_fecha').val();
@@ -10,6 +17,10 @@
                 var activ = jQuery('#trimestre_actividad').val();
                 var nota = jQuery('#trimestre_notas').val();
                 var evaid = jQuery('#trimestre_eva_id').val();
+                if (evaid > 0 && <?php echo $ena = (isAdmin() || isCoordinator()) ? 'false' : 'true'; ?>){
+                    alert('No tiene permiso de editar este formulario.');
+                    return;
+                }
                 jsonstr = stringifyFormJson('trimestre_');
                 ladata = "op=evaluacion_save&sdid="+sdid+"&pronum="+pronum+"&usrid="+usrid+"&id="+evaid+"&form="+form_trimestre_+"&fecha="+fecha+"&sist="+sist+"&activ="+activ+"&content="+jsonstr+"&nota="+nota;
                 ladata = ladata.replace("#", "%23");
@@ -20,6 +31,7 @@
         function trimestre_responseSave(data){
             cursorNormal();
             if (data.output.valid){
+                trimestre_loadLastData();
                 clearForm(form_trimestre_);
                 alert('Información almacenada correctamente.');
             } else {
@@ -47,6 +59,30 @@
                 alert(''+data.output.response.content);
             }
         }
+        
+        function trimestre_loadLastData(){
+            ladata = "op=evaluacion_get&sdid="+sdid+"&pronum="+pronum+"&form="+form_trimestre_;
+            callAjaxForm(ladata, trimestre_responseloadLastData);
+        }
+        
+        function trimestre_responseloadLastData(data){
+            cursorNormal();
+            if (data.output.valid){
+                jQuery('#trimestre_fecha_historial').empty();
+                res = data.output.response;
+                opciones = '<option value="seleccione">Seleccione una</option>';
+                for (var j in res) {
+                    opciones += '<option value="'+res[j].fecha+'">'+res[j].fecha+'</option>';
+                }
+                jQuery('#trimestre_fecha_historial').append(opciones);
+                jQuery('#trimestre_fecha').val(res[0].fecha);
+                trimestre_loadform();
+            } else {
+                clearForm(form_trimestre_);
+                alert(''+data.output.response.content);
+            }
+        }
+        
     </script>
     <div class="form_default">
         <input type="hidden" id="trimestre_eva_id" value="0"/>
@@ -57,12 +93,17 @@
 
             <p>
             <div class="one_sixth"><label>Fecha</label></div>
-            <div class="one_sixth"><input type="text" id="trimestre_fecha" class="sftable" readonly="true" /></div>
+            <div class="one_sixth"><input type="text" id="trimestre_fecha" class="sftable" readonly="true" /><div style="float: right"><input type="button" class="sftable" id="trimestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="trimestre_loadform();"/><input type="button" class="sftable" id="trimestre_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_trimestre_);"/></div></div>
+            <div class="one_sixth"><label>Fechas anteriores</label></div>
+            <div class="one_sixth"><select id="trimestre_fecha_historial" style="width: 190px !important;"><option value="seleccione">Seleccione una</option></select></div>
+            </p>
+            <p>
+            <div class="one_sixth"><label>Responsable</label></div>
+            <div class="one_sixth"><input type="text" id="trimestre_responsable" class="sftable" /></div>
             <div class="one_sixth"><label>Sistema</label></div>
             <div class="one_sixth"><input type="text" id="trimestre_sistema"  class="sftable" /></div>
             <div class="one_sixth"><label>Actividad</label></div>
             <div class="one_sixth last"><select id="trimestre_actividad"><option value="seleccione">Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
-            <div class="one_sixth"><input type="button" class="sftable" id="trimestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="trimestre_loadform();"/></div>
             </p>
         </fieldset>
 

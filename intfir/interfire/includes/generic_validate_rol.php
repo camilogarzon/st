@@ -23,5 +23,9 @@ function getUserIdSede(){
 function getUserId(){
     return $_SESSION['usuario']['id'];
 }
+function getUserFullName(){
+    $fullname =  $_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellido'];
+    return $fullname;
+}
 
 ?>
