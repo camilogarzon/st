@@ -8,7 +8,9 @@
             applyDatepicker('registro_campo11');
             responsible = '<?php echo getUserFullName(); ?>';
             jQuery('#registro_actividad').change(function(){
-                theval = jQuery('#registro_actividad').val(); jQuery('#trimestre_actividad').val(theval); jQuery('#semestre_actividad').val(theval);
+                theval = jQuery('#registro_actividad').val(); 
+                jQuery('#trimestre_actividad').val(theval); 
+                jQuery('#semestre_actividad').val(theval);
             });
             jQuery('#registro_fecha_historial').change(function(){
                 jQuery('#registro_fecha').val(jQuery('#registro_fecha_historial').val());
@@ -20,15 +22,12 @@
         function registro_savedata() {
             fecha = jQuery('#registro_fecha').val();
             if (fecha != ''){
-                var sist = jQuery('#registro_sistema').val();
-                var activ = jQuery('#registro_actividad').val();
-                var nota = jQuery('#registro_notas').val();
                 var evaid = jQuery('#registro_eva_id').val();
                 if (evaid > 0 && <?php echo $ena = (isAdmin() || isCoordinator()) ? 'false' : 'true'; ?>){
                     alert('No tiene permiso de editar este formulario.');
                     return;
                 }
-                jsonstr = stringifyFormJson('registro_');
+                jsonstr = stringifyFormJson(form_registro_);
                 ladata = "op=evaluacion_save&sdid="+sdid+"&pronum="+pronum+"&usrid="+usrid+"&id="+evaid+"&form="+form_registro_+"&fecha="+fecha+"&sist="+sist+"&activ="+activ+"&content="+jsonstr+"&nota="+nota;
                 ladata = ladata.replace("#", "%23");
                 callAjaxForm(ladata, registro_responseSave);
@@ -52,6 +51,7 @@
                 ladata = "op=evaluacion_get&sdid="+sdid+"&pronum="+pronum+"&fecha="+fecha+"&form="+form_registro_;
                 callAjaxForm(ladata, registro_responseLoad);
             }
+            
         }
         
         function registro_responseLoad(data){
@@ -68,6 +68,7 @@
                 jQuery('#registro_responsable').val(responsible); 
                 //alert(''+data.output.response.content);
             }
+            
         }
         
         function registro_loadLastData(){

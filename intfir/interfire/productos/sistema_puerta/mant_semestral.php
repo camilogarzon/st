@@ -21,7 +21,7 @@
                     alert('No tiene permiso de editar este formulario.');
                     return;
                 }
-                jsonstr = stringifyFormJson('semestre_');
+                jsonstr = stringifyFormJson(form_semestre_);
                 ladata = "op=evaluacion_save&sdid="+sdid+"&pronum="+pronum+"&usrid="+usrid+"&id="+evaid+"&form="+form_semestre_+"&fecha="+fecha+"&sist="+sist+"&activ="+activ+"&content="+jsonstr+"&nota="+nota;
                 ladata = ladata.replace("#", "%23");
                 callAjaxForm(ladata, semestre_responseSave);
