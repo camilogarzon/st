@@ -23,20 +23,12 @@
 	                   <fieldset>
 	                   		<legend>General</legend>
                     <p>
-                    	<div class="one_fourth">
-                    	<label for="name">Nombre del Sistema</label>
-                    	</div>
-                    	<div class="three_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
+                    	<div class="one_fourth"><label for="name">Nombre del Sistema</label></div>
+                    	<div class="three_fourth last"><input type="text" name="name"  class="sftable" /></div>
                     </p>
                     <p>
-                    	<div class="one_fourth">
-                    	<label for="name">Edificio</label>
-                    	</div>
-                    	<div class="three_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
+                    	<div class="one_fourth"><label for="name">Edificio</label></div>
+                    	<div class="three_fourth last"><input type="text" name="name"  class="sftable" /></div>
                     </p>
                     <p>
                     	<div class="one_fourth"><label for="name">Localización puesto Control</label></div>
@@ -55,21 +47,18 @@
                     </p>
                     <p>
                     	<div class="one_half"><label for="name">Esta el edificio totalmente cubierto por rociadores?</label></div>
-                        <div class="one_fourth"><select name="occupation">
-                          <option>Seleccione una</option>
-                          <option value="0">Si</option>
-                          <option value="1">No</option>
-                        </select>
-                        </div>
-                        <div class="one_fourth last">
-                        <input type="text" name="name"  class="sftable" />
-                    	</div>
+                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                        <div class="one_fourth last"><input type="text" name="name"  class="sftable" /></div>
                     </p>
                     <p>
                         <div class="one_fourth"><label for="name">Esta todo el sistema de rociadores en condiciones de funcionamiento?</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                         <div class="one_fourth"><label for="name">Se ha modificado el sistema de rociadores desde la última inspección?</label></div>
                         <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                    </p>
+                    <p>
+                        <div class="one_fourth"><label for="name">El país cuenta con estaciones climatologicas?</label></div>
+                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -137,12 +126,7 @@
                     </p>
                     <p>
                     	<div class="one_half"><label for="name">La bomba está en buenas condiciones?</label></div>
-                        <div class="one_half last"><select name="occupation">
-                          <option>Seleccione una</option>
-                          <option value="0">Si</option>
-                          <option value="1">No</option>
-                        </select>
-                        </div>
+                        <div class="one_half last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -158,12 +142,7 @@
                     </p>
                     <p>
                     	<div class="one_half"><label for="name">Existen señales indentificativas?</label></div>
-                        <div class="one_half last"><select name="occupation">
-                          <option>Seleccione una</option>
-                          <option value="0">Si</option>
-                          <option value="1">No</option>
-                        </select>
-                        </div>
+                        <div class="one_half last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
 	                   

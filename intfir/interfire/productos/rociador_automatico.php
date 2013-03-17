@@ -11,7 +11,7 @@
                     <li><a href="#tabs-7">Inspección Quinquenal</a></li>
                     <li><a href="#tabs-8">Inspección Trianual</a></li>
                     <li><a href="#tabs-9">5, 20 y 50 años</a></li>
-                    <li><a href="#tabs-10">Tubería area</a></li>
+                    <li><a href="#tabs-10">Tubería aerea</a></li>
                     <li><a href="#tabs-11">Tubería Subterránea</a></li>
                 </ul>
                 
@@ -53,7 +53,7 @@
                 
                 <div id="tabs-7">
                 
-                <?php include("rociador_automatico/rev_quincenal.php") ?>
+                <?php include("rociador_automatico/rev_quinquenal.php") ?>
                    
                 </div>
                 

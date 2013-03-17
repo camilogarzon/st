@@ -37,20 +37,20 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Lubricación de la tuerca de operación</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se ha lubricado la tuerca de operación?</td>
+			                    <td>Check</td>
 			                </tr>
 			                <tr>
-			                    <td>Lubricado de empaquetaduras</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se ha lubricado la empaquetadura?</td>
+			                    <td>Check</td>
 			                </tr>
 			                <tr>
-			                    <td>Lubricar del collar de empuje</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se ha lubricado el collar de empuje?</td>
+			                    <td>Check</td>
 			                </tr>
 			                <tr>
-			                    <td>Hacer funcionar el hidrante con descarga de agua durante al menos 1 munuto</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Funcionó el hidrante con descarga de agua mínimo por un minuto?</td>
+			                    <td>Check</td>
 			                </tr>
 			            </table>
 			        </div>

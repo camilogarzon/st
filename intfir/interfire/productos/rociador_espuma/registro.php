@@ -44,7 +44,7 @@
                     <p>
                     	<div class="one_fourth"><label for="name">Como están supervisadas las válvulas?</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Precintadas</option><option value="1">Bloqueadas</option><option value="2">Interruptor antimanipulaci?n</option></select></div>
-                    	<div class="one_fourth"><label for="name">Est?n las v?lvulas identificadas con alguna se?alizaci?n?</label></div>
+                    	<div class="one_fourth"><label for="name">Están las válvulas identificadas con alguna señalización?</label></div>
                         <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>

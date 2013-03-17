@@ -24,7 +24,7 @@
                     	<div class="one_fourth"><label for="name">Tipo de motor</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Diesel</option><option value="1">Eléctrico</option></select></div>
                     	<div class="one_fourth"><label for="name">Tipo de bomba</label></div>
-                        <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Vetical</option><option value="1">Horizontal</option></select></div>
+                        <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Vertical</option><option value="1">Horizontal</option></select></div>
                     </p>
                     <p>
                         <div class="one_fourth"><label for="name">Marca</label></div>
@@ -34,7 +34,7 @@
                     </p>
                     <p>
                     	<div class="one_fourth"><label for="name">Aprobado UL/FM</label></div>
-                        <div class="three_fourth last"><select name="occupation"> <option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select>
+                        <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select>
                         </div>
                     </p>
                     <p>
@@ -97,7 +97,7 @@
                     </p>
                     <p>
                     	<div class="one_fourth"><label for="name">Aprobado UL/FM</label></div>
-                        <div class="three_fourth last">
+                        <div class="one_fourth last">
 	                        <select name="occupation">
 	                          <option>Seleccione una</option>
 	                          <option value="0">Si</option>
@@ -137,7 +137,7 @@
                     </p>
                     <p>
                     	<div class="one_fourth"><label for="name">Aprobado UL/FM</label></div>
-                        <div class="three_fourth last"> <select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                        <div class="one_fourth last"> <select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
                         <div class="one_fourth"><label for="name">Potencia motor</label></div>

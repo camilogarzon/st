@@ -26,7 +26,7 @@
 .ui-tabs-nav li a:hover { text-decoration: none; background: #e7e7e7; }
 .ui-tabs-nav li.ui-state-active a { background: #fcfcfc; color: #ca252d; font-weight: bold; border-bottom: 1px solid #fcfcfc; }
 .ui-tabs-hide { display: none; }
-.ui-tabs-panel { padding: 15px; min-height: 600px; }
+.ui-tabs-panel { padding: 10px; min-height: auto; clear: both; }
 
 /*
 .tabs2 { border: 0; }

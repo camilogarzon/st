@@ -45,42 +45,66 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Los Hidrantes están accesibles</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>El hidrante está accesible?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
                                 
 			                </tr>
 			                <tr>
-			                    <td>Las bocas de hidrantes están apretadas</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Las bocas del hidrante están apretadas?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>No hay perdidas en el hidrante cuando se abre la válvula</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>El hidrante presenta alguna perdida o fuga al momento de abrir la tabla?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>No hay perdidas fugas en la junta debajo de las tapas cuando se abre la valvula</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>En la junta debajo de las tapas cuando se abre la válvula se presenta alguna perdida?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>No hay grietas en la columna del hidrante</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Existen grietas en la columna del hidrante?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>La tuerca para accionarlo no esta gastada ni tiene los bordes redondeados</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>La tuerca para accionar se encuentran en buen estado, sus bordes no están redondeadas?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Las mangueras para conexión al hidrante no están estropeadas</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Comprobar los armarios para mangueras, si existen, para asegurarse de que todo el equipo esta en buenas condiciones </td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Las mangueras para conexión al hidrante están en buen estado?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>
 				       
 				       </fieldset>
+	                   
+	                   <!-- CASETA DE HIDRANTES -->
+	                   
+	                   <fieldset>
+	                   		<legend>Caseta de hidrantes</legend>
+                    <p>
+                    	<div class="one_fourth"><label for="name">Manguera de 2 1/2" (Check)</label></div>
+                        <div class="one_fourth"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Manguera de 1 1/2"</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" value="precargado" class="sftable_half" /><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                    </p>
+                    <p>
+                    	<div class="one_fourth"><label for="name">Llave apertura valvula (Check)</label></div>
+                        <div class="one_fourth"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Llave apertura hidrante (Check)</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    </p>
+                    <p>
+                    	<div class="one_fourth"><label for="name">Llave spaner (Check)</label></div>
+                        <div class="one_fourth"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Reducción de 2 1/2" a 1 1/2" (Check)</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    </p>
+                    <p>
+                    	<div class="one_fourth"><label for="name">Bifurcacion de 2 1/2" a 1 1/2" (Check)</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" value="precargado" class="sftable" /></div>
+                    </p>
+	                   </fieldset>
 	                   	                   
 	                   <!-- NOTAS -->
 	                   

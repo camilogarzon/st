@@ -12,6 +12,7 @@ if (isset($_SESSION['usuario'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Interfirex | Gestor de Inventarios</title>
         <link rel="stylesheet" media="screen" href="css/style.css" />
+        <link rel="stylesheet" media="screen" href="css/style2.css" />
         <!--[if IE 9]>
             <link rel="stylesheet" media="screen" href="css/ie9.css"/>
         <![endif]-->
@@ -50,6 +51,33 @@ if (isset($_SESSION['usuario'])) {
             <div class="bg3"></div>
             <div class="bg4"></div>
             <div class="bg5"></div>
+            <div class="bg6"></div>
+            <div class="bg7"></div>
+            <div class="bg8"></div>
+            <div class="bg9"></div>
+            <div class="bg10"></div>
+            <div class="bg11"></div>
+            <div class="bg12"></div>
+            <div class="bg13"></div>
+            <div class="bg14"></div>
+            <div class="bg15"></div>
+            <div class="bg16"></div>
+            <div class="bg17"></div>
+            <div class="bg18"></div>
+            <div class="bg19"></div>
+            <div class="bg20"></div>
+            <div class="bg21"></div>
+            <div class="bg22"></div>
+            <div class="bg23"></div>
+            <div class="bg24"></div>
+            <div class="bg25"></div>
+            <div class="bg26"></div>
+            <div class="bg27"></div>
+            <div class="bg28"></div>
+            <div class="bg29"></div>
+            <div class="bg30"></div>
+            <div class="bg31"></div>
+            <div class="bg32"></div>
         </div>
 
         <div class="notification notifyError loginNotify">Los datos ingresados no son válidos. (Escríbalos de nuevo)</div>

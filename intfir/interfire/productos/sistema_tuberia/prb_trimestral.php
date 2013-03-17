@@ -45,8 +45,8 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Identificar y accionar el interruptor de caudal</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se identificó y accionó el interruptor de caudal?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

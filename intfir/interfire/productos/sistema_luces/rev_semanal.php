@@ -45,92 +45,92 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el nivel de combustible del tanque de suministro</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el nivel de combustible del tanque de suministro?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar el nivel díario del tanque</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado el nivel diario del tanque?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar y accionar la válvula de flotación del tanque</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionar la válvula de flotación del tanque?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar y accionar la bomba de combustible</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado la bomba de combustible?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar y accionar la válvula de solenoide</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado la válvula de solenoide?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la existencia de agua en el sistema de combustible</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado la existencia de agua en el sistema de combustible?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar Las mangueras flexibles y conectores</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han comprobado las mangueras flexibles y conectores?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el nivel de aceite en el motor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el nivel de aceite en el motor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el funcionamiento del calentador del aceite del motor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el funcionamiento del calentador del aceite del motor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el nivel de refrigerante en el motor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el nivel de refrigerante en el motor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el estado del refrigerante</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el estado del refrigerante?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la idoneidad de flujo de aire a traves del radiador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado la idoneidad de flujo de aire a traves del radiador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el estado de la bomba del agua</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el estado de la bomba del agua?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar las mangueras flexibles y conectores</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado las mangueras flexibles y conectores?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el estado de la camisa de agua</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el estado de la camisa de agua?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la existencia de fugas en el sistema de extracción de gases</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado la existencia de fugas en el sistema de extracción de gases?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el purgador de drenaje de condensado</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el purgador de drenaje de condensado?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el nivel de electrolito en las baterias</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el nivel de electrolito en las baterias?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el sistema electrico</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el sistema electrico?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar el motor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado el motor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la limpieza en la sala del generador y en los tanques de suministro de combustible</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado la limpieza en la sala del generador y en los tanques de suministro de combustible?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar el generador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado el generador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

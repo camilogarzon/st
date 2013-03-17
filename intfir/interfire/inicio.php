@@ -22,7 +22,7 @@ $_ACTIVE_SIDEBAR = "inicio";
 
 
 <!-- content -->
-<div class="maincontent">
+<div class="maincontent home1">
 
 <h1 class="pageTitle">Interfire SAS | Interfire IPM</h1>
 

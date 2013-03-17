@@ -45,28 +45,28 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspeccionar la existencia de obstrucciones en las aberturas de ventilación del tanque y en los conductos de rebosamiento</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado la existencia de obstrucciones en las aberturas de ventilación del tanque y en los conductos de rebosamiento?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar los conductos de flujo de combustible</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han inspeccionado los conductos de flujo de combustible?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar los mecanismos y controles de ventilación</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han inspeccionado los mecanismos y controles de ventilación?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar los soportes de sistema de extraccion de gases</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han inspeccionado los soportes de sistema de extracción de gases?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar los contactores del conmutador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han inspeccionado los contactores del conmutador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Comprobar el sistema de arranque del motor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha comprobado el sistema de arranque del motor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			            </table>
 			        </div>

@@ -35,8 +35,8 @@
                     <p>
                     	<div class="one_fourth"><label for="name">Abastecimiento</label></div>
                     	<div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Manual</option><option value="1">Automático</option></select></div>
-                    	<div class="one_fourth"><label for="name">Número de sálidas</label></div>
-                    	<div class="one_fourth last"><input type="text" name="name" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Uso compartido</label></div>
+                    	<div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
                     <p>
                     	<div class="one_fourth"><label for="name">Fecha instalación</label></div>
@@ -45,12 +45,71 @@
                     	<div class="one_fourth last"><input type="text" name="name" class="sftable" /></div>
                     </p>
                     <p>
-                    	<div class="one_fourth"><label for="name">Diámetro de sálidas</label></div>
-                    	<div class="one_fourth"><input type="text" name="name" class="sftable" /></div>
-                    	<div class="one_fourth"><label for="name">Uso compartido</label></div>
-                    	<div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                    	<div class="one_fourth"><label for="name">El país cuenta con estaciones climatologicas?</label></div>
+                    	<div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
                     </p>
 	                   </fieldset>
+	                   
+	                    <fieldset>
+	                   	<legend>Diametros Salida</legend>
+	                   	
+	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
+			        	<colgroup>
+			                <col class="head1" width="10%" />
+			                <col class="head0" width="10%" />
+			                <col class="head1" width="10%" />
+			                <col class="head0" width="10%" />
+			                <col class="head1" width="10%" />
+			                <col class="head0" width="10%" />
+			                <col class="head1" width="10%" />
+			                <col class="head0" width="10%" />
+			                <col class="head1" width="10%" />
+			                <col class="head0" width="10%" />
+			            </colgroup>
+			            <tr>
+			                <td>Salidas</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			                <td>Diametro</td>
+			            </tr>
+			            </table>
+			        
+			        <div class="sTableWrapper">
+			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
+			                <colgroup>
+			                    <col class="con1" width="10%" />
+			                    <col class="con0" width="10%" />
+			                    <col class="con1" width="10%" />
+			                    <col class="con0" width="10%" />
+			                    <col class="con1" width="10%" />
+			                    <col class="con0" width="10%" />
+			                    <col class="con1" width="10%" />
+			                    <col class="con0" width="10%" />
+			                    <col class="con1" width="10%" />
+			                    <col class="con0" width="10%" />
+			                </colgroup>
+			                <tr>
+			                    <td>Salidas</td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
+			                </tr>
+			            </table>
+			        </div>
+				       
+				       </fieldset>
 	                   
 	                   <!-- NOTAS -->
 	                   

@@ -45,12 +45,12 @@
 			                    <td><input type="text" name="email" value="inspector" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Las alarmas de nivel de agua funcionan correctamente</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Las alarmas de nivel de agua funcionan correctamente?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Drenar los sedimentos del depósito y examinarlo en busca de signos de deterioro del mismo</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se drenaron los sedimentos del depósito en búsqueda de signos de deterioro del mismo?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

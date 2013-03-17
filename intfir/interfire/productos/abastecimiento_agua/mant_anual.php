@@ -45,20 +45,20 @@
 			                    <td><input type="text" name="email" value="inspector" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar el correcto funcionamiento de la protección catódica de los depósitos</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se ha inspeccionado el correcto funcionamiento de la protección catódica de los depósitos?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
 			                    <td>Válvulas de drenaje de depósitos de almacenamiento estacional</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Limpiar las membranas de venteo de los depósitos</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se han limpiado las membranas de venteo de los depósitos?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Accionar las válvulas de control para asegurarse que abren y cierran completamente</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se han accionado las válvulas de control para asegurarse que abren y cierran completamente?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

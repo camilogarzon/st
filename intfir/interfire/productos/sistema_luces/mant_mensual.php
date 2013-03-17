@@ -45,8 +45,8 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Eliminar corrosion, limpiar y secar la carcasa de la bateria</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha eliminado la corrosion y limpiado la carcasa de la bateria?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

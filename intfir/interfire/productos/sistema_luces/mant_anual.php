@@ -45,35 +45,35 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Eliminar atascos en el intercambiador de calor</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han eliminado atascos en el intercambiador de calor?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Limpiar el exterior del radiador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha limpiado el exterior del radiador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Limpiar los mecanismos y controles de ventilación</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han limpiado los mecanismos y controles de ventilación?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Limpiar los contactores del conmutador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han limpiado los contactores del conmutador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar y limpiar el conmutador y anillos colectores del generador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado y limpiado el conmutador y anillos colectores del generador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Inspeccionar y limpiar el rotor y el estator del generador</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado y limpiado el rotor y el estator del generador?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			                <tr>
-			                    <td>Cambiar los cojinetes del generador y el lubricante de los mismos</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han cambiado los cojinetes del generador y el lubricante de los mismos?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
-			                    <td>Inspeccionar y limpiar el regulador de tensión</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado y limpiado el regulador de tensión?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                <tr>
 			            </table>
 			        </div>

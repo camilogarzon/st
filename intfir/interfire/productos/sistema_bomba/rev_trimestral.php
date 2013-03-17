@@ -45,28 +45,28 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el adecuado funcionamiento del respiradero del carter</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobó el adecuado funcionamiento del respiradero del carter</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la integridad del sistema de aislamiento del escape</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobó la integridad del sistema de aislamiento del escape</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la resistencia al fuego de los materiales de escape</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobó la resistencia al fuego de los materiales de escape</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar los terminales de las baterias para asegurarse de que estan limpios y bien apretados</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobaron los terminales de las baterias para asegurarse de que estan limpios y bien apretados</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar si el cableado eléctrico esta desgastado en los puntos susceptibles de un mayor rozamiento</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobó si el cableado eléctrico esta desgastado en los puntos susceptibles de un mayor rozamiento</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el funcionamiento de los dispositivos de seguridad y alarmas (semestralmente)</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se comprobó el funcionamiento de los dispositivos de seguridad y alarmas (semestralmente)</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

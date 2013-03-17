@@ -21,7 +21,7 @@
 	                   <fieldset>
 	                   		<legend>Hidrantes</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Tipo</label></div>
+                    	<div class="one_fourth"><label for="name">Tipo (seco activa semestral seco)</label></div>
                         <div class="one_fourth">
 	                        <select name="occupation">
 	                          <option>Seleccione una</option>

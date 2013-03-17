@@ -10,7 +10,7 @@
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
-                        <div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
+                        <div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Recarga</option><option value="1">Revisión</option></select></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -19,16 +19,12 @@
 	                   <fieldset>
 	                   		<legend>General</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Conteo en la recepción y verificación del pedido</label></div>
-                    	<div class="one_fourth"><input type="text" name="name"  class="sftable" /></div>
-                    	<div class="one_fourth"><label for="name">Despresurización del extintor</label></div>
-                    	<div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option><option value="2">N/A</option></select></div>
-                    </p>
-                    <p>
-                    	<div class="one_fourth"><label for="name">Manguera</label></div>
-                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option></select></div>
-                    	<div class="one_fourth"><label for="name">Boquilla</label></div>
-                    	<div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option></select></div>
+                    	<div class="one_sixth"><label for="name">Despresurización del extintor</label></div>
+                    	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option><option value="2">N/A</option></select></div>
+                    	<div class="one_sixth"><label for="name">Manguera</label></div>
+                        <div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option></select></div>
+                    	<div class="one_sixth"><label for="name">Boquilla</label></div>
+                    	<div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option></select></div>
                     </p>	                   
                     	</fieldset>
 	                   
@@ -39,22 +35,22 @@
                     <p>
                     	<div class="one_sixth"><label for="name">Manija de Transporte</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option><option value="2">N/A</option></select></div>
-                    	<div class="one_sixth"><label for="name">Vastago</label></div>
+                    	<div class="one_sixth"><label for="name">Vastago (se bloquea con revisión)</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Bueno</option><option value="1">Malo</option></select></div>
                     	<div class="one_sixth"><label for="name">Manija de operación</label></div>
                     	<div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_sixth"><label for="name">Empaques</label></div>
+                    	<div class="one_sixth"><label for="name">Empaques (se bloquea con revisión)</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Buenos</option><option value="1">Malos</option><option value="2">N/A</option></select></div>
-                    	<div class="one_sixth"><label for="name">Roscas hembras</label></div>
+                    	<div class="one_sixth"><label for="name">Rosca hembra</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Buenas</option><option value="1">Malas</option><option value="2">N/A</option></select></div>
-                    	<div class="one_sixth"><label for="name">Rosca macho</label></div>
+                    	<div class="one_sixth"><label for="name">Rosca macho (se bloquea con revisión)</label></div>
                     	<div class="one_sixth last"><select name="occupation"><option>Seleccione una</option><option value="0">Buena</option><option value="1">Mala</option><option value="2">N/A</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_fourth"><label for="name">Limpieza general de sus partes</label></div>
-                    	<div class="one_fourth"><input type="text" name="name"  class="sftable" /></div>
+                    	<div class="one_sixth"><label for="name">Limpieza general de sus partes</label></div>
+                    	<div class="one_sixth last">Check</div>
                     </p>
 	                   </fieldset>
 	                   
@@ -112,8 +108,8 @@
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></div>
                     </p>
                     <p>
-                    	<div class="one_sixth"><label for="name">Adisión</label></div>
-                    	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                    	<div class="one_sixth"><label for="name">Adición</label></div>
+                    	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">0 - 1000</option><option value="1">1000 - 2000</option><option value="2">2000 - 3000</option><option value="3">3000 - 4000</option><option value="4">4000 - 5000</option><option value="5">5000 - 6000</option><option value="6">6000 - 7000</option><option value="7">7000 - 8000</option><option value="8">8000 - 9000</option></select></div>
                     	<div class="one_sixth"><label for="name">Cantidad</label></div>
                     	<div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                     </p>
@@ -124,7 +120,7 @@
 	                   <fieldset>
 	                   		<legend>Revisión de las etiquetas</legend>
                     <p>
-                    	<div class="one_sixth"><label for="name">Etiquetas de instrucciones</label></div>
+                    	<div class="one_sixth"><label for="name">Etiqueta de instrucción</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Bueno</option><option value="1">Malo</option></select></div>
                     	<div class="one_sixth"><label for="name">Rotulo</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Bueno</option><option value="1">Malo</option></select></div>
@@ -140,13 +136,15 @@
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">125 PSI</option><option value="1">150 PSI</option><option value="2">195 PSI</option><option value="3">240 PSI</option></select></div>
                     	<div class="one_sixth"><label for="name">Presenta fugas</label></div>
                     	<div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
+                    	<div class="one_sixth"><label for="name">Prueba</label></div>
+                    	<div class="one_sixth last">Check</div>
                     </p>
 	                   </fieldset>
 	                   
 	                   <!-- ABRAZADERAS -->
 	                   
 	                   <fieldset>
-	                   		<legend>Ultima fecha de prueba</legend>
+	                   		<legend>Ultima fecha de prueba hidrostatica</legend>
                     <p>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
                     	<div class="one_sixth"><input type="text" name="name" value="precargado" class="sftable" /></div>

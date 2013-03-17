@@ -45,36 +45,36 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Inpeccionar la existencia de obstrucciones en las aberturas de ventilación del tanque y en los conductos de rebosamiento</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha inspeccionado la existencia de obstrucciones en las aberturas de ventilación del tanque y en los conductos de rebosamiento?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar los mecanismos y controles de ventilación</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han probado los mecanismos y controles de ventilación?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar el sistema de escape para prevenir excesiva contrapresión</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha probado el sistema de escape para prevenir excesiva contrapresión?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar el sistema de arranque conexiones, cojinetes, rotor, aislamiento del secundario</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha probado el sistema de arranque conexiones, cojinetes, rotor, aislamiento del secundario?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar la bomba de inyección y los inyectores</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha probado la bomba de inyección y los inyectores</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar y registrar las lecturas de la resistencia en el bobinado con un probador de aislamiento (megaohmetro)</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se han probado y registrado las lecturas de la resistencia en el bobinado con un probador de aislamiento?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar cada unidad alimentada por batería durante 90 minutos</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha probado cada unidad alimentada por batería durante 90 minutos?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar el generador de emergencia a plena carga o con una carga de prueba igual a esta</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">N/A</option></select></td>
+			                    <td>Se ha probado el generador de emergencia a plena carga o con una carga de prueba igual a esta?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

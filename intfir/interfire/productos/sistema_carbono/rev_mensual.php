@@ -45,11 +45,11 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar si existen signos de fugas en el cilindro</td>
+			                    <td>Se comprobó si existen signos de fugas en el cilindro</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar si existen signos de daños físicos en los componentes del sitema</td>
+			                    <td>Se comprobó si existen signos de daños físicos en los componentes del sistema</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			            </table>

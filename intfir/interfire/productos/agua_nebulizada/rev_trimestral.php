@@ -26,7 +26,6 @@
 	                   	<li>2- Inspecciónar los componentes de operación, incluyendo las válvulas de control.</li>
 	                   	<li>3- Inspecciónar los interruptores de flujo, válvula, e interruptores de supervisión del depósito.</li>
 	                   	<li>4- Inspecciónar los dispositivos iniciadores y detectores.</li>
-	                   	<li>5 - Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -41,10 +40,10 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Presión Aire</td>
-			                <td>Componentes operación</td>
-			                <td>Flujo de Agua y Supervision</td>
-			                <td>Dispositivos de iniciación</td>
+			                <td>1- Presión Aire</td>
+			                <td>2- Componentes operación</td>
+			                <td>3- Flujo de Agua y Supervision</td>
+			                <td>4- Dispositivos de iniciación</td>
 			            </tr>
 			            </table>
 			        
@@ -61,21 +60,18 @@
 			                <tr>
 			                    <td>Precargado</td>
 			                    <td>Precargado</td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
-			                    	</select></td>
-			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                   </tr>
 			            </table>

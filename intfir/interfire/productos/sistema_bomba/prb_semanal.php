@@ -26,7 +26,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Descripción</td>
-			                <td>Semana</td>
+			                <td>Valor</td>
 			            </tr>
 			            </table>
 			        
@@ -45,15 +45,15 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Hace funcionar la bomba durante 10 minutos (30 minutos bomba diesel)</td>
+			                    <td>Se hizo funcionar la bomba durante 10 minutos (30 minutos bomba diesel)?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar que los prensaestopas esten apretadas</td>
+			                    <td>Los prensaestopas están apretadas?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Registar la presión de aspiración marcada por el monometro en PSI bar</td>
+			                    <td>La presión de aspiración marcada por el monometro en PSI bar es:</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
@@ -65,11 +65,11 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar si existen ruidos o vibraciones anormales</td>
+			                    <td>Existen ruidos o vibraciones anormales?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar que no se sobrecalienten los prensaestopas, los cojinetes ni la carcasa de la bomba</td>
+			                    <td>Se ha comprobado que no se sobrecalienten los prensaestopas, los cojinetes ni la carcasa de la bomba?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -97,11 +97,11 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la presión del aceite, velocidad, temperatura del aceite y del agua, mientras el motor esta funcionanado</td>
+			                    <td>Se ha comprobado la presión del aceite, velocidad, temperatura del aceite y del agua, mientras el motor esta funcionanado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el caudal del refrigerante en el radíador</td>
+			                    <td>Se ha comprobado el caudal del refrigerante en el radiador</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -109,11 +109,11 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el funcionamiento de la valvula de flotador del deposito</td>
+			                    <td>Funciona la válvula de flotador del deposito?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar la correcta actuación de los solenoides</td>
+			                    <td>Funciona correctamente la actuación de los solenoides?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
@@ -121,20 +121,16 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar el sifon de vapor (solamente turbina de vapor)</td>
+			                    <td>Se comprobó el sifon de vapor (solamente turbina de vapor)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar válvula de alivio de vapor (solo turbina de vapor)</td>
+			                    <td>Se comprobó válvula de alivio de vapor (solo turbina de vapor)</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Comprobar los controladores de alarmas</td>
+			                    <td>Se comprobaron los controladores de alarmas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Registrar todas aquellas observaciones acerca del sistemas que el inspector considere importantes. Situal un numero en esta casilla y numerar la nota correspondiente en el campo notas.</td>
-			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			            </table>
 			        </div>

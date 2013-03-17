@@ -22,9 +22,8 @@
 	                   	<legend>Inspección Mensual</legend>
 	                   	
 	                   	<ul>
-	                   	<li>Identificar la localizaci—n de la v‡lvula.</li>
-	                   	<li>Si la v‡lvula est‡ abierta y parece estar en buenas condiciones anotar Si.</li>
-	                   	<li>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	<li>1- Identificar la localización de la válvula.</li>
+	                   	<li>2- Si la válvula está abierta y parece estar en buenas condiciones anotar SI.</li>
 	                   	</ul>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -37,8 +36,8 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Válvulas</td>
-			                <td>Abierta y OK</td>
+			                <td>1- Válvulas</td>
+			                <td>2- Abierta y OK</td>
 			            </tr>
 			            </table>
 			        

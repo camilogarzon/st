@@ -29,7 +29,6 @@
 	                   	<li>3- Asegurarse que existe el número y tipo correcto de rociadores y una llave inglesa adecuada.</li>
 	                   	<li>4- Comprobar que no existan daños físicos y que las conexiones eléctricas sean seguras.</li>
 	                   	<li>5- Registrar las lecturas de presión psi. Se deberá investigar cualquier pérdida de más de un 10%.</li>
-	                   	<li>6- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	<li></li>
 	                   	</ul>
                    
@@ -46,11 +45,11 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Válvulas</td>
-			                <td>Válvulas alarma</td>
-			                <td>Rociadores de Repuesto</td>
-			                <td>Dispositivos Alarma</td>
-			                <td>Presión agua</td>
+			                <td>1- Válvulas</td>
+			                <td>2- Válvulas alarma</td>
+			                <td>3- Rociadores de Repuesto</td>
+			                <td>4- Dispositivos Alarma</td>
+			                <td>5- Presión agua</td>
 			            </tr>
 			            </table>
 			        

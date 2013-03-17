@@ -47,11 +47,11 @@
 			                    <td>Precargado</td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar dispositivos iniciadores y detectores</td>
+			                    <td>Se inspeccionó dispositivos iniciadores y detectores?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar baterias, panel de control e interfaz</td>
+			                    <td>Se inspeccionó baterias, panel de control e interfaz?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
 			                </tr>
 			            </table>

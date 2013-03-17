@@ -69,7 +69,7 @@
                     <p>
                     	<div class="one_fourth"><label for="name">Cuando se realizó la última prueba de abastecimiento de agua?</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select> </div>
-                    	<div class="one_fourth"><label for="name">Están los depósitos, tanques de presió;n, etc, en buen estado?</label></div>
+                    	<div class="one_fourth"><label for="name">Están los depósitos, tanques de presión, etc, en buen estado?</label></div>
                         <div class="one_fourth last"><select name="occupation"> <option>Seleccione una</option> <option value="0">Si</option></select></div>
                     </p>
 	                   </fieldset>
@@ -91,7 +91,7 @@
 	                   <!-- CONEXIONES PARA EL DEPARTAMENTO DE BOMBEROS -->
 	                   
 	                   <fieldset>
-	                   		<legend> CONEXIONES PARA EL DEPARTAMENTO DE BOMBEROS </legend>
+	                   		<legend>CONEXIONES PARA EL DEPARTAMENTO DE BOMBEROS </legend>
                     <p>
                     	<div class="one_fourth"><label for="name">Ubicación</label></div>
                         <div class="one_fourth"><input type="text" name="name" class="sftable" /></div>                    	

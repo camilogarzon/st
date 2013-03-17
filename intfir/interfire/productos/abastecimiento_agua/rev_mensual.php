@@ -17,7 +17,7 @@
 	                   </fieldset>
 	                   
 	                   <fieldset>
-	                   	<legend>Revisi—n Mensual</legend>
+	                   	<legend>Revisión Mensual</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -29,7 +29,7 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Comprobar la presión en el deposito</td>
+			                <td>La presión en el deposito es:</td>
 			                <td>El nivel de agua esta a una altura normal</td>
 			            </tr>
 			            </table>
@@ -46,7 +46,7 @@
 			                    <td>Fecha</td>
 			                    <td>inspector precargado</td>
 			                    <td><input type="text" value="PSI" class="sftable" /></td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

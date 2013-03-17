@@ -20,22 +20,12 @@
 	                   
 	                   <fieldset><legend>Luces de Emergencia</legend>
                     <p>
-                    	<div class="one_fourth"><label for="name">Tipo de Alimentación</label></div>
-                        <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Bateria</option><option value="1">Generadores de emergencia</option><option value="2"></option></select></div>
-                    	<div class="one_fourth"><label for="name">Caseta hidrante</label></div>
-                        <div class="one_fourth last"><select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option></select> </div>
-                    </p>
-                    <p>
-                    	<div class="one_fourth"><label for="name">El edificio tiene una cobertura por luces de emergencia</label></div>
-                        <div class="one_fourth">
-	                        <select name="occupation">
-	                          <option>Seleccione una</option>
-	                          <option value="0">Si</option>
-	                          <option value="1">No</option>
-	                        </select>
-                        </div>
-                        <div class="one_fourth"><label for="name">Duración del abastecimiento</label></div>
-                        <div class="one_fourth last"><input type="text" name="name" value="en horas" class="sftable" /></div>
+                    	<div class="one_sixth"><label for="name">Tipo de Alimentación</label></div>
+                        <div class="one_sixth"><select name="occupation"><option>Seleccione una</option><option value="0">Bateria</option><option value="1">Generadores de emergencia</option><option value="2"></option></select></div>
+                    	<div class="one_sixth"><label for="name">La instalación tiene una cobertura por luces de emergencia</label></div>
+                        <div class="one_sixth"><input type="text" name="name" class="sftable" /></div>
+                        <div class="one_sixth"><label for="name">Duración del abastecimiento</label></div>
+                        <div class="one_sixth last"><input type="text" name="name" value="en horas" class="sftable" /></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -46,8 +36,8 @@
                      <p>
                     	<div class="one_fourth"><label for="name">Tipo de Alimentación</label></div>
                         <div class="one_fourth"><select name="occupation"><option>Seleccione una</option><option value="0">Bateria</option><option value="1">Generadores de emergencia</option><option value="2"></option></select></div>
-                    	<div class="one_fourth"><label for="name">El edificio tiene una cobertura por luces de emergencia</label></div>
-                        <div class="one_fourth last"> <select name="occupation"><option>Seleccione una</option><option value="0">Si</option><option value="1">No</option> </select></div>
+                    	<div class="one_fourth"><label for="name">La instalación tiene una cobertura por señalización de emergencia</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" class="sftable" /></div>
                     </p>
 	                   </fieldset>
 	                   
@@ -56,8 +46,10 @@
 	                   <fieldset>
 	                   		<legend>Mantenimiento</legend>
                     <p>
-                    	<div class="one_half"><label for="name">Fecha ultimo mantenimiento</label></div>
-                        <div class="one_half last"><input type="text" name="name" value="fecha" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Fecha ultimo mantenimiento</label></div>
+                        <div class="one_fourth"><input type="text" name="name" value="fecha" class="sftable" /></div>
+                    	<div class="one_fourth"><label for="name">Fecha ultima prueba</label></div>
+                        <div class="one_fourth last"><input type="text" name="name" value="fecha" class="sftable" /></div>
                     </p>
 	                   </fieldset>
 	                   

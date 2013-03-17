@@ -103,7 +103,7 @@
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">No Aplica</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Equipamiento de vigilante</td>
+			                    <td>Equipamiento supervisor</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option><option value="2">No Aplica</option></select></td>
 			                </tr>
 			                <tr>

@@ -23,7 +23,7 @@
                 
                 <div id="tabs-2">
                 
-                <?php include("abastecimiento_agua/rev_día.php") ?>
+                <?php include("abastecimiento_agua/rev_dia.php") ?>
                 
                 </div>
                            

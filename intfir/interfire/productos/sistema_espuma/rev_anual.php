@@ -19,7 +19,7 @@
 	                   <!-- TABLA ANUAL-->
 	                   
 	                  	<fieldset>
-	                   	<legend>Revisi—n Anual</legend>
+	                   	<legend>Revisión Anual</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

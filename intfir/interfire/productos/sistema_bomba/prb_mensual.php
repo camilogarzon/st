@@ -1,4 +1,4 @@
-<form action="" method="post">
+º<form action="" method="post">
                    <div class="form_default">
 	                   
 	                   <!-- INFORMACION GENERAL -->
@@ -26,7 +26,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Descripción</td>
-			                <td>D</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -45,20 +45,20 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Accionar el interruptor de aislamiento y el seccionador de circuito</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se accionó el interruptor de aislamiento y el seccionador de circuito</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Analizar el anticongelante para determinar el nivel de protección</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se analizó el anticongelante para determinar el nivel de protección</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Averiguar el estado de carga de las baterías</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se averiguó el estado de carga de las baterías</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Probar el correcto funcionamiento de seccionadores y fusibles</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Funcionan correctamente seccionadores y fusibles</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

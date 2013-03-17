@@ -29,8 +29,8 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>El interior del deposito no muestra signos de óxido, corrosion ni desechos</td>
-			                <td>Examinar todas las válvulas para asegurarse de que están operativas</td>
+			                <td>El interior del deposito muestra signos de óxido, corrosion ni desechos</td>
+			                <td>Las válvulas están operativas y se encuentran abiertas?</td>
 			            </tr>
 			            </table>
 			        

@@ -90,21 +90,19 @@
 
         <fieldset>
             <legend>Información General</legend>
-
-            <p>
             <div class="one_sixth"><label>Fecha</label></div>
-            <div class="one_sixth"><input type="text" id="trimestre_fecha" class="sftable" readonly="true" /><div style="float: right"><input type="button" class="sftable" id="trimestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="trimestre_loadform();"/><input type="button" class="sftable" id="trimestre_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_trimestre_);"/></div></div>
+            <div class="one_sixth"><input type="text" id="trimestre_fecha" class="sftable" readonly="true" /></div>
+            <div class="one_sixth"><input type="button" class="sftable" id="trimestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="trimestre_loadform();"/></div>
+            <div class="one_sixth"><input type="button" class="sftable" id="trimestre_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_trimestre_);"/></div>
             <div class="one_sixth"><label>Fechas anteriores</label></div>
-            <div class="one_sixth"><select id="trimestre_fecha_historial" style="width: 190px !important;"><option value="seleccione">Seleccione una</option></select></div>
-            </p>
-            <p>
+            <div class="one_sixth last"><select id="trimestre_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
+            <div class="clear"></div>
             <div class="one_sixth"><label>Responsable</label></div>
             <div class="one_sixth"><input type="text" id="trimestre_responsable" class="sftable" /></div>
             <div class="one_sixth"><label>Sistema</label></div>
             <div class="one_sixth"><input type="text" id="trimestre_sistema"  class="sftable" /></div>
             <div class="one_sixth"><label>Actividad</label></div>
             <div class="one_sixth last"><select id="trimestre_actividad"><option value="seleccione">Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
-            </p>
         </fieldset>
 
         <fieldset>
@@ -128,68 +126,65 @@
                         <col class="con0" width="25%" />
                     </colgroup>
                     <tr>
-                        <td>1. Comprobar si hay daños físicos en la puerta y ver que el panel de vidriado (si existe) esta correcto</td>
+                        <td>1. Existen daños físicos en la puerta?</td>
                         <td><select id="trimestre_campo01"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>2. Comprobar que funcionan los cierrapuertas</td>
+                        <td>2. Funcionan las cierrapuertas?</td>
                         <td><select id="trimestre_campo02"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>3. Comprobar que funcionan los pestillos</td>
+                        <td>3. Funcionan los pestillos?</td>
                         <td><select id="trimestre_campo03"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>4. Comprobar que funciona el coordinador (si existe)</td>
+                        <td>4. Funciona el coordinador?</td>
                         <td><select id="trimestre_campo04"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>5. Comprobar que los herrajes están seguros</td>
+                        <td>5. Están seguros los herrajes?</td>
                         <td><select id="trimestre_campo05"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>6. Comprobar que no exista corrosión en puertas Kalamein</td>
+                        <td>6. Existe corrosión en puertas Kalamein?</td>
                         <td><select id="trimestre_campo06"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>7. Comprobar cables y cadenas de las puertas deslizantes para asegurar que estan en perfecto estado y funcionan adecuadamente</td>
+                        <td>7. Se encuentran en perfecto estado y funcionan adecuadamente los cables y cadenas de las puertas deslizantes?</td>
                         <td><select id="trimestre_campo07"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>8. Comprobar que pintura u otros contaminantes en cables, cadenas, enrrolladores, fusibles, y otras partes moviles no puedan afectar a su funcionamiento. Reemplazar los eslabones fusibles que se hayan pintado</td>
+                        <td>8. Los cables, cadenas, enrrolladores, fusibles y otras partes móviles no están contaminados con pintura u otros elementos?</td>
                         <td><select id="trimestre_campo08"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>9. Engrasar herrajes en puertas giratorias, enrrollables y deslizantes</td>
+                        <td>9. Se engrasaron los herrajes en puertas giratorias, enrrollables y deslizantes?</td>
                         <td><select id="trimestre_campo09"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>10. Comprobar que las puertas homologadas no han sido modificadas indebidamente</td>
+                        <td>10. Las puertas homologadas no han sido modificadas indebidamente?</td>
                         <td><select id="trimestre_campo10"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>11. Limpiar el área circundante de elementos que puedan interferir u obstruir el funcionamiento de la puerta</td>
+                        <td>11. Está libre de obstrucción la puerta?</td>
                         <td><select id="trimestre_campo11"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                     <tr>
-                        <td>12. Comprobar que las puertas deslizantes se mueven con facilidad y cierran completamente</td>
+                        <td>12. Las puertas deslizantes se mueven con facilidad y cierran completamente?</td>
                         <td><select id="trimestre_campo12"><option value="seleccione">Seleccionar</option><option value="0">SI</option><option value="1">NO</option></select></td>
                     </tr>
                 </table>
+            </div>
 
         </fieldset>
-
-
-
+        
         <!-- NOTAS -->
 
         <fieldset>
             <legend>Notas</legend>
-            <p>
                 <textarea  id="trimestre_notas" class="mftable" cols="" rows=""></textarea>
-            </p>
         </fieldset>
-
+        <div class="clear"></div>
         <input type="button"  id="trimestre_registrar" value="Registrar" onclick="trimestre_savedata()"/>
     </div>
 </form>

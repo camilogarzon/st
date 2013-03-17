@@ -22,15 +22,14 @@
 	                   	<legend>Inspección Mensual</legend>
 	                   	
 	                   	<ul>
-	                   	<li>1- Si las conexiones para el departamento de bomberos no están obstruidas y en buen estado anotar Si. Si no, ver que se realizan correcciones oportunas y describirlas en Notas.</li>
-	                   	<li>2- Si las válvulas están bloqueadas anotar Si. Si algunas no, bloquear y anotar Si.</li>
-	                   	<li>3- Asegurarse que los dispositivos de alarma están libres de daños físicos y que las conexiones eléctricas son seguras. Si es así, anotar Si. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
+	                   	<li>1- Si las conexiones para el departamento de bomberos no están obstruidas y en buen estado anotar SI. Si no, ver que se realizan correcciones oportunas y describirlas en Notas.</li>
+	                   	<li>2- Si las válvulas están bloqueadas anotar Si. Si algunas no, bloquear y anotar SI.</li>
+	                   	<li>3- Asegurarse que los dispositivos de alarma están libres de daños físicos y que las conexiones eléctricas son seguras. Si es así, anotar SI. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
 	                   	<li>4- Registrar la presión del agua . Si hay una diferencia de 10% o mas, investigar la causa, evaluar el impacto sobre el funcionamiento del sistema y describirlo en Notas.</li>
-	                   	<li>5- Anotar Si si las instrucciones están disponibles. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
+	                   	<li>5- Anotar SI, si las instrucciones están disponibles. Si no, ver que se realizan las correcciones oportunas y describirlas en Notas.</li>
 	                   	<li>6- Inspecciónar las boquillas para comprobar que tengan adecuada orientación, que no se encuentren bloqueadas y que las tapas (si tienen) estén en su lugar.</li>
 	                   	<li>7- Inspecciónar que todas las válvulas en el proporcionador están en la posición adecuada.</li>
 	                   	<li>8- Inspecciónar el tanque de espumógeno para comprobar que está lleno y no hay indicios de corrosión importante.</li>
-	                   	<li>9- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -72,7 +71,7 @@
 			                </tr>
 			                <tr>
 			                <tr>
-			                    <td>Presi—n del agua</td>
+			                    <td>Presión del agua</td>
 			                    <td><input type="text" name="email"  class="sftable" /></td>
 			                </tr>
 			                <tr>

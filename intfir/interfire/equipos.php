@@ -199,7 +199,6 @@ $_ACTIVE_SIDEBAR = "equipos";
                 </tr>
             </tfoot>
         </table>
-        <div onclick="loadQR(456)">XXXXXXXXXXX</div>
     </div>
     <script type="text/javascript">
         function loadQR(href, id){ 

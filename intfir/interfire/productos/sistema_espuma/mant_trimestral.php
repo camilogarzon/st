@@ -47,12 +47,8 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Girar cada válvula lo máximo posible y retornarla a su posición inicial, Volver a precintar o a bloquear, si procede </td>
+			                    <td>Se giró cada válvula lo máximo posible y retornarla a su posición inicial, Volver a precintar o a bloquear, si procede </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo </td>
-			                    <td><input type="text" name="email"  class="sftable" /></td>
 			                </tr>
 			            </table>
 				       

@@ -7,6 +7,8 @@
 		                   <legend>Información General</legend>
 		                   
 		            <p>
+                    	<div class="one_sixth"><label for="name">Extintor</label></div>
+                        <div class="one_sixth">ID Extintor</div>
                     	<div class="one_sixth"><label for="name">Fecha</label></div>
                         <div class="one_sixth"><input type="text" name="name"  class="sftable" /></div>
                         <div class="one_sixth"><label for="email">Actividad</label></div>
@@ -39,29 +41,8 @@
 	                   
 	                  	<fieldset>
 	                   	<legend>Inspección, Mantenimiento y Recarga</legend>
-                   
-				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
-			        	<colgroup>
-			                <col class="head1" width="50%" />
-			                <col class="head0" width="50%" />
-			            </colgroup>
-			            <tr>
-			                <td>ID Extintor</td>
-			                <td>Mensual (M), Anual (A), Recarga (R)</td>
-			            </tr>
-			            </table>
 			        
 			        <div class="sTableWrapper">
-			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
-			                <colgroup>
-			                    <col class="con1" width="50%" />
-			                    <col class="con0" width="50%" />
-			                </colgroup>
-			                <tr>
-			                    <td>Precargado</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Inspección Mensual</option><option value="1">Mantenimiento Anual</option><option value="1">Recarga Extintor</option></select></td>
-			                   </tr>
-			            </table>
 	                   
 	                   <!-- TABLA MANTENIMIENTO 2 -->
                    
@@ -83,14 +64,14 @@
 			                <td>Manometro y Presión</td>
 			                <td>Sello Seguridad</td>
 			                <td>Cilindro</td>
-			                <td>Etiquetas</td>
+			                <td>Etiqueta</td>
 			                <td>Acceso</td>
 			                <td>Ubicación</td>
 			                <td>Altura</td>
 			                <td>Señalización</td>
-			                <td>Inspección Mensual</td>
+			                <td>Rótulo Inspección Mensual</td>
 			                <td>Fecha Mantenimiento</td>
-			                <td>Fecha Prox. Mantenimiento</td>
+			                <td>Fecha Vencimiento</td>
 			            </tr>
 			            </table>
 			        

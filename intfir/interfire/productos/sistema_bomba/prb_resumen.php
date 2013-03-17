@@ -45,7 +45,7 @@
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Presi—n en el pilot en psi</td>
+			                    <td>Presión en el pitot en psi</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
 			                </tr>
 			                <tr>

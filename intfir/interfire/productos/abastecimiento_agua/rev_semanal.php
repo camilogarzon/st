@@ -28,7 +28,7 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Las válvulas de control están correctamente dispuestas</td>
+			                <td>Las válvulas se encuentran totalmente abiertas?</td>
 			            </tr>
 			            </table>
 			        
@@ -42,7 +42,7 @@
 			                <tr>
 			                    <td>Fecha</td>
 			                    <td>inspector precargado</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 			        </div>

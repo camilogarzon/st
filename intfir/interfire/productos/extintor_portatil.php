@@ -4,7 +4,7 @@
                 <ul>
                     <li><a href="#tabs-1">Registro</a></li>
                     <li><a href="#tabs-2">Inspección Mensual</a></li>
-                    <li><a href="#tabs-3">Inspección Anual</a></li>
+                    <li><a href="#tabs-3">Mantenimiento y Recarga</a></li>
                 </ul>
                 
                 <div id="tabs-1">

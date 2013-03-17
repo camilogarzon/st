@@ -3,15 +3,25 @@
     <div class="content" style="display: block;">
         <ul class="leftmenu">
             <li <?php if ($_ACTIVE_SIDEBAR == "inicio") echo 'class="current"'; ?>><a href="inicio.php" class="home">Inicio</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "empresas") echo 'class="current"'; ?>><a href="empresas.php" class="form">Empresas</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "sedes") echo 'class="current"'; ?>><a href="sedes.php" class="gallery">Sedes</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "empresas") echo 'class="current"'; ?>><a href="empresas.php" class="empresas">Empresas</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "sedes") echo 'class="current"'; ?>><a href="sedes.php" class="sedes">Sedes</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "usuarios") echo 'class="current"'; ?>><a href="usuarios.php" class="usuarios">Usuarios</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "sistemas") echo 'class="current"'; ?>><a href="sistemas.php" class="form">Sistemas</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "equipos") echo 'class="current"'; ?>><a href="equipos.php" class="gallery">Equipos</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "indicadores") echo 'class="current"'; ?>><a href="indicadores.php" class="grid">Indicadores</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "mensajes") echo 'class="current"'; ?>><a href="mensajes.php" class="calendar">Mensajes</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "mensajes") echo 'class="current"'; ?>><a href="mensajes.php" class="mensajes">Mensajes</a></li>
             <li <?php if ($_ACTIVE_SIDEBAR == "alertas") echo 'class="current"'; ?>><a href="alertas.php" class="buttons">Alertas</a></li>
-            <li <?php if ($_ACTIVE_SIDEBAR == "archivos") echo 'class="current"'; ?>><a href="archivos.php" class="editor">Archivos</a></li>
+            <li <?php if ($_ACTIVE_SIDEBAR == "archivos") echo 'class="current"'; ?>><a href="archivos.php" class="archivos">Archivos</a></li>
+        </ul>
+    </div>
+    
+    <h3 class="open">Clientes</h3>
+    <div class="content" style="display: block;">
+        <ul class="leftmenu">
+            <li><a href="auditoria.php" class="editor">Auditor&iacute;a</a></li>
+            <li><a href="auditoria.php" class="editor">Interventor&iacute;a</a></li>
+            <li><a href="archivos.php" class="editor">Plan de Emergencia</a></li>
+            <li><a href="encuesta.php" class="editor">Encuesta Satisfacci&oacute;n</a></li>
         </ul>
     </div>
 

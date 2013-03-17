@@ -28,7 +28,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Descripción</td>
-			                <td>Año</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -49,7 +49,7 @@
 			                    <td>Calidad de la espuma - Retirar una pinta (0,5 litros) de espumógeno y enviarla al fabricante para que realice un análisis. Adjuntar el informe a este formulario </td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
-			                    <td>Prueba de descarga - Realizar una prueba de descarga para asegurarse de que todos los componentes del sistema funcionan correctamente. Asegurarse de que el sistema este en perfectas condiciones de trabajo</td>
+			                    <td>Prueba de descarga - Se realizó una prueba de descarga para asegurarse de que todos los componentes del sistema funcionan correctamente. Asegurarse de que el sistema este en perfectas condiciones de trabajo</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>

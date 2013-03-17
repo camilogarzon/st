@@ -28,7 +28,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Descripción</td>
-			                <td>Año</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -39,7 +39,7 @@
 			                    <col class="con0" width="50%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Lubricar válvulas</td>
+			                    <td>Se lubricaron válvulas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -51,20 +51,20 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Aplicar grafito o grafito en aceite ligero para lubricar los vastagos</td>
+			                    <td>Se aplicó grafito o grafito en aceite ligero para lubricar los vastagos</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Asegurarse que las instrucciones de manejo están actualizadas y disponibles</td>
+			                    <td>Se aseguraron que las instrucciones de manejo están actualizadas y disponibles</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
-			                    <td>Inspecciónar los filtros</td>
+			                    <td>Se inspeccionaron los filtros</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
-			                    <td>Inspecciónar posibles da–os o corrosión en tuberías aéreas</td>
+			                    <td>Se inspeccionaron posibles daños o corrosión en tuberías aéreas</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
-			                    <td>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo.</td>
+			                    <td>Se registraron todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo.</td>
 			                    <td><input type="text" name="email" class="sftable" /></td>
                                 </tr>
 			            </table>

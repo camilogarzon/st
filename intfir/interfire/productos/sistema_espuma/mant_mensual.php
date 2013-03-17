@@ -28,7 +28,7 @@
 			            </colgroup>
 			            <tr>
 			                <td>Descripción</td>
-			                <td>Mes</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
@@ -47,12 +47,8 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Accionar las bombas durante 20 o 30 segúndos asegurándose de que no hay perdida de espuma</td>
+			                    <td>Se accionó las bombas durante 20 o 30 segundos asegurándose de que no hay perdida de espuma</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
-			                </tr>
-			                <tr>
-			                    <td>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo.</td>
-			                    <td><input type="text" name="email"  class="sftable" /></td>
 			                </tr>
 			            </table>
 				       

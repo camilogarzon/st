@@ -23,9 +23,8 @@
 	                   	
 	                   	<ul>
 	                   	<li>1- Si las válvulas están precintadas anotar Si, si algunas no están precintadas, precintar y anotar Si.</li>
-	                   	<li>2- Si todos los rociadores están en buenas condiciones y el nivel del almacenamiento está al menos 46cm por debajo, anotar Si. Si no, ver las correcciones realizadas y describirlas en notas.</li>
-	                   	<li>3-6 Registrar la presión en psi. Se deberá investigar cualquier pérdida de más del 10%</li>
-	                   	<li>7- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
+	                   	<li>2- Si todos los rociadores están en buenas condiciones y el nivel del almacenamiento está al menos 46 cm por debajo, anotar SI. Si no, ver las correcciones realizadas y describirlas en notas.</li>
+	                   	<li>3 al 6 Registrar la presión en psi. Se deberá investigar cualquier pérdida de más del 10%</li>
 	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -42,12 +41,12 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Válvulas precintadas</td>
-			                <td>Rociadores OK</td>
-			                <td>Válvula de alarma OK</td>
-			                <td>Válvula de tubería seca</td>
-			                <td>Válvula de preacción</td>
-			                <td>Presión del agua</td>
+			                <td>1- Válvulas precintadas</td>
+			                <td>2- Rociadores OK</td>
+			                <td>3- Válvula de alarma OK</td>
+			                <td>4- Válvula de tubería seca</td>
+			                <td>5- Válvula de preacción</td>
+			                <td>6- Presión del agua</td>
 			            </tr>
 			            </table>
 			        

@@ -47,7 +47,7 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Prueba de disparo a caudal máximo de la válvula del sistema seco</td>
+			                    <td>Se disparó a caudal máximo de la válvula del sistema seco?</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>

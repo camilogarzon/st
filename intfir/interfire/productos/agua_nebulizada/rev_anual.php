@@ -45,16 +45,16 @@
 			                    <td>Precargado</td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar filtros</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se inspeccionaron filtros?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar equipos de control, conexiones en el cableado de fibra optica</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se inspeccionaron equipos de control, conexiones en el cableado de fibra optica?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Inspecciónar conexiones, soportes, boquillas y tuberías flexibles</td>
-			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Correcto</option><option value="1">Incorrecto</option></select></td>
+			                    <td>Se inspeccionaron conexiones, soportes, boquillas y tuberías flexibles?</td>
+			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			            </table>
 				       

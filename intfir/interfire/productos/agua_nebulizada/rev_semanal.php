@@ -25,8 +25,8 @@
 	                   	<li>1- Comprobar que el tanque de abastecimiento está lleno si el nivel de agua no está supervisado.</li>
 	                   	<li>2- Comprobar el manómetro de presión de aire para confirmar que se mantiene en un valor adecuado.</li>
 	                   	<li>3- Comprobar el manómetro de presión de aire para confirmar que la presión del aire se mantiene gracias al compresor.</li>
-	                   	<li>4- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
+	                   	<div class="clear"></div>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>
@@ -39,9 +39,9 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Nivel de Agua</td>
-			                <td>Presión de Aire en Depósito</td>
-			                <td>Compresor Aire</td>
+			                <td>1- Nivel de Agua</td>
+			                <td>2- Presión de Aire en Depósito</td>
+			                <td>3- Compresor Aire</td>
 			            </tr>
 			            </table>
 			        
@@ -58,16 +58,16 @@
 			                    <td>Precargado</td>
 			                    <td>Precargado</td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                   </tr>
 			            </table>

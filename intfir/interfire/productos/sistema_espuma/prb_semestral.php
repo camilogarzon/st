@@ -27,14 +27,14 @@
 			                <col class="head0" width="25%" />
 			            <tr>
 			                <td>Descripción</td>
-			                <td>Semestre 1</td>
+			                <td>Dato</td>
 			            </tr>
 			            </table>
 			        
 			        <div class="sTableWrapper">
 			            <table cellpadding="0" cellspacing="0" class="sTable" width="100%">
 			                <colgroup>
-			                    <col class="con1" width="50%" />
+			                    <col class="con1" width="75%" />
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>

@@ -19,7 +19,7 @@
 	                   <!-- TABLA TRIMESTRAL-->
 	                   
 	                  	<fieldset>
-	                   	<legend>Inspección Trimestral </legend>
+	                   	<legend>Inspección Trimestral</legend>
 	                   	
 	                   	<table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

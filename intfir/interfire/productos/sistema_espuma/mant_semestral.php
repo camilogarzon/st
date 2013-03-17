@@ -39,7 +39,7 @@
 			                    <col class="con0" width="25%" />
 			                </colgroup>
 			                <tr>
-			                    <td>Sello hidraulico de venteo</td>
+			                    <td>Sello hidráulico de venteo</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
@@ -51,11 +51,11 @@
 			                    <td><input type="text" name="email" value="precargado" class="sftable" /></td>
 			                </tr>
 			                <tr>
-			                    <td>Asegurar que el sello hidraulico de venteo es correcto</td>
+			                    <td>Se aseguró que el sello hidráulico de venteo es correcto</td>
 			                    <td><select name="occupation"><option>Seleccionar</option><option value="0">Si</option><option value="1">No</option></select></td>
 			                </tr>
 			                <tr>
-			                    <td>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo.</td>
+			                    <td>Se registraron todas aquellas observaciones acerca del sistema que el inspector considere importantes. Situar un numero en esta casilla y numerar la nota correspondiente mas abajo.</td>
 			                    <td><input type="text" name="email"  class="sftable" /></td>
 			                </tr>
 			            </table>

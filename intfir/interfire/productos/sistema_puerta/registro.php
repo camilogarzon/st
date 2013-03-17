@@ -100,65 +100,55 @@
 
         <fieldset>
             <legend>Información General</legend>
-
-            <p>
             <div class="one_sixth"><label>Fecha</label></div>
-            <div class="one_sixth"><input type="text" id="registro_fecha" class="sftable" readonly="true" /><div style="float: right"><input type="button" class="sftable" id="registro_cagar" value="CARGAR" style="cursor: pointer;" onclick="registro_loadform();"/><input type="button" class="sftable" id="registro_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_registro_);"/></div></div>
+            <div class="one_sixth"><input type="text" id="registro_fecha" class="sftable" readonly="true" /></div>
+            <div class="one_sixth"><input type="button" class="sftable" id="registro_cagar" value="CARGAR" style="cursor: pointer;" onclick="registro_loadform();"/></div>
+            <div class="one_sixth"><input type="button" class="sftable" id="registro_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_registro_);"/></div>
             <div class="one_sixth"><label>Fechas anteriores</label></div>
-            <div class="one_sixth"><select id="registro_fecha_historial" style="width: 190px !important;"><option value="seleccione">Seleccione una</option></select></div>
-            </p>
-            <p>
+            <div class="one_sixth last"><select id="registro_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
+            <div class="clear"></div>
             <div class="one_sixth"><label>Responsable</label></div>
             <div class="one_sixth"><input type="text" id="registro_responsable" class="sftable" /></div>
             <div class="one_sixth"><label>Sistema</label></div>
             <div class="one_sixth"><input type="text" id="registro_sistema"  class="sftable" /></div>
             <div class="one_sixth"><label>Actividad</label></div>
             <div class="one_sixth last"><select id="registro_actividad"><option value="seleccione">Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
-            </p>
         </fieldset>
 
         <!-- PUERTAS CORTA FUEGO -->
 
         <fieldset>
             <legend>Puertas Cortafuego</legend>
-            <p>
             <div class="one_fourth"><label >Clasificación en horas</label></div>
             <div class="one_fourth"><input type="text" class="sftable" id="registro_campo01" /></div>
             <div class="one_fourth"><label >Dispositivo de cierre</label></div>
             <div class="one_fourth last"><select id="registro_campo02"><option value="seleccione">Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
-            </p>
-            <p>
+            <div class="clear"></div>
             <div class="one_fourth"><label >Fecha instalación</label></div>
             <div class="one_fourth"><input type="text" class="sftable" id="registro_campo03" readonly="true"/></div>
             <div class="one_fourth"><label >Señalización adecuada</label></div>
             <div class="one_fourth last"><select id="registro_campo04"><option value="seleccione">Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
-            </p>
-            <p>
+            <div class="clear"></div>
             <div class="one_fourth"><label >Aprobado UL/FM</label></div>
             <div class="one_fourth"><select id="registro_campo05"><option value="seleccione">Seleccione una</option><option value="0">Si</option><option value="1">No</option></select></div>
             <div class="one_fourth"><label >Tipo de cerramiento</label></div>
             <div class="one_fourth last"><input type="text" class="sftable" id="registro_campo06"/></div>
-            </p>
         </fieldset>
 
         <!-- ultimo mantenimiento -->
 
         <fieldset><legend>mantenimiento</legend>
-            <p>
-            <div class="one_half"><label >Fecha ultimo mantenimiento</label></div>
-            <div class="one_half last"><input type="text" class="sftable" id="registro_campo07" readonly="true"/></div>
-            </p>
+            <div class="one_fourth"><label >Fecha ultimo mantenimiento</label></div>
+            <div class="one_fourth last"><input type="text" class="sftable" id="registro_campo07" readonly="true"/></div>
         </fieldset>
 
         <!-- NOTAS -->
 
         <fieldset>
             <legend>Notas</legend>
-            <p>
-                <textarea id="registro_notas" class="mftable" cols="" rows="" maxlength="2000"></textarea>
-            </p>
+            <textarea id="registro_notas" class="mftable" cols="" rows="" maxlength="2000"></textarea>
         </fieldset>
-
+        <div class="clear"></div>
         <input type="button" id="registro_registrar" value="Registrar" onclick="registro_savedata()"/>
     </div>
 </form>

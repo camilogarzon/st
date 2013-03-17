@@ -27,7 +27,6 @@
 	                   	<li>3- Comprobar el manómetro de presión del aire para confirmar que la presión del aire se mantiene gracias al compresor.</li>
 	                   	<li>4- Comprobar la presión y discos indicadores en los cilindros.</li>
 	                   	<li>5- Inspecciónar los componentes de operación del sistema, incluyendo las válvulas de control.</li>
-	                   	<li>6- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -43,11 +42,11 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Nivel Agua</td>
-			                <td>Presión Aire en Deposito</td>
-			                <td>Compresor Aire</td>
-			                <td>Cilindros</td>
-			                <td>Componentes operativos</td>
+			                <td>1- Nivel Agua</td>
+			                <td>2- Presión Aire en Deposito</td>
+			                <td>3- Compresor Aire</td>
+			                <td>4- Cilindros</td>
+			                <td>5- Componentes operativos</td>
 			            </tr>
 			            </table>
 			        
@@ -69,21 +68,18 @@
 			                    	<option value="0">Correcto</option>
 			                    	<option value="1">Incorrecto</option>
 			                    	</select></td>
+			                    <td><input type="text" name="name" class="sftable" /></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
-			                    	</select></td>
-			                    <td><select name="occupation"><option>Seleccionar</option>
-			                    	<option value="0">Correcto</option>
-			                    	<option value="1">Incorrecto</option>
+			                    	<option value="0">Si</option>
+			                    	<option value="1">No</option>
 			                    	</select></td>
 			                   </tr>
 			            </table>

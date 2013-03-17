@@ -23,8 +23,9 @@
 	                   	
 	                   	<ul>
 	                   	<li>Si las válvulas están abiertas y precintadas anotar Si. Si no, precintar y anotar Si.</li>
-	                   	<li>Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes</li>
 	                   	</ul>
+	                   	
+	                   	<div class="clear"></div>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
 			        	<colgroup>

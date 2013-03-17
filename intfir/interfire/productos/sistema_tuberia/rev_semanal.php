@@ -22,7 +22,7 @@
 	                   	<legend>Inspección Semanal</legend>
 	                   	
 	                   	<ul>
-	                   	<li>1- Si las válvulas est‡n precintadas, anotar Si. Si no, precintar y anotar Si.</li>
+	                   	<li>1- Si las válvulas están precintadas, anotar Si. Si no, precintar y anotar Si.</li>
 	                   	<li>2- Registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
 	                   	

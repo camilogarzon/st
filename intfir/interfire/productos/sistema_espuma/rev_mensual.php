@@ -24,9 +24,8 @@
 	                   	<ul>
 	                   	<li>1- Si las conexiones para el Departamento de Bomberos no están obstruidas y en buen estado anotar Si. si no, ver que se realizan las correcciones y describirlas en Notas.</li>
 	                   	<li>2- Si las válvulas están bloqueadas anotar Si. Si no, bloquear y anotar Si.</li>
-	                   	<li>3- Inspecciónar las condiciones de los dispositivos de descarga de espuma, para asegurarse que no están dañados, bloqueadas, o afectados de alguna manera.</li>
+	                   	<li>3- Inspeccionar las condiciones de los dispositivos de descarga de espuma, para asegurarse que no están dañados, bloqueadas, o afectados de alguna manera.</li>
 	                   	<li>4- Inspecciónar el tanque de espumógeno para asegurarse de que está lleno. El líquido debería llegar hasta la mitad del vaso de expansión.</li>
-	                   	<li>5- registrar todas aquellas observaciones acerca del sistema que el inspector considere importantes.</li>
 	                   	</ul>
                    
 				        <table cellpadding="0" cellspacing="0" class="sTableHead" width="100%">
@@ -41,10 +40,10 @@
 			            <tr>
 			                <td>Fecha</td>
 			                <td>Inspector</td>
-			                <td>Conecxiones para el departamento de bomberos</td>
-			                <td>Valvulas bloqueadas</td>
-			                <td>Produccion de espuma</td>
-			                <td>Nivel de concentracion de espuma</td>
+			                <td>2- Conexiones para el departamento de bomberos</td>
+			                <td>3- Valvulas bloqueadas</td>
+			                <td>4- Produccion de espuma</td>
+			                <td>5- Nivel de concentración de espuma</td>
 			            </tr>
 			            </table>
 			        
