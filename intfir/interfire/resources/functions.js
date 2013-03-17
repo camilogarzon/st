@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Autor: Lucas Forchino
  * Web: http://www.tutorialjquery.com
  *

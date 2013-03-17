@@ -653,10 +653,12 @@ class Controller {
     }
 
     public function evaluacion_get() {
-        $resultado = 0;$q = '';
+        $resultado = 0;$q = '';$m = 'kokokok'.$this->sdid.'+'.$this->fecha.'+'.$this->pronum.'+'.$this->form.'+';
         $arr = array();
-        if ($this->sdid > 0 && $this->fecha != "" && $this->pronum != "" && $this->form != "") {
-            $q = "SELECT * FROM fir_evaluacion WHERE fir_sede_sde_id = " . $this->sdid . " AND eva_fecha = '" . $this->fecha . "' AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
+        //if ($this->sdid > 0 && $this->fecha != "" && $this->pronum != "" && $this->form != "") {
+            //$q = "SELECT * FROM fir_evaluacion WHERE fir_sede_sde_id = " . $this->sdid . " AND eva_fecha = '" . $this->fecha . "' AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
+        if ($this->fecha != "" && $this->pronum != "" && $this->form != "") {
+            $q = "SELECT * FROM fir_evaluacion WHERE eva_fecha = '" . $this->fecha . "' AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $resultado = mysql_num_rows($con);
             while ($obj = mysql_fetch_object($con)) {
@@ -674,12 +676,46 @@ class Controller {
                     'fecha' => $obj->eva_fecha,
                     'tsfecha' => $obj->eva_fecha_hora);
             }            
-        } else if ($this->sdid > 0 && $this->pronum != "" && $this->form != "") {
-            $q = "SELECT * FROM fir_evaluacion WHERE fir_sede_sde_id = " . $this->sdid . " AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
+        //} else if ($this->sdid > 0 && $this->pronum != "" && $this->form != "") {
+            //$q = "SELECT * FROM fir_evaluacion WHERE fir_sede_sde_id = " . $this->sdid . " AND eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
+        } else if ($this->pronum != "" && $this->form != "") {
+            $q = "SELECT * FROM fir_evaluacion WHERE eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
             $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
             $resultado = mysql_num_rows($con);
             while ($obj = mysql_fetch_object($con)) {
-                $arr[] = array('id' => $obj->eva_id, 'fecha' => $obj->eva_fecha);
+                $arr[] = array(
+                    'id' => $obj->eva_id,
+                    'usrid' => $obj->fir_usuario_usr_id,
+                    'sdid' => $obj->fir_sede_sde_id,
+                    'proid' => ($obj->fir_producto_pro_id),
+                    'pronum' => ($obj->eva_pro_numinventario),
+                    'form' => ($obj->eva_form_name),
+                    'sist' => ($obj->eva_sistema),
+                    'activ' => $obj->eva_actividad,
+                    'cont' => utf8_encode($obj->eva_contenido),
+                    'nota' => $obj->eva_notas,
+                    'fecha' => $obj->eva_fecha,
+                    'tsfecha' => $obj->eva_fecha_hora);
+            }            
+        } else if ($this->pronum != "" && $this->form != "") {
+            $m += 'busqueda 03';
+            $q = "SELECT * FROM fir_evaluacion WHERE eva_pro_numinventario = '" . $this->pronum . "' AND eva_form_name = '" . $this->form . "' ORDER BY eva_fecha DESC";
+            $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+            $resultado = mysql_num_rows($con);
+            while ($obj = mysql_fetch_object($con)) {
+                $arr[] = array(
+                    'id' => $obj->eva_id,
+                    'usrid' => $obj->fir_usuario_usr_id,
+                    'sdid' => $obj->fir_sede_sde_id,
+                    'proid' => ($obj->fir_producto_pro_id),
+                    'pronum' => ($obj->eva_pro_numinventario),
+                    'form' => ($obj->eva_form_name),
+                    'sist' => ($obj->eva_sistema),
+                    'activ' => $obj->eva_actividad,
+                    'cont' => utf8_encode($obj->eva_contenido),
+                    'nota' => $obj->eva_notas,
+                    'fecha' => $obj->eva_fecha,
+                    'tsfecha' => $obj->eva_fecha_hora);
             }            
         } else {
             $arrjson = array('output' => array('valid' => false, 'response' => array('code' => '2001', 'content' => ' Faltan datos.')));
@@ -687,7 +723,8 @@ class Controller {
         if ($resultado > 0) {
             $arrjson = array('output' => array('valid' => true, 'response' => $arr));
         } else {
-            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados', 'q' => $q)));
+            $m += 'FINAL';
+            $arrjson = array('output' => array('valid' => FALSE, 'response' => array('code' => '2001', 'content' => 'Sin resultados', 'q' => $q, 'm' => $m)));
         }
         $this->response = ($arrjson);
     }

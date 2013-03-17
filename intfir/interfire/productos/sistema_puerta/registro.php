@@ -1,6 +1,6 @@
-<form id="registro_">
+<form id="registro_puerta">
     <script type="text/javascript">
-        var form_registro_ = 'registro_';var sdid = '<?php echo getUserIdSede(); ?>';var usrid = '<?php echo getUserId(); ?>';var pronum = '<?php echo $_GET['id']; ?>';var ladata = '';var jsonstr = '';var fecha = '';
+        var form_registro_ = 'registro_puerta';var sdid = '<?php echo getUserIdSede(); ?>';var usrid = '<?php echo getUserId(); ?>';var pronum = '<?php echo $_GET['id']; ?>';var ladata = '';var jsonstr = '';var fecha = '';
         
         jQuery(document).ready(function(){applyDatepicker('registro_fecha');applyDatepicker('registro_campo03');applyDatepicker('registro_campo07');
             responsible = '<?php echo getUserFullName(); ?>';
@@ -66,7 +66,8 @@
                 theval = jQuery('#registro_actividad').val(); jQuery('#trimestre_actividad').val(theval); jQuery('#semestre_actividad').val(theval);
             } else {
                 clearForm(form_registro_);
-                alert(''+data.output.response.content);
+                jQuery('#registro_responsable').val(responsible); 
+                //alert(''+data.output.response.content);
             }
         }
         
@@ -89,7 +90,8 @@
                 registro_loadform();
             } else {
                 clearForm(form_registro_);
-                alert(''+data.output.response.content);
+                jQuery('#registro_responsable').val(responsible); 
+                //alert(''+data.output.response.content);
             }
         }
         
@@ -102,17 +104,17 @@
             <legend>Información General</legend>
             <div class="one_sixth"><label>Fecha</label></div>
             <div class="one_sixth"><input type="text" id="registro_fecha" class="sftable" readonly="true" /></div>
-            <div class="one_sixth"><input type="button" class="sftable" id="registro_cagar" value="CARGAR" style="cursor: pointer;" onclick="registro_loadform();"/></div>
-            <div class="one_sixth"><input type="button" class="sftable" id="registro_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_registro_);"/></div>
-            <div class="one_sixth"><label>Fechas anteriores</label></div>
-            <div class="one_sixth last"><select id="registro_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
-            <div class="clear"></div>
             <div class="one_sixth"><label>Responsable</label></div>
             <div class="one_sixth"><input type="text" id="registro_responsable" class="sftable" /></div>
             <div class="one_sixth"><label>Sistema</label></div>
-            <div class="one_sixth"><input type="text" id="registro_sistema"  class="sftable" /></div>
-            <div class="one_sixth"><label>Actividad</label></div>
-            <div class="one_sixth last"><select id="registro_actividad"><option value="seleccione">Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
+            <div class="one_sixth last"><input type="text" id="registro_sistema"  class="sftable" /></div>
+            <div class="one_sixth ocultar"><input type="button" class="sftable" id="registro_cagar" value="CARGAR" style="cursor: pointer;" onclick="registro_loadform();"/></div>
+            <div class="one_sixth ocultar"><input type="button" class="sftable" id="registro_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_registro_);jQuery('#registro_responsable').val(responsible); "/></div>
+            <div class="one_sixth ocultar"><label>Fechas anteriores</label></div>
+            <div class="one_sixth last ocultar"><select id="registro_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
+            <div class="clear"></div>
+            <div class="one_sixth ocultar"><label>Actividad</label></div>
+            <div class="one_sixth last ocultar"><select id="registro_actividad"><option value="seleccione">Seleccione una</option><option value="0">Instalación</option><option value="1">Diseño</option><option value="2">Auditoría</option><option value="3">Interventoría</option><option value="4">IPM</option></select></div>
         </fieldset>
 
         <!-- PUERTAS CORTA FUEGO -->

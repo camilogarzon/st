@@ -1,6 +1,6 @@
-<form id="semestre_">
+<form id="semestre_puerta">
     <script type="text/javascript">
-        var form_semestre_ = 'semestre_';var sdid = '<?php echo getUserIdSede(); ?>';var usrid = '<?php echo getUserId(); ?>';var pronum = '<?php echo $_GET['id']; ?>';
+        var form_semestre_ = 'semestre_puerta';var sdid = '<?php echo getUserIdSede(); ?>';var usrid = '<?php echo getUserId(); ?>';var pronum = '<?php echo $_GET['id']; ?>';
         
         jQuery(document).ready(function(){applyDatepicker('semestre_fecha');
             jQuery('#semestre_fecha_historial').change(function(){
@@ -56,7 +56,8 @@
                 jQuery('#semestre_eva_id').val(res[0].id);
             } else {
                 clearForm(form_semestre_);
-                alert(''+data.output.response.content);
+                jQuery('#semestre_responsable').val(responsible);
+                //alert(''+data.output.response.content);
             }
         }
         
@@ -79,7 +80,8 @@
                 semestre_loadform();
             } else {
                 clearForm(form_semestre_);
-                alert(''+data.output.response.content);
+                jQuery('#semestre_responsable').val(responsible);
+                //alert(''+data.output.response.content);
             }
         }
         
@@ -92,10 +94,10 @@
             <legend>Información General</legend>
             <div class="one_sixth"><label>Fecha</label></div>
             <div class="one_sixth"><input type="text" id="semestre_fecha" class="sftable" readonly="true" /></div>
-            <div class="one_sixth"><input type="button" class="sftable" id="semestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="semestre_loadform();"/></div>
-            <div class="one_sixth"><input type="button" class="sftable" id="semestre_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_semestre_);"/></div>
             <div class="one_sixth"><label>Fechas anteriores</label></div>
-            <div class="one_sixth last"><select id="semestre_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
+            <div class="one_sixth"><select id="semestre_fecha_historial"><option value="seleccione">Seleccione una</option></select></div>
+            <div class="one_sixth ocultar"><input type="button" class="sftable" id="semestre_cagar" value="CARGAR" style="cursor: pointer;" onclick="semestre_loadform();"/></div>
+            <div class="one_sixth last"><input type="button" class="sftable" id="semestre_limpiar" value="LIMPIAR" style="cursor: pointer;" onclick="clearForm(form_semestre_);jQuery('#semestre_responsable').val(responsible);"/></div>
             <div class="clear"></div>
             <div class="one_sixth"><label>Responsable</label></div>
             <div class="one_sixth"><input type="text" id="semestre_responsable" class="sftable" /></div>

@@ -8,3 +8,6 @@
 .errortext{
     color: red;
 }
+.ocultar {
+    display: none;
+}
