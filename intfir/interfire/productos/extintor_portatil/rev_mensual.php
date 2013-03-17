@@ -208,11 +208,9 @@
         <fieldset>
             <legend>Notas</legend>
             <p>
-                <textarea id="inspeccion_mensual_notas" class="mftable" cols="" rows=""></textarea>
+                <textarea id="inspeccion_mensual_notas" class="mftable" cols="" rows="" maxlength="2000"></textarea>
             </p>
         </fieldset>
-
         <input type="button" id="inspeccion_mensual_registrar" value="Registrar" onclick="inspeccion_mensual_savedata()"/>
-
     </div>    
 </form>

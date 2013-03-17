@@ -1,5 +1,8 @@
 <?php
 require_once 'includes/generic_validate_session.php';
+if (empty($_GET['id'])) {
+    header('Location: equipos.php');
+}
 ?>
 <!-- head -->
 <?php include("head.php"); ?>
@@ -8,24 +11,24 @@ require_once 'includes/generic_validate_session.php';
 
 <!-- header -->
 <div class="header">
-<?php include("header.php"); ?> 
+    <?php include("header.php"); ?> 
 </div>
 <!-- header -->
 
 
 <!-- sidebar -->
 <div class="sidebar">
-<?php include("sidebar.php"); ?>
+    <?php include("sidebar.php"); ?>
 </div>
 <!-- sidebar -->
 
 <!-- content -->
 <div class="maincontent">
 
-	<div class="contenedor">
-        
+    <div class="contenedor">
+
         <?php include("productos/sistema_tuberia.php") ?>
-    
+
     </div>
 
 </div>
