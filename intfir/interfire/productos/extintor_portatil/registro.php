@@ -7,28 +7,21 @@
             applyDatepicker('registro_campo06');
             applyDatepicker('registro_campo11');
             responsible = '<?php echo getUserFullName(); ?>';
-            jQuery('#registro_actividad').change(function(){
-                theval = jQuery('#registro_actividad').val(); 
-                jQuery('#trimestre_actividad').val(theval); 
-                jQuery('#semestre_actividad').val(theval);
-            });
-            jQuery('#registro_fecha_historial').change(function(){
-                jQuery('#registro_fecha').val(jQuery('#registro_fecha_historial').val());
-                registro_loadform();
-            });
             registro_loadLastData();
         });
         
         function registro_savedata() {
             fecha = jQuery('#registro_fecha').val();
             if (fecha != ''){
+                var activ = jQuery('#registro_actividad').val();
+                var nota = jQuery('#registro_notas').val();
                 var evaid = jQuery('#registro_eva_id').val();
                 if (evaid > 0 && <?php echo $ena = (isAdmin() || isCoordinator()) ? 'false' : 'true'; ?>){
                     alert('No tiene permiso de editar este formulario.');
                     return;
                 }
                 jsonstr = stringifyFormJson(form_registro_);
-                ladata = "op=evaluacion_save&sdid="+sdid+"&pronum="+pronum+"&usrid="+usrid+"&id="+evaid+"&form="+form_registro_+"&fecha="+fecha+"&sist="+sist+"&activ="+activ+"&content="+jsonstr+"&nota="+nota;
+                ladata = "op=evaluacion_save&sdid="+sdid+"&pronum="+pronum+"&usrid="+usrid+"&id="+evaid+"&form="+form_registro_+"&fecha="+fecha+"&activ="+activ+"&content="+jsonstr+"&nota="+nota;
                 ladata = ladata.replace("#", "%23");
                 callAjaxForm(ladata, registro_responseSave);
             }
@@ -61,8 +54,6 @@
                 jsonstr = res[0].cont;
                 populateForm(form_registro_, JSON.parse(jsonstr));
                 jQuery('#registro_eva_id').val(res[0].id);
-                theval = jQuery('#registro_sistema').val(); jQuery('#trimestre_sistema').val(theval); jQuery('#semestre_sistema').val(theval);
-                theval = jQuery('#registro_actividad').val(); jQuery('#trimestre_actividad').val(theval); jQuery('#semestre_actividad').val(theval);
             } else {
                 clearForm(form_registro_);
                 jQuery('#registro_responsable').val(responsible); 
@@ -79,13 +70,7 @@
         function registro_responseloadLastData(data){
             cursorNormal();
             if (data.output.valid){
-                jQuery('#registro_fecha_historial').empty();
                 res = data.output.response;
-                opciones = '<option value="seleccione">Seleccione una</option>';
-                for (var j in res) {
-                    opciones += '<option value="'+res[j].fecha+'">'+res[j].fecha+'</option>';
-                }
-                jQuery('#registro_fecha_historial').append(opciones);
                 jQuery('#registro_fecha').val(res[0].fecha);
                 registro_loadform();
             } else {
@@ -375,7 +360,7 @@
         <fieldset>
             <legend>Notas</legend>
             <p>
-                <textarea  id="registro_campo22" name="location" class="mftable" cols="" rows=""></textarea>
+                <textarea  id="registro_notas" name="location" class="mftable" cols="" rows=""></textarea>
             </p>
         </fieldset>
         <input type="button" id="registro_registrar" value="Registrar" onclick="registro_savedata()"/>
